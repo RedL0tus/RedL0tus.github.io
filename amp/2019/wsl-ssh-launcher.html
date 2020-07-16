@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WSL SSH Launcher</title>
+    <link rel="canonical" href="https://v2bv.net/2019/wsl-ssh-launcher" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese">
+    <style amp-custom>
+      *{margin:0;padding:0}*,*:before,*:after{box-sizing:inherit}html{min-height:100%;box-sizing:border-box;-webkit-tap-highlight-color:transparent;font-size:62.5%}body{font-family:'Inconsolata', monospace;font-weight:400;-webkit-font-smoothing:antialiased}article,aside,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}h1,h2,h3,h4,h5,h6{font-weight:400;color:#163541}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}img{max-width:100%;font-style:italic;vertical-align:middle;border:0}svg:not(:root){overflow:hidden}svg{pointer-events:none;max-height:100%}a{background-color:transparent;text-decoration:none;color:#0067FB}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}i,em{font-weight:italic}figure{margin:0}hr{margin-top:2.5rem;margin-bottom:2.5rem;width:100%;height:1px;border:0;background:#EFF1F3}pre{overflow:auto}.u-container{max-width:62rem;margin-right:auto;margin-left:auto;padding-top:10rem;padding-right:1rem;padding-left:1rem}.u-separate{margin-right:.45rem;margin-left:.25rem;color:#5C6E74}.u-separate:after{content:'\00a0/'}.c-page_header{margin-bottom:10rem}.c-page_header h1{margin-bottom:2.5rem;line-height:1.5;font-size:2.4rem;color:#163541}.c-page_header p{line-height:1;font-size:1.8rem}.c-page_footer{margin-bottom:10rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.c-page_footer p{line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article{margin-bottom:10rem}.c-article_header{margin-bottom:5rem}@media screen and (min-width: 45rem){.c-article_header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline}}.c-article_title{line-height:1.5;font-size:3.2rem;color:#163541}.c-article_time{line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article_main{margin-bottom:5rem;line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article_main>*{margin-bottom:1.8rem}.c-article_main h2{line-height:1.5;font-size:2.4rem}.c-article_main h3{line-height:1.5;font-size:2rem}.c-article_main h4{line-height:1.6;font-size:1.8rem}.c-article_main h5{line-height:1.5;font-size:1.8rem}.c-article_main strong{color:#163541;font-weight:400}.c-article_main blockquote{margin-left:0;margin-right:0;padding-left:1.8rem;border-left:1px solid #EFF1F3}.c-article_main ul,.c-article_main ol{margin-left:2.1rem}.c-tag{margin-right:1rem;position:relative;white-space:nowrap;line-height:1.5;font-size:1.8rem;color:#163541}.c-tag:before{color:#869395;content:'#\2009'}.c-archives{margin-bottom:10rem}.c-archives_year{margin-bottom:2.5rem;line-height:1.5;font-size:3.2rem}.c-archives_list{margin-bottom:2.5rem;list-style:none}.c-archives_item{padding-top:2.5rem;padding-bottom:2.5rem;border-top:1px solid #EFF1F3}@media screen and (min-width: 45rem){.c-archives_item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}}.c-archives_item h3{line-height:1.5;font-size:1.8rem}.c-archives_item p{line-height:1.5;font-size:1.8rem;color:#515862}pre,code{font-family:'Inconsolata', monospace;font-size:1.4rem;line-height:1.5}.highlight{border-radius:4px;background:#FDFDFD;border:1px solid #E8E8EB;color:#93a1a1}.highlight .gutter{padding:1.2rem;border-right:1px solid #E8E8EB}.highlight .code{padding:1.2rem}span.lineno{padding:1rem;border-right:1px solid #E8E8EB}.highlight .c{color:#586e75}.highlight .err{color:#93a1a1}.highlight .g{color:#93a1a1}.highlight .k{color:#859900}.highlight .l{color:#93a1a1}.highlight .n{color:#93a1a1}.highlight .o{color:#859900}.highlight .x{color:#cb4b16}.highlight .p{color:#93a1a1}.highlight .cm{color:#586e75}.highlight .cp{color:#859900}.highlight .c1{color:#586e75}.highlight .cs{color:#859900}.highlight .gd{color:#2aa198}.highlight .ge{color:#93a1a1;font-style:italic}.highlight .gr{color:#dc322f}.highlight .gh{color:#cb4b16}.highlight .gi{color:#859900}.highlight .go{color:#93a1a1}.highlight .gp{color:#93a1a1}.highlight .gs{color:#93a1a1;font-weight:bold}.highlight .gu{color:#cb4b16}.highlight .gt{color:#93a1a1}.highlight .kc{color:#cb4b16}.highlight .kd{color:#268bd2}.highlight .kn{color:#859900}.highlight .kp{color:#859900}.highlight .kr{color:#268bd2}.highlight .kt{color:#dc322f}.highlight .ld{color:#93a1a1}.highlight .m{color:#2aa198}.highlight .s{color:#2aa198}.highlight .na{color:#93a1a1}.highlight .nb{color:#B58900}.highlight .nc{color:#268bd2}.highlight .no{color:#cb4b16}.highlight .nd{color:#268bd2}.highlight .ni{color:#cb4b16}.highlight .ne{color:#cb4b16}.highlight .nf{color:#268bd2}.highlight .nl{color:#93a1a1}.highlight .nn{color:#93a1a1}.highlight .nx{color:#93a1a1}.highlight .py{color:#93a1a1}.highlight .nt{color:#268bd2}.highlight .nv{color:#268bd2}.highlight .ow{color:#859900}.highlight .w{color:#93a1a1}.highlight .mf{color:#2aa198}.highlight .mh{color:#2aa198}.highlight .mi{color:#2aa198}.highlight .mo{color:#2aa198}.highlight .sb{color:#586e75}.highlight .sc{color:#2aa198}.highlight .sd{color:#93a1a1}.highlight .s2{color:#2aa198}.highlight .se{color:#cb4b16}.highlight .sh{color:#93a1a1}.highlight .si{color:#2aa198}.highlight .sx{color:#2aa198}.highlight .sr{color:#dc322f}.highlight .s1{color:#2aa198}.highlight .ss{color:#2aa198}.highlight .bp{color:#268bd2}.highlight .vc{color:#268bd2}.highlight .vg{color:#268bd2}.highlight .vi{color:#268bd2}.highlight .il{color:#2aa198}
+    </style>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>
+      body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+      </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+        {
+          "vars": {
+          "account": "UA-97897080-1"
+        },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
+    <main class="u-container" id="page_container">
+      <div class="c-page" id="page_main">
+        <article class="c-article" id="page_article">
+          <header class="c-page_header" id="page_header">
+            <h1>Untitled</h1>
+            <p><a href="/">&lt;&ndash;&ndash; Back</a></p>
+          </header>
+          <div class="c-article_main" id="article_main">
+            <header class="c-article_header" id="article_header">
+              <h1 class="c-article_title" id="article_title">WSL SSH Launcher</h1>
+              <p class="c-article_time" id="article_time"><time datetime="2019-06-02T05:35:00+00:00" itemprop="datePublished">Jun 2, 2019</time></p>
+            </header>
+            <p><a href="#en">Chinglish version</a><br>
+              <a href="#zh">中文</a></p>
+            <div id="en"></div>
+            <p>I’m a Linux user and recently because of some undeniable reason, I’ m using Windows these days. I  haven’t been using Windows for about half a year, and I got really used  to those command line tools in Linux (e,g, tmux), it’s kind of  uncomfortable without them.
+              So I enabled WSL, installed openSUSE and Arch. After  setting up my dotfiles, I found out that there is not a single usable  terminal emulator on Windows:</p>
+            <ul>
+              <li>Windows version of Alacritty cannot display some character in the right way. Tmux’s status line become weird after stretching the window.</li>
+              <li>Fluent Terminal looks nice but tmux’s status line will disappear in some cases.</li>
+              <li>ConEmu does not support dialog very well, etc.</li>
+            </ul>
+            <p>And vim does not work well in those terminal emulators, especially for syntax highlighting (colors become indistinguishable). Seems these situations are caused by ConHost and people who build those terminal emulators cannot fix that on  their own. I know they tried their best.</p>
+            <p><del>Macrohard</del> Microsoft said they are going to fix that and released Windows Terminal at Build 2019, I’m very glad they are working on it.  But after I downloading a Dev build from their CI, I found out that:</p>
+            <ul>
+              <li>Colors are still not 100% correct in some cases, though it’s still a huge improvement from the previous ConHost.</li>
+              <li>Does not support mouse interaction (e.g. tmux’s mouse mode and vim).</li>
+              <li>High CPU and RAM usage. After opening 5-6 tabs, it uses 20% of my CPU (which is a 6th-gen Shintel Core i7) and over 3GB of RAM, plus another 20% usage on CPU by Antimalware service.  Performance also become unacceptable in this case, I can even see how  each character is printed out.</li>
+            </ul>
+            <p>After searching for resolutions, I found that someone said we can use SSH clients as there are some decent SSH clients on Windows. But there are still some problems:</p>
+            <ul>
+              <li>WSL does not have a real init system and service manager, so distributions with “pure” systemd only cannot start sshd as a daemon unless start by hand.</li>
+              <li>Even though some distribution can start sshd through RC scripts, it still needs some sort of interaction.</li>
+            </ul>
+            <p>Then I done a little bit of searching and found no suitable tools can start sshd  on boot (maybe it exists, but I just didn’t see it). So I wrote one : )</p>
+            <p><amp-img src="../img/wsl_ssh_screenshot.png" alt="Screenshot" layout="responsive">
+                <noscript><img src="../img/wsl_ssh_screenshot.png" alt="Screenshot"></noscript>
+              </amp-img><br>
+              (I think the interface is pretty straight forward)</p>
+            <p>I was planning to make a UWP one but I don’t know how to do it so I just made it with WPF. It’s my first WPF program so… Yea it’s ugly and I don’t really know how to design a UI.</p>
+            <p>It has the basic functionalities I need, but still, with some issues:</p>
+            <ul>
+              <li>Window cannot be resized, because I don’t know how to make it resizable in the correct way.</li>
+              <li>Microsoft says WPF supports HiDPi, but I didn’t test it since I don’t have that kind of device.</li>
+              <li>It cannot stop the sshd process only, instead, it will kill all the WSL instance of that specific distribution:
+                <ul>
+                  <li>I wrapped the WSL process with BackgroundWorker, but I don’t know how to stop a process inside a BackgroundWorker, my bad.</li>
+                  <li>WSL instances are isolated so I cannot start a new process and kill the process in the previous WSL instance.
+                    <ul>
+                      <li>Sometimes it’s not… I’m really confused.</li>
+                    </ul>
+                  </li>
+                  <li>So I did it in this way.</li>
+                </ul>
+              </li>
+              <li>Again, it’s extremely ugly.</li>
+              <li>Lacks error handling.</li>
+            </ul>
+            <p>But at least it works!</p>
+            <p>Source code:<br>
+              <a href="https://github.com/RedL0tus/WSL_SSH_Launcher">https://github.com/RedL0tus/WSL_SSH_Launcher</a></p>
+            <p>GitHub Release:<br>
+              <a href="https://github.com/RedL0tus/WSL_SSH_Launcher/releases">https://github.com/RedL0tus/WSL_SSH_Launcher/releases</a></p>
+            <p>Macrohard store：<br>
+              <a href="//www.microsoft.com/store/apps/9NRPB1HPKK8G?cid=storebadge&amp;ocid=badge"><amp-img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="English badge" style="width: 284px; height: 104px;" width="864" height="312" layout="responsive">
+                  <noscript><img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="English badge" style="width: 284px; height: 104px;" width="864" height="312"></noscript>
+                </amp-img></a><br>
+              Tip: Unlimited free trial is offered.</p>
+            <div id="en-privacy-policy"></div>
+            <p>Privacy policy: It does not access anything other than it’s configuration and things related to WSL, so you don’t need to worry about anything.</p>
+            <div id="zh"></div>
+            <p>因为一些不可抗的原因，我这段时间在用 Windows。但是在这之前我已经有半年左右没用过 Windows 了，离开了 Linux 下的那些工具可以说是浑身难受。而且最近这段时间刚刚配了一下 tmux 之类的东西感觉挺好。到了 Windows 下可真算是这也没有那也没有了。</p>
+            <p>于是装了 openSUSE 和 Arch 两个 WSL(Windows Subsystem Linux) 发行版。装完并设置好自己的 dotfiles 之后用了一段时间才发现 Windows 下根本就没一个好用的终端模拟器：</p>
+            <ul>
+              <li>Windows 版的 Alacritty 字符显示不正确，拉伸窗口之后 tmux 的 status line 显示不正常。</li>
+              <li>Fluent Terminal 虽然好看，字符也正常，但是换行多了之后 tmux 的 status line 会丢。</li>
+              <li>ConEmu 对 dialog 的支持好像有问题。</li>
+            </ul>
+            <p>并且 vim 在这些终端模拟器里基本就是不能使用（尤其是配色上面）。这些问题据说是 ConHost 的限制，他们做终端模拟器的人也没办法。</p>
+            <p>前段时间巨硬的 Build 大会上公布了 Windows Terminal，我也去他们的 CI 上面下了一个 Dev 构建然后试了下，发现：</p>
+            <ul>
+              <li>部分地方的颜色还是不对。</li>
+              <li>功能倒是没什么大问题了，但是不支持 tmux 的 mouse mode 等等。</li>
+              <li>占用真的太太太太太太高了，性能也是真的很烂… 我开了 五六个标签页吃了我 3GB+ 的内存和 20+% 的 CPU，Antimalware 的那个服务在此之上又吃了 20+% 的 CPU… 我这还什么都没干呢。而且这个时候性能已经差到了能看到它一个字一个字打出来的程度，实在是遭不住。</li>
+            </ul>
+            <p>这时候又看到说我们可以用 SSH，毕竟 Windows 下还是有不少还算好用的 SSH 客户端的嘛。可是这个方法也不是很完美。一是 WSL 里没有真正意义上的 init，像 Arch 这样只有纯 systemd 的发行版无法通过它自动启动 sshd；二是就算能用 RC 脚本启动 sshd（比如 Ubuntu），也还是需要用户操作，相对麻烦。</p>
+            <p>然后我就想造一个东西能启动 WSL 里面的 sshd，网上稍微搜了下好像也没有同类程序。我就自己下载了 Visual Studio 试着写了一个。</p>
+            <p><amp-img src="../img/wsl_ssh_screenshot.png" alt="截图" layout="responsive">
+                <noscript><img src="../img/wsl_ssh_screenshot.png" alt="截图"></noscript>
+              </amp-img></p>
+            <p>其实本来想做成 UWP 的但是试了一下发现完全没头绪，最后用了 WPF。我总共就没做过几个图形程序，希望大佬们轻点。</p>
+            <p>现在基本功能在我这边测试是能用了（可以列出发行版，可以启动 sshd，可以开机自动启动），但是还是很不完善：</p>
+            <ul>
+              <li>窗口现在是无法拖大小的，因为我做不来。</li>
+              <li>现在无法只停止 sshd 服务，只能杀死所有同个发行版的 WSL instance：
+                <ul>
+                  <li>我现在把跑了 sshd 的 WSL 进程放进了 BackgroundWorker，但是不知道如何正确结束掉 BackgroundWorker 里面的子进程。</li>
+                  <li>同时由于 WSL instance 之间是独立的，我无法通过再创建一个 WSL 进程来杀死之前的 sshd。</li>
+                  <li>所以最后发现我只能把它做成杀死所有 WSL instance，当然主要是我太菜。</li>
+                </ul>
+              </li>
+              <li>现在的 Logo 很丑，我也没办法，毕竟我不懂设计。</li>
+              <li>缺少 Error handling。</li>
+            </ul>
+            <p>但是它至少能用了嘛！</p>
+            <p>源码:<br>
+              <a href="https://github.com/RedL0tus/WSL_SSH_Launcher">https://github.com/RedL0tus/WSL_SSH_Launcher</a></p>
+            <p>GitHub Release:<br>
+              <a href="https://github.com/RedL0tus/WSL_SSH_Launcher/releases">https://github.com/RedL0tus/WSL_SSH_Launcher/releases</a></p>
+            <p>巨硬商店：<br>
+              <a href="//www.microsoft.com/store/apps/9NRPB1HPKK8G?cid=storebadge&amp;ocid=badge"><amp-img src="https://assets.windowsphone.com/42e5aa4a-f19a-4205-9191-a97105ed7663/Chinese_Simplified_get-it-from-MS_InvariantCulture_Default.png" alt="Chinese badge" style="width: 284px; height: 104px;" layout="responsive">
+                  <noscript><img src="https://assets.windowsphone.com/42e5aa4a-f19a-4205-9191-a97105ed7663/Chinese_Simplified_get-it-from-MS_InvariantCulture_Default.png" alt="Chinese badge" style="width: 284px; height: 104px;"></noscript>
+                </amp-img></a><br>
+              提示： 提供了不限时间的免费试用，或者可以去 GitHub Release 直接下载 .exe。就把这里这个收费当捐赠吧 ：）</p>
+            <p><del>绝赞盈利尝试 #1</del></p>
+            <div id="zh-privacy-policy"></div>
+            <p>隐私策略：它不会访问任何它的配置文件和 WSL 以外的东西，所以没什么好担心的。</p>
+          </div>
+          <footer class="c-article_footer" id="page_footer">
+            <p>
+            </p>
+          </footer>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

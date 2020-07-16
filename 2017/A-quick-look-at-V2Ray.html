@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A quick look at V2Ray - Untitled</title>
+    <meta name="description" content="A normal way to escape from censorship or blockage of access to information is to use proxy.">
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese"rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://v2bv.net/2017/A-quick-look-at-V2Ray">
+    <link rel="alternate" type="application/rss+xml" title="Untitled" href="https://v2bv.net/feed.xml">
+    <link rel="manifest" href="/manifest.json">
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/service-worker.js')
+          .then(function() { console.log("Service Worker Registered"); });
+      }
+    </script>
+    <link rel="amphtml" href="https://v2bv.net/amp/2017/A-quick-look-at-V2Ray">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-97897080-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "publisher": {
+              "@type": "Organization",
+              "name": "Sth.",
+              "logo": "/favicon.ico"
+          },
+          "author": {
+              "@type": "Person",
+              "name": "Kay",
+              "image": {
+                  "@type": "ImageObject",
+                  "url": "/avatar.jpg",
+              },
+              "description": "Untitled"
+          },
+          "headline": "A quick look at V2Ray",
+          "url": "https://v2bv.net",
+          "datePublished": "Jun 16, 2017",
+          "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://v2bv.net"
+          }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="u-container">
+      <div class="c-page">
+        <article class="c-article">
+          <header class="c-page__header" id="page_header">
+            <h1 itemprop="articleSection">Untitled</h1>
+            <p>
+              <a href="/">&lt;&ndash;&ndash; Back</a>
+            </p>
+          </header>
+          <div class="c-article__main">
+            <article class="c-article">
+              <header class="c-article__header">
+                <div id="article_title">
+                  <h1 class="c-article__title">A quick look at V2Ray</h1>
+                </div>
+                <div id="article_time">
+                  <p class="c-article__time">
+                    <time content="2017-06-16">
+                      Jun 16, 2017
+                    </time>
+                  </p>
+                </div>
+              </header>
+              <div class="c-article__main">
+                <p>A normal way to escape from censorship or blockage of access to information is to use proxy.</p>
+                <p>There are several different proxy protocols and software. And today I’m gonna talk about V2Ray.</p>
+                <p>It’s home page is https://www.v2ray.com.</p>
+                <p>It’s written in Golang, with these features:</p>
+                <ol>
+                  <li>It supports several protocols (SOCKS, HTTP, Shadowsocks, VMess)(And VMess is it’s own protocol).</li>
+                  <li>Built-in routing support.</li>
+                  <li>Cross-platform support.</li>
+                </ol>
+                <p>But these features also causes it’s a bit hard for newbies to configure it.</p>
+                <p>But in fact, if you just need basic proxy features, it could be very easy to use.</p>
+                <p>First, V2Ray use JSON as the format of configuration file. A basic configuration of V2Ray can be split to several parts: <code class="language-plaintext highlighter-rouge">inbound</code>, <code class="language-plaintext highlighter-rouge">outbound</code> and <code class="language-plaintext highlighter-rouge">routing</code>.</p>
+                <p><code class="language-plaintext highlighter-rouge">inbound</code> is just about how others connect to V2Ray software.<br />
+                  <code class="language-plaintext highlighter-rouge">outbound</code> is about how V2Ray connect to the web or other V2Ray servers.<br />
+                  <code class="language-plaintext highlighter-rouge">routing</code> is the part to configure the route of packages.</p>
+                <p>Also there are <code class="language-plaintext highlighter-rouge">inboundDetour</code>/<code class="language-plaintext highlighter-rouge">outboundDetour</code> and parts about how to transport packages.</p>
+                <p>###<strong>In the part <code class="language-plaintext highlighter-rouge">inbound</code>:</strong></p>
+                <p>For servers, inbound have to be the protocol and ports that clients will connect. As an example:</p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>"inbound": {
+  "port": 37192, // port
+  "protocol": "vmess",    // main inbound protocol
+  "settings": {
+    "clients": [
+      {
+        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",  // User ID
+        "level": 1  // User level 
+      }
+    ]
+  }
+}
+</code></pre>
+                  </div>
+                </div>
+                <p>In the example, <code class="language-plaintext highlighter-rouge">port</code> will be the port that clients will connect; <code class="language-plaintext highlighter-rouge">protocol</code> is the protocol it gonna use; <code class="language-plaintext highlighter-rouge">settings</code> are the parameters of inbound protocols.</p>
+                <p>For more detailed information about VMess and it’s settings, please visit: https://www.v2ray.com/chapter_04/03_vmess.html</p>
+                <p>For clients, inbound have to be the settings of how other applications connects to it. For example:</p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>"inbound": {
+  "port": 1080, // port
+  "protocol": "socks",
+  "settings": {
+    "auth": "noauth",
+    "udp": false
+  }
+}
+</code></pre>
+                  </div>
+                </div>
+                <p><code class="language-plaintext highlighter-rouge">port</code> is the port that other applications will connect; <code class="language-plaintext highlighter-rouge">protocol</code> is the protocol it will use. For now V2Ray supports SOCKS5 and HTTP.</p>
+                <p>For detailed information, please visit: https://www.v2ray.com/chapter_04/03_vmess.html</p>
+                <p>###<strong>In the part <code class="language-plaintext highlighter-rouge">outbound</code>:</strong></p>
+                <p>For servers, this part is about how V2Ray communicates with the web.</p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>"outbound": {
+  "protocol": "freedom",  
+  "settings": {}
+}
+</code></pre>
+                  </div>
+                </div>
+                <p>In this example, traffics will use a protocol called <code class="language-plaintext highlighter-rouge">freedom</code>. In fact, it’s just about to make normal TCP/UDP connections to the web.</p>
+                <p>For more detailed information about <code class="language-plaintext highlighter-rouge">freedom</code>, please visit: https://www.v2ray.com/chapter_02/protocols/freedom.html</p>
+                <p>For clients, this part is about how V2Ray communicates with V2Ray on the server.</p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>"outbound": {
+  "protocol": "vmess",
+  "settings": {
+    "vnext": [
+      {
+        "address": "8.8.8.8", // Server IP
+        "port": 17173,  // Server port
+        "users": [
+          {
+            "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", // User ID
+            "security": "aes-128-gcm", 
+            "alterId": 128
+          },
+        ]
+      }
+    ]
+  }
+}
+</code></pre>
+                  </div>
+                </div>
+                <p>Note that in this part, all of the settings <strong>must</strong> be the same with the server.</p>
+                <p>For more detailed information about VMess and it’s settings, please visit: https://www.v2ray.com/chapter_04/03_vmess.html</p>
+                <p>###<strong>In the part <code class="language-plaintext highlighter-rouge">routing</code>:</strong></p>
+                <p>Absolutely it’s about routing of packages.</p>
+                <p>For detailed information, please visit: https://www.v2ray.com/chapter_02/03_routing.html</p>
+                <p>Here is an example about <code class="language-plaintext highlighter-rouge">routing</code>:</p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>"routing": {
+  "strategy": "rules",
+  "settings": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "0.0.0.0/8",
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "127.0.0.0/8",
+          "169.254.0.0/16",
+          "172.16.0.0/12",
+          "192.0.0.0/24",
+          "192.0.2.0/24",
+          "192.168.0.0/16",
+          "198.18.0.0/15",
+          "198.51.100.0/24",
+          "203.0.113.0/24",
+          "::1/128",
+          "fc00::/7",
+          "fe80::/10"
+        ],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
+</code></pre>
+                  </div>
+                </div>
+                <p>P.S. “outboundTag” determines which route the traffics that meets the rules above will go. It’s about inboundDetor/outboundDetor, please visit official manual.</p>
+                <p>###<strong>Here is the basic config:</strong></p>
+                <p><strong>Server:</strong></p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>{
+  "inbound": {
+    "port": 12138,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+          "level": 1,
+          "alterId": 128
+        }
+      ]
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  },
+  "outboundDetour": [
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "routing": {
+    "strategy": "rules",
+    "settings": {
+      "rules": [
+        {
+          "type": "field",
+          "ip": [
+            "0.0.0.0/8",
+            "10.0.0.0/8",
+            "100.64.0.0/10",
+            "127.0.0.0/8",
+            "169.254.0.0/16",
+            "172.16.0.0/12",
+            "192.0.0.0/24",
+            "192.0.2.0/24",
+            "192.168.0.0/16",
+            "198.18.0.0/15",
+            "198.51.100.0/24",
+            "203.0.113.0/24",
+            "::1/128",
+            "fc00::/7",
+            "fe80::/10"
+          ],
+          "outboundTag": "blocked"
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  </div>
+                </div>
+                <p><strong>Client:</strong></p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>{
+  "inbound": {
+    "port": 1080,
+    "protocol": "socks",
+    "settings": {
+      "auth": "noauth",
+      "udp": true
+    }
+  },
+  "outbound": {
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "8.8.8.8",
+          "port": 12138,
+          "users": [
+            {
+              "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+              "alterId": 128,
+              "security": "aes-128-gcm"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "outboundDetour": [
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "tag": "direct"
+    }
+  ],
+  "routing": {
+    "strategy": "rules",
+    "settings": {
+      "rules": [
+        {
+          "type": "field",
+          "ip": [
+            "0.0.0.0/8",
+            "10.0.0.0/8",
+            "100.64.0.0/10",
+            "127.0.0.0/8",
+            "169.254.0.0/16",
+            "172.16.0.0/12",
+            "192.0.0.0/24",
+            "192.0.2.0/24",
+            "192.168.0.0/16",
+            "198.18.0.0/15",
+            "198.51.100.0/24",
+            "203.0.113.0/24",
+            "::1/128",
+            "fc00::/7",
+            "fe80::/10"
+          ],
+          "outboundTag": "direct"
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+                  </div>
+                </div>
+                <div id="disqus_thread"></div>
+                <script>
+                  var disqus_config = function () {
+                    this.page.url = "https://v2bv.net/2017/A-quick-look-at-V2Ray";
+                    this.page.identifier = "/2017/A-quick-look-at-V2Ray";
+                  };
+                  (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = '//sth-1.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                  })();
+                </script>
+                <noscript>
+                  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+              </div>
+              <footer class="c-article__footer">
+                <p>
+                </p>
+              </footer>
+            </article>
+            <div id="disqus_thread"></div>
+            <script>
+              var disqus_config = function () {
+                this.page.url = "https://v2bv.net/2017/A-quick-look-at-V2Ray";
+                this.page.identifier = "/2017/A-quick-look-at-V2Ray";
+              };
+              (function() {
+                var d = document, s = d.createElement('script');
+                s.src = '//sth-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>
+              Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+          </div>
+          <footer class="c-page__footer" id="page_footer">
+          </hr>
+          <p>
+            <script type='text/javascript'>
+              fortune = new Array(9);
+              fortune[0] = 'You Door All Dalao Except Me I good vegetable ah...';
+              fortune[1] = 'すべてはシュタインズ・ゲートの選択である!';
+              fortune[2] = 'Pen Pineapple Apple Pen ~';
+              fortune[3] = 'なんでそんなに慣れてんだよっ！';
+              fortune[4] = 'あたしが、先だった……先だったんだ……';
+              fortune[5] = '+1s +1s +1s +1s +1s +1s +1s +1s';
+              fortune[6] = 'どうしてこうなるんだろう…';
+              fortune[7] = '你也配姓趙？你怎麼會姓趙！——你那裡配姓趙！';
+              fortune[8] = '你才是法師！你全家都是法師！';
+              index = Math.floor(Math.random() * fortune.length);
+              document.write(fortune[index]);
+            </script>
+            <noscript>どうしてこうなるんだろう…</noscript>
+          </p>
+        </hr>
+      </br>
+      <p>
+        &copy; KayMW 
+        2020 | Powered by Jekyll | Using theme: Biu
+      </p>
+    </br>
+    <p>Follow me on: 
+      <a rel="me" href="https://s.brined.fish/@KayMW">Mastodon</a>
+      &
+      <a href="https://github.com/RedL0tus">Github</a>
+      <span class="u-separate"></span>
+      Subscribe: <a href="/feed.xml">RSS</a>
+    </p>
+  </footer>
+</article>
+</div>
+</div>
+</body>
+</html>

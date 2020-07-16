@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unofficial LineageOS build (SFMod) - Untitled</title>
+    <meta name="description" content="Several days ago, Cyngn shut down all services for CyanogenMod, and those developers created a fork of CyanogenMod called LineageOS. And at now, though we ca...">
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese"rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://v2bv.net/2017/unofficial-lineageos-build">
+    <link rel="alternate" type="application/rss+xml" title="Untitled" href="https://v2bv.net/feed.xml">
+    <link rel="manifest" href="/manifest.json">
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/service-worker.js')
+          .then(function() { console.log("Service Worker Registered"); });
+      }
+    </script>
+    <link rel="amphtml" href="https://v2bv.net/amp/2017/unofficial-lineageos-build">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-97897080-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "publisher": {
+              "@type": "Organization",
+              "name": "Sth.",
+              "logo": "/favicon.ico"
+          },
+          "author": {
+              "@type": "Person",
+              "name": "Kay",
+              "image": {
+                  "@type": "ImageObject",
+                  "url": "/avatar.jpg",
+              },
+              "description": "Untitled"
+          },
+          "headline": "Unofficial LineageOS build (SFMod)",
+          "url": "https://v2bv.net",
+          "datePublished": "Jan 10, 2017",
+          "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://v2bv.net"
+          }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="u-container">
+      <div class="c-page">
+        <article class="c-article">
+          <header class="c-page__header" id="page_header">
+            <h1 itemprop="articleSection">Untitled</h1>
+            <p>
+              <a href="/">&lt;&ndash;&ndash; Back</a>
+            </p>
+          </header>
+          <div class="c-article__main">
+            <article class="c-article">
+              <header class="c-article__header">
+                <div id="article_title">
+                  <h1 class="c-article__title">Unofficial LineageOS build (SFMod)</h1>
+                </div>
+                <div id="article_time">
+                  <p class="c-article__time">
+                    <time content="2017-01-10">
+                      Jan 10, 2017
+                    </time>
+                  </p>
+                </div>
+              </header>
+              <div class="c-article__main">
+                <p>Several days ago, Cyngn shut down all services for CyanogenMod, and those developers created a fork of CyanogenMod called <a href="https://lineageos.org">LineageOS</a>. And at now, though we can visit their download site but they didn’t start build official builds yet (2017.01.09). So I built a build from their <a href="https://github.com/LineageOS">source code on GitHub</a> for my Nexus 5X(bullhead) – Of course, with some changes.</p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>Changes:
+1. Change default kernel to flar2's ElementalX-4.04.
+2. Add Brevent(3.1.2).
+3. Change color theme to blue, just like Pixel (From Pure Nexus Project)
+4. Add Masquerade and Substratum.
+5. System embedded Magisk Manager
+</code></pre>
+                  </div>
+                </div>
+                <p>And… I call it SFMod, you can find source code <a href="https://github.com/SFMod">here</a></p>
+                <p>(The reason why I stop using Pure Nexus is that the maintainer of Pure Nexus allways reset repo’s HEAD and <code class="language-plaintext highlighter-rouge">git push -f</code> so when I merge from those repo, it always make many conflicts; And always fail to build it from source.)</p>
+                <p>Here is the download link: <a href="https://drive.google.com/file/d/0B5BS_3kBfTlkLWRZaENGOHN1NTg/view?usp=sharing">Google Drive</a></p>
+                <p><img src="https://img.vim-cn.com/8e/85681240d1c07a4f410de749592faa05c81cc3.png" alt="About" /></p>
+                <div id="disqus_thread"></div>
+                <script>
+                  var disqus_config = function () {
+                    this.page.url = "https://v2bv.net/2017/unofficial-lineageos-build";
+                    this.page.identifier = "/2017/unofficial-lineageos-build";
+                  };
+                  (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = '//sth-1.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                  })();
+                </script>
+                <noscript>
+                  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+              </div>
+              <footer class="c-article__footer">
+                <p>
+                </p>
+              </footer>
+            </article>
+            <div id="disqus_thread"></div>
+            <script>
+              var disqus_config = function () {
+                this.page.url = "https://v2bv.net/2017/unofficial-lineageos-build";
+                this.page.identifier = "/2017/unofficial-lineageos-build";
+              };
+              (function() {
+                var d = document, s = d.createElement('script');
+                s.src = '//sth-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>
+              Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+          </div>
+          <footer class="c-page__footer" id="page_footer">
+          </hr>
+          <p>
+            <script type='text/javascript'>
+              fortune = new Array(9);
+              fortune[0] = 'You Door All Dalao Except Me I good vegetable ah...';
+              fortune[1] = 'すべてはシュタインズ・ゲートの選択である!';
+              fortune[2] = 'Pen Pineapple Apple Pen ~';
+              fortune[3] = 'なんでそんなに慣れてんだよっ！';
+              fortune[4] = 'あたしが、先だった……先だったんだ……';
+              fortune[5] = '+1s +1s +1s +1s +1s +1s +1s +1s';
+              fortune[6] = 'どうしてこうなるんだろう…';
+              fortune[7] = '你也配姓趙？你怎麼會姓趙！——你那裡配姓趙！';
+              fortune[8] = '你才是法師！你全家都是法師！';
+              index = Math.floor(Math.random() * fortune.length);
+              document.write(fortune[index]);
+            </script>
+            <noscript>どうしてこうなるんだろう…</noscript>
+          </p>
+        </hr>
+      </br>
+      <p>
+        &copy; KayMW 
+        2020 | Powered by Jekyll | Using theme: Biu
+      </p>
+    </br>
+    <p>Follow me on: 
+      <a rel="me" href="https://s.brined.fish/@KayMW">Mastodon</a>
+      &
+      <a href="https://github.com/RedL0tus">Github</a>
+      <span class="u-separate"></span>
+      Subscribe: <a href="/feed.xml">RSS</a>
+    </p>
+  </footer>
+</article>
+</div>
+</div>
+</body>
+</html>

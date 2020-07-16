@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>淺談 Malicious Engine</title>
+    <link rel="canonical" href="https://v2bv.net/2017/intel-me" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese">
+    <style amp-custom>
+      *{margin:0;padding:0}*,*:before,*:after{box-sizing:inherit}html{min-height:100%;box-sizing:border-box;-webkit-tap-highlight-color:transparent;font-size:62.5%}body{font-family:'Inconsolata', monospace;font-weight:400;-webkit-font-smoothing:antialiased}article,aside,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}h1,h2,h3,h4,h5,h6{font-weight:400;color:#163541}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}img{max-width:100%;font-style:italic;vertical-align:middle;border:0}svg:not(:root){overflow:hidden}svg{pointer-events:none;max-height:100%}a{background-color:transparent;text-decoration:none;color:#0067FB}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}i,em{font-weight:italic}figure{margin:0}hr{margin-top:2.5rem;margin-bottom:2.5rem;width:100%;height:1px;border:0;background:#EFF1F3}pre{overflow:auto}.u-container{max-width:62rem;margin-right:auto;margin-left:auto;padding-top:10rem;padding-right:1rem;padding-left:1rem}.u-separate{margin-right:.45rem;margin-left:.25rem;color:#5C6E74}.u-separate:after{content:'\00a0/'}.c-page_header{margin-bottom:10rem}.c-page_header h1{margin-bottom:2.5rem;line-height:1.5;font-size:2.4rem;color:#163541}.c-page_header p{line-height:1;font-size:1.8rem}.c-page_footer{margin-bottom:10rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.c-page_footer p{line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article{margin-bottom:10rem}.c-article_header{margin-bottom:5rem}@media screen and (min-width: 45rem){.c-article_header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline}}.c-article_title{line-height:1.5;font-size:3.2rem;color:#163541}.c-article_time{line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article_main{margin-bottom:5rem;line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article_main>*{margin-bottom:1.8rem}.c-article_main h2{line-height:1.5;font-size:2.4rem}.c-article_main h3{line-height:1.5;font-size:2rem}.c-article_main h4{line-height:1.6;font-size:1.8rem}.c-article_main h5{line-height:1.5;font-size:1.8rem}.c-article_main strong{color:#163541;font-weight:400}.c-article_main blockquote{margin-left:0;margin-right:0;padding-left:1.8rem;border-left:1px solid #EFF1F3}.c-article_main ul,.c-article_main ol{margin-left:2.1rem}.c-tag{margin-right:1rem;position:relative;white-space:nowrap;line-height:1.5;font-size:1.8rem;color:#163541}.c-tag:before{color:#869395;content:'#\2009'}.c-archives{margin-bottom:10rem}.c-archives_year{margin-bottom:2.5rem;line-height:1.5;font-size:3.2rem}.c-archives_list{margin-bottom:2.5rem;list-style:none}.c-archives_item{padding-top:2.5rem;padding-bottom:2.5rem;border-top:1px solid #EFF1F3}@media screen and (min-width: 45rem){.c-archives_item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}}.c-archives_item h3{line-height:1.5;font-size:1.8rem}.c-archives_item p{line-height:1.5;font-size:1.8rem;color:#515862}pre,code{font-family:'Inconsolata', monospace;font-size:1.4rem;line-height:1.5}.highlight{border-radius:4px;background:#FDFDFD;border:1px solid #E8E8EB;color:#93a1a1}.highlight .gutter{padding:1.2rem;border-right:1px solid #E8E8EB}.highlight .code{padding:1.2rem}span.lineno{padding:1rem;border-right:1px solid #E8E8EB}.highlight .c{color:#586e75}.highlight .err{color:#93a1a1}.highlight .g{color:#93a1a1}.highlight .k{color:#859900}.highlight .l{color:#93a1a1}.highlight .n{color:#93a1a1}.highlight .o{color:#859900}.highlight .x{color:#cb4b16}.highlight .p{color:#93a1a1}.highlight .cm{color:#586e75}.highlight .cp{color:#859900}.highlight .c1{color:#586e75}.highlight .cs{color:#859900}.highlight .gd{color:#2aa198}.highlight .ge{color:#93a1a1;font-style:italic}.highlight .gr{color:#dc322f}.highlight .gh{color:#cb4b16}.highlight .gi{color:#859900}.highlight .go{color:#93a1a1}.highlight .gp{color:#93a1a1}.highlight .gs{color:#93a1a1;font-weight:bold}.highlight .gu{color:#cb4b16}.highlight .gt{color:#93a1a1}.highlight .kc{color:#cb4b16}.highlight .kd{color:#268bd2}.highlight .kn{color:#859900}.highlight .kp{color:#859900}.highlight .kr{color:#268bd2}.highlight .kt{color:#dc322f}.highlight .ld{color:#93a1a1}.highlight .m{color:#2aa198}.highlight .s{color:#2aa198}.highlight .na{color:#93a1a1}.highlight .nb{color:#B58900}.highlight .nc{color:#268bd2}.highlight .no{color:#cb4b16}.highlight .nd{color:#268bd2}.highlight .ni{color:#cb4b16}.highlight .ne{color:#cb4b16}.highlight .nf{color:#268bd2}.highlight .nl{color:#93a1a1}.highlight .nn{color:#93a1a1}.highlight .nx{color:#93a1a1}.highlight .py{color:#93a1a1}.highlight .nt{color:#268bd2}.highlight .nv{color:#268bd2}.highlight .ow{color:#859900}.highlight .w{color:#93a1a1}.highlight .mf{color:#2aa198}.highlight .mh{color:#2aa198}.highlight .mi{color:#2aa198}.highlight .mo{color:#2aa198}.highlight .sb{color:#586e75}.highlight .sc{color:#2aa198}.highlight .sd{color:#93a1a1}.highlight .s2{color:#2aa198}.highlight .se{color:#cb4b16}.highlight .sh{color:#93a1a1}.highlight .si{color:#2aa198}.highlight .sx{color:#2aa198}.highlight .sr{color:#dc322f}.highlight .s1{color:#2aa198}.highlight .ss{color:#2aa198}.highlight .bp{color:#268bd2}.highlight .vc{color:#268bd2}.highlight .vg{color:#268bd2}.highlight .vi{color:#268bd2}.highlight .il{color:#2aa198}
+    </style>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>
+      body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+      </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+        {
+          "vars": {
+          "account": "UA-97897080-1"
+        },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
+    <main class="u-container" id="page_container">
+      <div class="c-page" id="page_main">
+        <article class="c-article" id="page_article">
+          <header class="c-page_header" id="page_header">
+            <h1>Untitled</h1>
+            <p><a href="/">&lt;&ndash;&ndash; Back</a></p>
+          </header>
+          <div class="c-article_main" id="article_main">
+            <header class="c-article_header" id="article_header">
+              <h1 class="c-article_title" id="article_title">淺談 Malicious Engine</h1>
+              <p class="c-article_time" id="article_time"><time datetime="2017-09-27T00:53:00+00:00" itemprop="datePublished">Sep 27, 2017</time></p>
+            </header>
+            <p>想必不少人之前看到有新聞說 ME 被發現有漏洞，但是又不知道它是什麼,相關的中文資料很少。<br>
+              這幾天正好想寫點什麼，那就拿這個題材來水一水吧，文筆不好請見諒。</p>
+            <h2 id="什麼是-me">什麼是 ME？</h2>
+            <ul>
+              <li>Intel ME 是 Intel <strong>M</strong>anagement <strong>E</strong>ngine 的簡稱。</li>
+              <li>Intel ME 是一個擁有從<strong>底層</strong>控制硬件能力的、<strong>獨立</strong>與處理器和操作系統的<strong>框架</strong>，它對於操作系統也是隱形的。簡單點說就是擁有極高的權限。其中 Intel Active Management Technology（英特爾主動管理技術）是運行與 ME 框架上的應用的一個例子。</li>
+              <li>
+                <p>Intel ME 被搭載在<strong>幾乎所有的</strong> 2006 年之後上市出售的 intel 平臺上。硬件部分整合在 CPU 或是主板芯片組內；軟件（固件）部分一般與 BIOS 共存在一個 ROM 芯片中（如果把 ROM 的內容提取出來的話，會發現 ME 固件往往比 BIOS 本身以及 GBE 固件加在一起還大）。</p>
+                <div class="language-plaintext highlighter-rouge">
+                  <div class="highlight">
+                    <pre class="highlight"><code>Found Region Section
+FLREG0:    0x00000000
+  Flash Region 0 (Flash Descriptor): 00000000 - 00000fff
+FLREG1:    0x07ff0500
+  Flash Region 1 (BIOS): 00500000 - 007fffff
+FLREG2:    0x04ff0003
+  Flash Region 2 (Intel ME): 00003000 - 004fffff
+FLREG3:    0x00020001
+  Flash Region 3 (GbE): 00001000 - 00002fff
+FLREG4:    0x00001fff
+  Flash Region 4 (Platform Data): 00fff000 - 00000fff (unused) （以上是我的 X220 的原版 BIOS的結構信息）
+</code></pre>
+                  </div>
+                      </div>
+              </li>
+            </ul>
+            <p>在 Linux 平臺上可以使用 <a href="https://github.com/zamaudio/intelmetool">intelmetool</a> 來查看 ME 的狀態。<br>
+              <amp-img src="https://img.vim-cn.com/ab/ec88a9b22cfcdc7c0ec735d31bd81abd333f6f.png" alt="X220_intelmetool" width="1366" height="768" layout="responsive">
+                <noscript><img src="https://img.vim-cn.com/ab/ec88a9b22cfcdc7c0ec735d31bd81abd333f6f.png" alt="X220_intelmetool" width="1366" height="768"></noscript>
+              </amp-img>
+              (我的 X220 上已經用 me_cleaner 把 ME 閹割了，所以狀態是 Recovery)</p>
+            <p>Windows 平臺可以使用 MEInfoWin 這個程序來查看，因爲版權問題不在這裏提供下載。<br>
+              <del>（好吧事實是我也找不到下載地址）</del></p>
+            <h2 id="爲什麼-me-會被認爲不安全">爲什麼 ME 會被認爲不安全？</h2>
+            <p>ME 本身是爲了企業管理用途而存在的，但是存在以下問題，導致我們不得不擔憂它的安全性：</p>
+            <ul>
+              <li>ME 擁有<strong>高於幾乎所有別的系統組件的權限</strong>，也因爲這點有人把它叫做 <code class="language-plaintext highlighter-rouge">Ring -3</code>。</li>
+              <li>ME 是<strong>閉源</strong>的，用戶無法審覈它是否足夠安全。</li>
+              <li>ME <strong>幾乎無法被關閉或禁用</strong>。</li>
+              <li>ME 以及依賴它的組件<strong>已經</strong>被發現了有漏洞存在（<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5689">CVE-2017-5689</a>），並且很可能有<strong>更多</strong>的漏洞等着被發現（畢竟基本不可能一個 Bug 都不存在）。</li>
+            </ul>
+            <p>就像是你的身體裏有個不受你的意識控制，而又有能力控制你的身體，還能窺探甚至影響你的思維的不明物體。<br>
+              <del>這個不明物體甚至還是有缺陷的，可能會讓別人隨意控制你。</del></p>
+            <p>尤其是如果你是自由軟件的狂熱愛好者、會在電腦上處理機密信息或是很重要的隱私，ME 無疑是一個不可忽視的漏洞。</p>
+            <p>說得陰謀論點，它甚至可能是 Intel 或是美國政府在你的電腦裏留下的後門。</p>
+            <p><del>如果你用的是 AuthenticAMD 平臺的機器，那麼自然不用擔心 ME 的存在。然而天下的烏鴉一般黑，一個類似的東西叫 PSP(</del>PlayStation Portable~~ Platform Security Processor)，也有差不多的問題存在，只是現在似乎還沒有被公開有漏洞。~~
+              AMD 的 PSP 可以被用戶禁用。</p>
+            <h2 id="me-可能被關閉禁用麼">ME 可能被關閉/禁用麼？</h2>
+            <p>在前面也說了，ME 幾乎不可能被關閉，爲什麼又要寫這一段呢？<br>
+              ME 的確很難被關閉。它沒有開關，（在 Nehalem 架構之後）如果暴力破壞它的固件，機器會在 30 分鐘內自動斷電或是重啓；至於破壞硬件… 洗洗睡吧。
+              而且隨着 ME 的一代代更新，ME 覆蓋的範圍越來越廣，最新的 ME 已經接管了硬件初始化；同時還有 Boot Guard 的存在，風險很大。<br>
+              然而再嚴密的東西也總會有疏漏的地方（墨先生一句話說得好，凡事有可能出岔子，它就會出岔子），幾乎不能被關閉也只是<strong>幾乎</strong>而已，<del>廣大勞動人民的智慧是無窮的</del>已經有人發現了在部分平臺上禁用它或是讓它失去功能的辦法。<br>
+              主要有以下思路：</p>
+            <ul>
+              <li>對於 Nehalem 之前的架構，可以通過一點小小的修改來徹底移除。</li>
+              <li>在不破壞基礎框架的前提下破壞一部分 ME 的組件：<br>
+                具體實現是 <a href="https://github.com/corna/me_cleaner">me_cleaner</a> ，需要使用編程器。它會把 BIOS 裏的 ME 固件裏的一部分非必要組件連同簽名一起移除（具體信息可以看<a href="https://github.com/corna/me_cleaner/wiki/How-does-it-work%3F">這裏</a>）。<br>
+                但是注意，這個方法僅僅只是讓 ME 失去了部分功能（幾乎殘廢了），並不是完美的方法（剩餘的必要部分也可能有問題）。另外要提醒的是，刷 BIOS 有風險，請做好備份。</li>
+              <li>有人發現了 ME 11(Skylake and above) 的固件裏有個保留位，通過修改它可以做到禁用 ME，具體可以看<a href="http://blog.ptsecurity.com/2017/08/disabling-intel-me.html">這裏</a>。</li>
+            </ul>
+            <p>現在還沒有任何簡單的方法來移除 ME，僅有的辦法也都需要編程器以及一定的動手技巧，還有刷壞 BIOS 成磚的風險。如果沒有相關經驗，並不怎麼建議移除它。</p>
+            <hr>
+            <p>最後安利一下 coreboot，可以把它理解爲一個開源的 BIOS 實現，官網是 <a href="https://coreboot.org">https://coreboot.org</a> 。有能力並且有興趣，而且設備又有適配的話可以試試。</p>
+            <p>本文的工具和信息不少也是來自 coreboot 項目的，如果喜歡並且方便可以捐贈給他們。</p>
+            <p>不管怎麼樣，還是希望開源自由的硬件和軟件遲早能夠勝過這些夾雜了私貨的產品，作爲用戶能得到不少好處。</p>
+            <p>參考資料：</p>
+            <ul>
+              <li>
+                <strong>Wires and Bits</strong> (<a href="http://me.bios.io">me.bios.io</a>): Brief description of ME, <a href="http://me.bios.io/ME:About">me.bios.io/ME:About</a>
+              </li>
+              <li>
+                <strong>Coreboot Wiki</strong> (<a href="https://www.coreboot.org">www.coreboot.org</a>):  Intel Management
+                Engine, <a href="https://www.coreboot.org/Intel_Management_Engine">www.coreboot.org/Intel_Management_Engine</a>
+              </li>
+              <li>
+                <strong>Postive Technologies</strong> (<a href="http://blog.ptsecurity.com">blog.ptsecurity.com</a>):Disabling Intel ME 11 via undocumented mode, <a href="http://blog.ptsecurity.com/2017/08/disabling-intel-me.html">blog.ptsecurity.com/2017/08/disabling-intel-me.html</a>
+              </li>
+              <li>
+                <strong>Wikipedia</strong> (<a href="https://wikipedia.org">wikipedia.org</a>): Intel Active Management Technology, <a href="https://en.wikipedia.org/wiki/Intel_Active_Management_Technology">en.wikipedia.org/wiki/Intel_Active_Management_Technology</a>
+              </li>
+              <li>
+                <strong>GitHub corna/me_cleaner</strong> (<a href="https://github.com/corna/me_cleaner">github.com/corna/me_cleaner</a>): How does it work?, <a href="https://github.com/corna/me_cleaner/wiki/How-does-it-work%3F">github.com/corna/me_cleaner/wiki/How-does-it-work%3F</a>
+              </li>
+            </ul>
+            <p>Intel, Active Management Technology 和 Management Engine 是英特爾公司或其子公司在美國和 / 或其他國家（地區）的商標，商標版權歸英特爾公司所有。</p>
+          </div>
+          <footer class="c-article_footer" id="page_footer">
+            <p>
+            </p>
+          </footer>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

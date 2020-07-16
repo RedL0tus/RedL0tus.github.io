@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A quick look at V2Ray</title>
+    <link rel="canonical" href="https://v2bv.net/2017/A-quick-look-at-V2Ray" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese">
+    <style amp-custom>
+      *{margin:0;padding:0}*,*:before,*:after{box-sizing:inherit}html{min-height:100%;box-sizing:border-box;-webkit-tap-highlight-color:transparent;font-size:62.5%}body{font-family:'Inconsolata', monospace;font-weight:400;-webkit-font-smoothing:antialiased}article,aside,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}h1,h2,h3,h4,h5,h6{font-weight:400;color:#163541}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}img{max-width:100%;font-style:italic;vertical-align:middle;border:0}svg:not(:root){overflow:hidden}svg{pointer-events:none;max-height:100%}a{background-color:transparent;text-decoration:none;color:#0067FB}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}i,em{font-weight:italic}figure{margin:0}hr{margin-top:2.5rem;margin-bottom:2.5rem;width:100%;height:1px;border:0;background:#EFF1F3}pre{overflow:auto}.u-container{max-width:62rem;margin-right:auto;margin-left:auto;padding-top:10rem;padding-right:1rem;padding-left:1rem}.u-separate{margin-right:.45rem;margin-left:.25rem;color:#5C6E74}.u-separate:after{content:'\00a0/'}.c-page_header{margin-bottom:10rem}.c-page_header h1{margin-bottom:2.5rem;line-height:1.5;font-size:2.4rem;color:#163541}.c-page_header p{line-height:1;font-size:1.8rem}.c-page_footer{margin-bottom:10rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.c-page_footer p{line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article{margin-bottom:10rem}.c-article_header{margin-bottom:5rem}@media screen and (min-width: 45rem){.c-article_header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline}}.c-article_title{line-height:1.5;font-size:3.2rem;color:#163541}.c-article_time{line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article_main{margin-bottom:5rem;line-height:1.5;font-size:1.8rem;color:#5C6E74}.c-article_main>*{margin-bottom:1.8rem}.c-article_main h2{line-height:1.5;font-size:2.4rem}.c-article_main h3{line-height:1.5;font-size:2rem}.c-article_main h4{line-height:1.6;font-size:1.8rem}.c-article_main h5{line-height:1.5;font-size:1.8rem}.c-article_main strong{color:#163541;font-weight:400}.c-article_main blockquote{margin-left:0;margin-right:0;padding-left:1.8rem;border-left:1px solid #EFF1F3}.c-article_main ul,.c-article_main ol{margin-left:2.1rem}.c-tag{margin-right:1rem;position:relative;white-space:nowrap;line-height:1.5;font-size:1.8rem;color:#163541}.c-tag:before{color:#869395;content:'#\2009'}.c-archives{margin-bottom:10rem}.c-archives_year{margin-bottom:2.5rem;line-height:1.5;font-size:3.2rem}.c-archives_list{margin-bottom:2.5rem;list-style:none}.c-archives_item{padding-top:2.5rem;padding-bottom:2.5rem;border-top:1px solid #EFF1F3}@media screen and (min-width: 45rem){.c-archives_item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}}.c-archives_item h3{line-height:1.5;font-size:1.8rem}.c-archives_item p{line-height:1.5;font-size:1.8rem;color:#515862}pre,code{font-family:'Inconsolata', monospace;font-size:1.4rem;line-height:1.5}.highlight{border-radius:4px;background:#FDFDFD;border:1px solid #E8E8EB;color:#93a1a1}.highlight .gutter{padding:1.2rem;border-right:1px solid #E8E8EB}.highlight .code{padding:1.2rem}span.lineno{padding:1rem;border-right:1px solid #E8E8EB}.highlight .c{color:#586e75}.highlight .err{color:#93a1a1}.highlight .g{color:#93a1a1}.highlight .k{color:#859900}.highlight .l{color:#93a1a1}.highlight .n{color:#93a1a1}.highlight .o{color:#859900}.highlight .x{color:#cb4b16}.highlight .p{color:#93a1a1}.highlight .cm{color:#586e75}.highlight .cp{color:#859900}.highlight .c1{color:#586e75}.highlight .cs{color:#859900}.highlight .gd{color:#2aa198}.highlight .ge{color:#93a1a1;font-style:italic}.highlight .gr{color:#dc322f}.highlight .gh{color:#cb4b16}.highlight .gi{color:#859900}.highlight .go{color:#93a1a1}.highlight .gp{color:#93a1a1}.highlight .gs{color:#93a1a1;font-weight:bold}.highlight .gu{color:#cb4b16}.highlight .gt{color:#93a1a1}.highlight .kc{color:#cb4b16}.highlight .kd{color:#268bd2}.highlight .kn{color:#859900}.highlight .kp{color:#859900}.highlight .kr{color:#268bd2}.highlight .kt{color:#dc322f}.highlight .ld{color:#93a1a1}.highlight .m{color:#2aa198}.highlight .s{color:#2aa198}.highlight .na{color:#93a1a1}.highlight .nb{color:#B58900}.highlight .nc{color:#268bd2}.highlight .no{color:#cb4b16}.highlight .nd{color:#268bd2}.highlight .ni{color:#cb4b16}.highlight .ne{color:#cb4b16}.highlight .nf{color:#268bd2}.highlight .nl{color:#93a1a1}.highlight .nn{color:#93a1a1}.highlight .nx{color:#93a1a1}.highlight .py{color:#93a1a1}.highlight .nt{color:#268bd2}.highlight .nv{color:#268bd2}.highlight .ow{color:#859900}.highlight .w{color:#93a1a1}.highlight .mf{color:#2aa198}.highlight .mh{color:#2aa198}.highlight .mi{color:#2aa198}.highlight .mo{color:#2aa198}.highlight .sb{color:#586e75}.highlight .sc{color:#2aa198}.highlight .sd{color:#93a1a1}.highlight .s2{color:#2aa198}.highlight .se{color:#cb4b16}.highlight .sh{color:#93a1a1}.highlight .si{color:#2aa198}.highlight .sx{color:#2aa198}.highlight .sr{color:#dc322f}.highlight .s1{color:#2aa198}.highlight .ss{color:#2aa198}.highlight .bp{color:#268bd2}.highlight .vc{color:#268bd2}.highlight .vg{color:#268bd2}.highlight .vi{color:#268bd2}.highlight .il{color:#2aa198}
+    </style>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>
+      body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+      </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+        {
+          "vars": {
+          "account": "UA-97897080-1"
+        },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
+    <main class="u-container" id="page_container">
+      <div class="c-page" id="page_main">
+        <article class="c-article" id="page_article">
+          <header class="c-page_header" id="page_header">
+            <h1>Untitled</h1>
+            <p><a href="/">&lt;&ndash;&ndash; Back</a></p>
+          </header>
+          <div class="c-article_main" id="article_main">
+            <header class="c-article_header" id="article_header">
+              <h1 class="c-article_title" id="article_title">A quick look at V2Ray</h1>
+              <p class="c-article_time" id="article_time"><time datetime="2017-06-16T07:04:50+00:00" itemprop="datePublished">Jun 16, 2017</time></p>
+            </header>
+            <p>A normal way to escape from censorship or blockage of access to information is to use proxy.</p>
+            <p>There are several different proxy protocols and software. And today I’m gonna talk about V2Ray.</p>
+            <p>It’s home page is https://www.v2ray.com.</p>
+            <p>It’s written in Golang, with these features:</p>
+            <ol>
+              <li>It supports several protocols (SOCKS, HTTP, Shadowsocks, VMess)(And VMess is it’s own protocol).</li>
+              <li>Built-in routing support.</li>
+              <li>Cross-platform support.</li>
+            </ol>
+            <p>But these features also causes it’s a bit hard for newbies to configure it.</p>
+            <p>But in fact, if you just need basic proxy features, it could be very easy to use.</p>
+            <p>First, V2Ray use JSON as the format of configuration file. A basic configuration of V2Ray can be split to several parts: <code class="language-plaintext highlighter-rouge">inbound</code>, <code class="language-plaintext highlighter-rouge">outbound</code> and <code class="language-plaintext highlighter-rouge">routing</code>.</p>
+            <p><code class="language-plaintext highlighter-rouge">inbound</code> is just about how others connect to V2Ray software.<br>
+              <code class="language-plaintext highlighter-rouge">outbound</code> is about how V2Ray connect to the web or other V2Ray servers.<br>
+              <code class="language-plaintext highlighter-rouge">routing</code> is the part to configure the route of packages.</p>
+            <p>Also there are <code class="language-plaintext highlighter-rouge">inboundDetour</code>/<code class="language-plaintext highlighter-rouge">outboundDetour</code> and parts about how to transport packages.</p>
+            <p>###<strong>In the part <code class="language-plaintext highlighter-rouge">inbound</code>:</strong></p>
+            <p>For servers, inbound have to be the protocol and ports that clients will connect. As an example:</p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>"inbound": {
+  "port": 37192, // port
+  "protocol": "vmess",    // main inbound protocol
+  "settings": {
+    "clients": [
+      {
+        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",  // User ID
+        "level": 1  // User level 
+      }
+    ]
+  }
+}
+</code></pre>
+              </div>
+            </div>
+            <p>In the example, <code class="language-plaintext highlighter-rouge">port</code> will be the port that clients will connect; <code class="language-plaintext highlighter-rouge">protocol</code> is the protocol it gonna use; <code class="language-plaintext highlighter-rouge">settings</code> are the parameters of inbound protocols.</p>
+            <p>For more detailed information about VMess and it’s settings, please visit: https://www.v2ray.com/chapter_04/03_vmess.html</p>
+            <p>For clients, inbound have to be the settings of how other applications connects to it. For example:</p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>"inbound": {
+  "port": 1080, // port
+  "protocol": "socks",
+  "settings": {
+    "auth": "noauth",
+    "udp": false
+  }
+}
+</code></pre>
+              </div>
+            </div>
+            <p><code class="language-plaintext highlighter-rouge">port</code> is the port that other applications will connect; <code class="language-plaintext highlighter-rouge">protocol</code> is the protocol it will use. For now V2Ray supports SOCKS5 and HTTP.</p>
+            <p>For detailed information, please visit: https://www.v2ray.com/chapter_04/03_vmess.html</p>
+            <p>###<strong>In the part <code class="language-plaintext highlighter-rouge">outbound</code>:</strong></p>
+            <p>For servers, this part is about how V2Ray communicates with the web.</p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>"outbound": {
+  "protocol": "freedom",  
+  "settings": {}
+}
+</code></pre>
+              </div>
+            </div>
+            <p>In this example, traffics will use a protocol called <code class="language-plaintext highlighter-rouge">freedom</code>. In fact, it’s just about to make normal TCP/UDP connections to the web.</p>
+            <p>For more detailed information about <code class="language-plaintext highlighter-rouge">freedom</code>, please visit: https://www.v2ray.com/chapter_02/protocols/freedom.html</p>
+            <p>For clients, this part is about how V2Ray communicates with V2Ray on the server.</p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>"outbound": {
+  "protocol": "vmess",
+  "settings": {
+    "vnext": [
+      {
+        "address": "8.8.8.8", // Server IP
+        "port": 17173,  // Server port
+        "users": [
+          {
+            "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", // User ID
+            "security": "aes-128-gcm", 
+            "alterId": 128
+          },
+        ]
+      }
+    ]
+  }
+}
+</code></pre>
+              </div>
+            </div>
+            <p>Note that in this part, all of the settings <strong>must</strong> be the same with the server.</p>
+            <p>For more detailed information about VMess and it’s settings, please visit: https://www.v2ray.com/chapter_04/03_vmess.html</p>
+            <p>###<strong>In the part <code class="language-plaintext highlighter-rouge">routing</code>:</strong></p>
+            <p>Absolutely it’s about routing of packages.</p>
+            <p>For detailed information, please visit: https://www.v2ray.com/chapter_02/03_routing.html</p>
+            <p>Here is an example about <code class="language-plaintext highlighter-rouge">routing</code>:</p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>"routing": {
+  "strategy": "rules",
+  "settings": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": [
+          "0.0.0.0/8",
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "127.0.0.0/8",
+          "169.254.0.0/16",
+          "172.16.0.0/12",
+          "192.0.0.0/24",
+          "192.0.2.0/24",
+          "192.168.0.0/16",
+          "198.18.0.0/15",
+          "198.51.100.0/24",
+          "203.0.113.0/24",
+          "::1/128",
+          "fc00::/7",
+          "fe80::/10"
+        ],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}
+</code></pre>
+              </div>
+            </div>
+            <p>P.S. “outboundTag” determines which route the traffics that meets the rules above will go. It’s about inboundDetor/outboundDetor, please visit official manual.</p>
+            <p>###<strong>Here is the basic config:</strong></p>
+            <p><strong>Server:</strong></p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>{
+  "inbound": {
+    "port": 12138,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+          "level": 1,
+          "alterId": 128
+        }
+      ]
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  },
+  "outboundDetour": [
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "routing": {
+    "strategy": "rules",
+    "settings": {
+      "rules": [
+        {
+          "type": "field",
+          "ip": [
+            "0.0.0.0/8",
+            "10.0.0.0/8",
+            "100.64.0.0/10",
+            "127.0.0.0/8",
+            "169.254.0.0/16",
+            "172.16.0.0/12",
+            "192.0.0.0/24",
+            "192.0.2.0/24",
+            "192.168.0.0/16",
+            "198.18.0.0/15",
+            "198.51.100.0/24",
+            "203.0.113.0/24",
+            "::1/128",
+            "fc00::/7",
+            "fe80::/10"
+          ],
+          "outboundTag": "blocked"
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+              </div>
+            </div>
+            <p><strong>Client:</strong></p>
+            <div class="language-plaintext highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code>{
+  "inbound": {
+    "port": 1080,
+    "protocol": "socks",
+    "settings": {
+      "auth": "noauth",
+      "udp": true
+    }
+  },
+  "outbound": {
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "8.8.8.8",
+          "port": 12138,
+          "users": [
+            {
+              "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+              "alterId": 128,
+              "security": "aes-128-gcm"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "outboundDetour": [
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "tag": "direct"
+    }
+  ],
+  "routing": {
+    "strategy": "rules",
+    "settings": {
+      "rules": [
+        {
+          "type": "field",
+          "ip": [
+            "0.0.0.0/8",
+            "10.0.0.0/8",
+            "100.64.0.0/10",
+            "127.0.0.0/8",
+            "169.254.0.0/16",
+            "172.16.0.0/12",
+            "192.0.0.0/24",
+            "192.0.2.0/24",
+            "192.168.0.0/16",
+            "198.18.0.0/15",
+            "198.51.100.0/24",
+            "203.0.113.0/24",
+            "::1/128",
+            "fc00::/7",
+            "fe80::/10"
+          ],
+          "outboundTag": "direct"
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+              </div>
+            </div>
+          </div>
+          <footer class="c-article_footer" id="page_footer">
+            <p>
+            </p>
+          </footer>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,1640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Untitled</title>
+      <description>Untitled</description>
+      <link>https://v2bv.net/</link>
+    <atom:link href="https://v2bv.net/feed.xml" rel="self" type="application/rss+xml"/>
+      <pubDate>Thu, 16 Jul 2020 00:23:47 +0000</pubDate>
+      <lastBuildDate>Thu, 16 Jul 2020 00:23:47 +0000</lastBuildDate>
+      <generator>Jekyll v4.1.1</generator>
+      <item>
+        <title>总结一下 9102</title>
+        <description>&lt;p&gt;一转眼就到了西元 202 年，再来一篇年度总结。&lt;/p&gt;
+          &lt;h2 id=&quot;先是一篇讣告&quot;&gt;先是一篇讣告&lt;/h2&gt;
+          &lt;p&gt;&lt;del&gt;爱机 ThinkPad P50 与公元二零一九年十二月十四日病故，享年三岁零三个月。谨此讣告。&lt;/del&gt;&lt;/p&gt;
+          &lt;p&gt;我的 P50 前两天不明原因挂了，在水深火热的美帝维修成本过高自己也不会，无奈之下用回了 X220。其实如果不干活不看视频的话 X220 也基本够用了。但是我毕竟是要营业的嘛，之前还有一个做了一半的辉光管时钟还有程序没写完，我又是那种不听着点声音感觉难受的人，于是在母上大人的资助下还是决定换台新的电脑。&lt;/p&gt;
+          &lt;p&gt;P50 的重量让我觉得以后还是买个小点轻点的好了，反正现在 Shintel 牙膏终于多挤了点，低压 i5 的 Cinebench 分都比我标压 i7 还高了不少。至于八代之后感觉区别就不大了，只要有几个 TB3 接口我就觉得可以了。然而众所周知，我们 AOSC 凄惨的果冻特首整个 9102 年基本上不是在买新电脑就是在退新电脑，已经在我之前把不少主流品牌的中高端笔记本试了一遍，甚至连 VAIO 都试过两款了。果冻凄惨的经历以及我刚刚挂掉的 P50 让我不敢再买 TP 了，想买雷蛇灵刃却被略糟糕的风评吓跑了，当时唯一的 Project Athena 认证笔记本 XPS 13 官网评论开头两条就是一星又不敢买。最后无（zou）奈（huo）之（ru）下（mo）康了康苹果的，买了台 MBP 13。&lt;/p&gt;
+          &lt;p&gt;其实买的时候还有点怕 20 年的 CES 上会不会有什么更好的机器出来，结果你们也知道了… Shintel 依旧牙膏，Tiger Lake 甚至就只讲了啥 AI 性能提升，而这提升据 Luv Letter 大佬所说就仅仅是加了 AVX512VNNI 指令集… 什么鬼啦，笔记本上除了浪费电以外 AVX-512 有个鬼用。各个厂商的机器看起来都变成了中看不中用的东西，简直都是魔怔了，一个个都去搞什么双屏笔记本，双 LCD 的话看着就很 emmmm，OLED 折叠的话上台的两个机器都能看到屏幕上的折痕。普通机器的话新 XPS 15 看拆机图散热规模甚至还不如我这边 13 吋的 MBP，然后我们的猛人联想的新 X1C 甚至连看都不太好看，可以说是非常迷惑了。有一种世风日下道德沦亡的感觉。&lt;/p&gt;
+          &lt;p&gt;说回 T2，本来想着买个 CPU 差点但是内存和硬盘一定要足够大的那种，同时又不想要定制（因为定制机出问题的话修起来感觉会很慢，我们可怜的臭臭每次修机器等主板到货就要一周），但是要 16GB 内存和四个 TB3 的话 MBP 13 就只有顶配的是量产机… 实在是过分。然后转接头又花了不少钱… 肉疼。&lt;/p&gt;
+          &lt;p&gt;到手之后硬件本身给我的感觉是确实好，价格这么精致的机器硬件本身不精致还了得。但是软件上就很讨厌了，macOS 实在是感觉过分，9102 年了竟然还有桌面环境没有窗口吸附的功能，也没有自带托盘图标整理的功能，要用这些功能的话都要花钱，动不动就好几十刀；App Store 上定价感觉也挺迷惑的，TDF 成员之一的一个公司自己改了下 Libre Office 的提示然后上架 App Store 就敢要 22 刀，实在是刷新眼界。别的大的小的软件也都不便宜，贫穷如我实在是消受不起。甚至想着要不学一学这些东西进行第二次绝赞盈利尝试算了，但是一看官方的文档就泄气了，实在是太烂了。&lt;/p&gt;
+          &lt;p&gt;键盘的话实际上感觉没有想像中的糟糕，可靠性相关的问题毕竟是刚买来还没遇到什么。就是打多了之后甚至感觉学校 iPad 配的垃圾键盘键程都挺长了… 罪过啊罪过啊。&lt;/p&gt;
+          &lt;p&gt;用 macOS 以外的系统的话感觉倒是海星。Windows 的话感觉比 macOS 流畅… 但是指纹识别之类的功能就不能用了，我也没啥非 Windows 不可的东西；Linux 的话试了下 Arch ISO，启动之后没什么动静过一会儿就重启了，估计是内核恐慌了，Ubuntu 19.10 的话能启动但是键盘触摸板网卡硬盘全部没驱动，打算等 20.04 发布的时候再试试好了。不过好玩的是在别的机器上卡成狗的 GNOME 3 Dash 在 T2 上比 macOS 的 Launchpad 流畅到不知哪里去了… 挺搞笑的。&lt;/p&gt;
+          &lt;p&gt;最后提到果果的话当然离不开要讲一讲 bug 了，说实话我到现在没有遇到严重到不能用的 bug。比较讨厌的倒是有一个，App Store 会丢失已经安装的东西的信息，重启一下已经安装了的东西一律变成未安装。还有过一段时间机器变得特别卡，但是过了一会儿就好了。&lt;/p&gt;
+          &lt;h2 id=&quot;再来讲一讲线下的事情&quot;&gt;再来讲一讲线下的事情&lt;/h2&gt;
+          &lt;h3 id=&quot;学校的事情&quot;&gt;学校的事情&lt;/h3&gt;
+          &lt;p&gt;俺终于快从高中毕业了。今年暑假的时间基本上花在学车和准备 SAT 上，还算挺累的。最后考出来的分数也就一般般吧，申请在前两天几乎已经提交完了，最后结果就听天由命了。剩下这最后一个学期我可以说是非常闲了。&lt;/p&gt;
+          &lt;h3 id=&quot;做了点小玩意儿&quot;&gt;做了点小玩意儿&lt;/h3&gt;
+          &lt;p&gt;俺前两天花了些时间做了个辉光管时钟，现在还差外壳没有做完。具体信息可以看 &lt;a href=&quot;https://www.v2ex.com/t/635784#reply70&quot;&gt;V2EX 上的帖子&lt;/a&gt;。打算完全做完之后在这里再发一个完整的帖子。&lt;/p&gt;
+          &lt;h3 id=&quot;摸鱼以及摸鱼&quot;&gt;摸鱼以及摸鱼&lt;/h3&gt;
+          &lt;p&gt;今年上半年基本上每天都会往 GH 上发一两个提交，到了下半年就基本在摸鱼了。现在申请的事情基本忙完了，过两天就正式开工看看。&lt;/p&gt;
+          &lt;h3 id=&quot;擅自停药了&quot;&gt;擅自停药了&lt;/h3&gt;
+          &lt;p&gt;嗯，这么做了，一个是太贵了，一个是吃了之后没啥精神。大概是七月底开始停的，然后把医生那边的预约也都取消了。现在感觉没什么问题。&lt;/p&gt;
+          &lt;h3 id=&quot;头发剪了&quot;&gt;头发剪了&lt;/h3&gt;
+          &lt;p&gt;一直挺想留长发的，然而去年上半年留了半年多之后掉发太严重，暑假回国的时候又被母上拖过去剪掉了头发。现在头发还是很少，感觉还是过两年再养长算了。&lt;/p&gt;
+          &lt;h3 id=&quot;aoscc&quot;&gt;AOSCC&lt;/h3&gt;
+          &lt;p&gt;很好玩，我觉得大家都应该来（大雾&lt;/p&gt;
+          &lt;h3 id=&quot;题外话&quot;&gt;题外话&lt;/h3&gt;
+          &lt;p&gt;どうしてこうなるんだろう…初めて、好きな人が出来た。一生ものの友だちができた。嬉しいことが二つ重なって。その二つの嬉しさが、また、たくさんの嬉しさを連れてきてくれて。夢のように幸せな時間を手に入れたはずなのに…なのに、どうして、こうなっちゃうんだろう…&lt;/p&gt;
+          &lt;p&gt;XDDDD&lt;/p&gt;
+          &lt;!-- GD 相关的东西这两年感觉不明显，以后再说吧。 --&gt;
+          &lt;h2 id=&quot;西元-202-年元旦有感&quot;&gt;西元 202 年元旦有感&lt;/h2&gt;
+          &lt;p&gt;赛博朋克 2077 千万别跳票我已经等不及了。&lt;/p&gt;
+        </description>
+        <pubDate>Sun, 12 Jan 2020 23:53:00 +0000</pubDate>
+        <link>https://v2bv.net/2020/summary-of-9102</link>
+      <guid isPermaLink="true">https://v2bv.net/2020/summary-of-9102</guid>
+    </item>
+    <item>
+      <title>WSL SSH Launcher</title>
+      <description>&lt;p&gt;&lt;a href=&quot;#en&quot;&gt;Chinglish version&lt;/a&gt;&lt;br /&gt;
+        &lt;a href=&quot;#zh&quot;&gt;中文&lt;/a&gt;&lt;/p&gt;
+        &lt;div id=&quot;en&quot;&gt;&lt;/div&gt;
+        &lt;p&gt;I’m a Linux user and recently because of some undeniable reason, I’ m using Windows these days. I  haven’t been using Windows for about half a year, and I got really used  to those command line tools in Linux (e,g, tmux), it’s kind of  uncomfortable without them.
+        So I enabled WSL, installed openSUSE and Arch. After  setting up my dotfiles, I found out that there is not a single usable  terminal emulator on Windows:&lt;/p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Windows version of Alacritty cannot display some character in the right way. Tmux’s status line become weird after stretching the window.&lt;/li&gt;
+        &lt;li&gt;Fluent Terminal looks nice but tmux’s status line will disappear in some cases.&lt;/li&gt;
+        &lt;li&gt;ConEmu does not support dialog very well, etc.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;And vim does not work well in those terminal emulators, especially for syntax highlighting (colors become indistinguishable). Seems these situations are caused by ConHost and people who build those terminal emulators cannot fix that on  their own. I know they tried their best.&lt;/p&gt;
+        &lt;p&gt;&lt;del&gt;Macrohard&lt;/del&gt; Microsoft said they are going to fix that and released Windows Terminal at Build 2019, I’m very glad they are working on it.  But after I downloading a Dev build from their CI, I found out that:&lt;/p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Colors are still not 100% correct in some cases, though it’s still a huge improvement from the previous ConHost.&lt;/li&gt;
+        &lt;li&gt;Does not support mouse interaction (e.g. tmux’s mouse mode and vim).&lt;/li&gt;
+        &lt;li&gt;High CPU and RAM usage. After opening 5-6 tabs, it uses 20% of my CPU (which is a 6th-gen Shintel Core i7) and over 3GB of RAM, plus another 20% usage on CPU by Antimalware service.  Performance also become unacceptable in this case, I can even see how  each character is printed out.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;After searching for resolutions, I found that someone said we can use SSH clients as there are some decent SSH clients on Windows. But there are still some problems:&lt;/p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;WSL does not have a real init system and service manager, so distributions with “pure” systemd only cannot start sshd as a daemon unless start by hand.&lt;/li&gt;
+        &lt;li&gt;Even though some distribution can start sshd through RC scripts, it still needs some sort of interaction.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;Then I done a little bit of searching and found no suitable tools can start sshd  on boot (maybe it exists, but I just didn’t see it). So I wrote one : )&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;../img/wsl_ssh_screenshot.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;br /&gt;
+        (I think the interface is pretty straight forward)&lt;/p&gt;
+        &lt;p&gt;I was planning to make a UWP one but I don’t know how to do it so I just made it with WPF. It’s my first WPF program so… Yea it’s ugly and I don’t really know how to design a UI.&lt;/p&gt;
+        &lt;p&gt;It has the basic functionalities I need, but still, with some issues:&lt;/p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Window cannot be resized, because I don’t know how to make it resizable in the correct way.&lt;/li&gt;
+        &lt;li&gt;Microsoft says WPF supports HiDPi, but I didn’t test it since I don’t have that kind of device.&lt;/li&gt;
+        &lt;li&gt;It cannot stop the sshd process only, instead, it will kill all the WSL instance of that specific distribution:
+        &lt;ul&gt;
+        &lt;li&gt;I wrapped the WSL process with BackgroundWorker, but I don’t know how to stop a process inside a BackgroundWorker, my bad.&lt;/li&gt;
+        &lt;li&gt;WSL instances are isolated so I cannot start a new process and kill the process in the previous WSL instance.
+        &lt;ul&gt;
+        &lt;li&gt;Sometimes it’s not… I’m really confused.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;So I did it in this way.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Again, it’s extremely ugly.&lt;/li&gt;
+        &lt;li&gt;Lacks error handling.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;But at least it works!&lt;/p&gt;
+        &lt;p&gt;Source code:&lt;br /&gt;
+        &lt;a href=&quot;https://github.com/RedL0tus/WSL_SSH_Launcher&quot;&gt;https://github.com/RedL0tus/WSL_SSH_Launcher&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;GitHub Release:&lt;br /&gt;
+        &lt;a href=&quot;https://github.com/RedL0tus/WSL_SSH_Launcher/releases&quot;&gt;https://github.com/RedL0tus/WSL_SSH_Launcher/releases&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Macrohard store：&lt;br /&gt;
+        &lt;a href=&quot;//www.microsoft.com/store/apps/9NRPB1HPKK8G?cid=storebadge&amp;amp;ocid=badge&quot;&gt;&lt;img src=&quot;https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png&quot; alt=&quot;English badge&quot; style=&quot;width: 284px; height: 104px;&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+        Tip: Unlimited free trial is offered.&lt;/p&gt;
+        &lt;div id=&quot;en-privacy-policy&quot;&gt;&lt;/div&gt;
+        &lt;p&gt;Privacy policy: It does not access anything other than it’s configuration and things related to WSL, so you don’t need to worry about anything.&lt;/p&gt;
+        &lt;div id=&quot;zh&quot;&gt;&lt;/div&gt;
+        &lt;p&gt;因为一些不可抗的原因，我这段时间在用 Windows。但是在这之前我已经有半年左右没用过 Windows 了，离开了 Linux 下的那些工具可以说是浑身难受。而且最近这段时间刚刚配了一下 tmux 之类的东西感觉挺好。到了 Windows 下可真算是这也没有那也没有了。&lt;/p&gt;
+        &lt;p&gt;于是装了 openSUSE 和 Arch 两个 WSL(Windows Subsystem Linux) 发行版。装完并设置好自己的 dotfiles 之后用了一段时间才发现 Windows 下根本就没一个好用的终端模拟器：&lt;/p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Windows 版的 Alacritty 字符显示不正确，拉伸窗口之后 tmux 的 status line 显示不正常。&lt;/li&gt;
+        &lt;li&gt;Fluent Terminal 虽然好看，字符也正常，但是换行多了之后 tmux 的 status line 会丢。&lt;/li&gt;
+        &lt;li&gt;ConEmu 对 dialog 的支持好像有问题。&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;并且 vim 在这些终端模拟器里基本就是不能使用（尤其是配色上面）。这些问题据说是 ConHost 的限制，他们做终端模拟器的人也没办法。&lt;/p&gt;
+        &lt;p&gt;前段时间巨硬的 Build 大会上公布了 Windows Terminal，我也去他们的 CI 上面下了一个 Dev 构建然后试了下，发现：&lt;/p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;部分地方的颜色还是不对。&lt;/li&gt;
+        &lt;li&gt;功能倒是没什么大问题了，但是不支持 tmux 的 mouse mode 等等。&lt;/li&gt;
+        &lt;li&gt;占用真的太太太太太太高了，性能也是真的很烂… 我开了 五六个标签页吃了我 3GB+ 的内存和 20+% 的 CPU，Antimalware 的那个服务在此之上又吃了 20+% 的 CPU… 我这还什么都没干呢。而且这个时候性能已经差到了能看到它一个字一个字打出来的程度，实在是遭不住。&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;这时候又看到说我们可以用 SSH，毕竟 Windows 下还是有不少还算好用的 SSH 客户端的嘛。可是这个方法也不是很完美。一是 WSL 里没有真正意义上的 init，像 Arch 这样只有纯 systemd 的发行版无法通过它自动启动 sshd；二是就算能用 RC 脚本启动 sshd（比如 Ubuntu），也还是需要用户操作，相对麻烦。&lt;/p&gt;
+        &lt;p&gt;然后我就想造一个东西能启动 WSL 里面的 sshd，网上稍微搜了下好像也没有同类程序。我就自己下载了 Visual Studio 试着写了一个。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;../img/wsl_ssh_screenshot.png&quot; alt=&quot;截图&quot; /&gt;&lt;/p&gt;
+        &lt;p&gt;其实本来想做成 UWP 的但是试了一下发现完全没头绪，最后用了 WPF。我总共就没做过几个图形程序，希望大佬们轻点。&lt;/p&gt;
+        &lt;p&gt;现在基本功能在我这边测试是能用了（可以列出发行版，可以启动 sshd，可以开机自动启动），但是还是很不完善：&lt;/p&gt;
+        &lt;ul&gt;
+        &lt;li&gt;窗口现在是无法拖大小的，因为我做不来。&lt;/li&gt;
+        &lt;li&gt;现在无法只停止 sshd 服务，只能杀死所有同个发行版的 WSL instance：
+        &lt;ul&gt;
+        &lt;li&gt;我现在把跑了 sshd 的 WSL 进程放进了 BackgroundWorker，但是不知道如何正确结束掉 BackgroundWorker 里面的子进程。&lt;/li&gt;
+        &lt;li&gt;同时由于 WSL instance 之间是独立的，我无法通过再创建一个 WSL 进程来杀死之前的 sshd。&lt;/li&gt;
+        &lt;li&gt;所以最后发现我只能把它做成杀死所有 WSL instance，当然主要是我太菜。&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;现在的 Logo 很丑，我也没办法，毕竟我不懂设计。&lt;/li&gt;
+        &lt;li&gt;缺少 Error handling。&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;但是它至少能用了嘛！&lt;/p&gt;
+        &lt;p&gt;源码:&lt;br /&gt;
+        &lt;a href=&quot;https://github.com/RedL0tus/WSL_SSH_Launcher&quot;&gt;https://github.com/RedL0tus/WSL_SSH_Launcher&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;GitHub Release:&lt;br /&gt;
+        &lt;a href=&quot;https://github.com/RedL0tus/WSL_SSH_Launcher/releases&quot;&gt;https://github.com/RedL0tus/WSL_SSH_Launcher/releases&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;巨硬商店：&lt;br /&gt;
+        &lt;a href=&quot;//www.microsoft.com/store/apps/9NRPB1HPKK8G?cid=storebadge&amp;amp;ocid=badge&quot;&gt;&lt;img src=&quot;https://assets.windowsphone.com/42e5aa4a-f19a-4205-9191-a97105ed7663/Chinese_Simplified_get-it-from-MS_InvariantCulture_Default.png&quot; alt=&quot;Chinese badge&quot; style=&quot;width: 284px; height: 104px;&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+        提示： 提供了不限时间的免费试用，或者可以去 GitHub Release 直接下载 .exe。就把这里这个收费当捐赠吧 ：）&lt;/p&gt;
+        &lt;p&gt;&lt;del&gt;绝赞盈利尝试 #1&lt;/del&gt;&lt;/p&gt;
+        &lt;div id=&quot;zh-privacy-policy&quot;&gt;&lt;/div&gt;
+        &lt;p&gt;隐私策略：它不会访问任何它的配置文件和 WSL 以外的东西，所以没什么好担心的。&lt;/p&gt;
+      </description>
+      <pubDate>Sun, 02 Jun 2019 05:35:00 +0000</pubDate>
+      <link>https://v2bv.net/2019/wsl-ssh-launcher</link>
+    <guid isPermaLink="true">https://v2bv.net/2019/wsl-ssh-launcher</guid>
+  </item>
+  <item>
+    <title>（重新）体验了一下 GuixSD 和 NixOS</title>
+    <description>&lt;p&gt;很久之前就听说 FSF 的老贼们整了一个新包管理和发行版叫 guix 和 GuixSD，当时看介绍说 guix 是个 “Transactional Package Manager”，之后没有仔细去了解过。前两天突然看到有人发了个文章安利 GuixSD，看了一下发现这玩意儿怎么跟之前体验过一下的 NixOS 那么像？查了一下才知道这好像就是个 nix （NixOS 的包管理）的 fork 来着。感觉 FSF 的老贼们真的是什么发行版火了就照着做一个全自由软件的 GNU/Linux-libre 发行版。不过这次 guix 相比 nix 还是有不少改动的（不像别的就只是重新打了个包），配置文件使用的语言从 nix 自创的 nix 换成了 Guile Scheme，init 系统从 systemd 换成了 Shepherd（我前几天才听说有这么个东西，本来是给 Hurd 用的） ，成功地让我起了兴趣（虽然我的兴趣不值钱）。&lt;/p&gt;
+      &lt;p&gt;安装过程什么的我就不多说了，两边都有文档，个人感觉 NixOS 的文档更详细一点但是也更乱。后面会带上我用的配置。&lt;/p&gt;
+      &lt;p&gt;这两个发行版做的就是让一个包管理根据一套配置管理整个系统（包括软件本身和各种配置）；同时把所有软件都放到一个目录下集中管理（guix 下是 /gnu，NixOS 下是 /nix），然后在根据一定设置创建 symlink 到另一个目录下模拟出一个环境叫 profile 使用。优点是你想让多少个不同版本的同一个软件共存就能放几个，还有回滚系统等等的能力。大概可以理解为做一个高级版的 snapd 或 flatpak 或 docker，然后用它来管理整个系统。具体可以去看他们的介绍，比如 &lt;a href=&quot;https://nixos.org/nixos/nix-pills/&quot;&gt;Nix Pills&lt;/a&gt;，我语文不好就不多说了。&lt;/p&gt;
+      &lt;p&gt;反正体验就是，装完了之后，什么 /nix 或 /gnu 之外，几乎什么都没有，/run 下面成吨成吨的 symlink。&lt;/p&gt;
+      &lt;p&gt;（哦对了，guix 和 nix 都可以在别的发行版上运行，nix 甚至能用来拯救 macOS，不一定要装他们的发行版也能体验到一部分功能。）&lt;/p&gt;
+      &lt;p&gt;听起来很美好，但是这跟现有 Linux 发行版区别还是很大，两个发行版本身人手也不算多，就导致会有一些问题，就比如：&lt;/p&gt;
+      &lt;p&gt;共同的坑：&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;完全&lt;/strong&gt;不遵守 LSB，别人发行的二进制除非 patchelf 不然都不能运行。&lt;/li&gt;
+      &lt;li&gt;总体来说资料还是少，虽然 NixOS 已经是一个从 2003 年开始就有的老项目了，文档还是不算多；至于 guix… 包管理相关的东西倒是都有文档，但是缺乏新手指引和示例导致很多部分很难看懂（比如设置默认 shell 的语法，文档里说是用一个 G-Expression，但是并没有写明具体的使用方法，G-Expression 的文档页面也没说使用方法），部分常见问题倒是能在邮件列表里找到，总体来说还是少。&lt;/li&gt;
+      &lt;li&gt;可能是因为对软件的魔改还不够彻底，有的时候还是会遇到点小问题。&lt;/li&gt;
+      &lt;li&gt;可能因为中文用户较少，这两个发行版的默认中文字体渲染都很烂。&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;GuixSD：&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;（GuixSD 还是新发行版，以后可能还会有改动，下面所有的都是基于 0.16 版来说）&lt;/strong&gt;&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;它是一个 GNU/Linux-libre 的全自由软件的发行版，这意味着它在非常清蒸的同时也丢掉了对很多硬件/程序的支持（除非自行打包内核和那些对应的软件）。只是我手头正好有一台换了 ath9k 网卡的 ThinkPad X220 才可以无痛使用，不然无线网卡驱动、显卡驱动等等可能都会有问题。同时那群维护者在自由软件上也是激进过头了，&lt;a href=&quot;https://gnunet.org/bot/log/guix/2016-05-16&quot;&gt;之前&lt;/a&gt;有人在 IRC 上问能不能打包 Telegram Desktop（GPLv3），可能是维护者的几个人在讨论之后说“这 IM 服务端不自由还是用 IRC 或电邮吧”就不了了之了，到现在都没打包。&lt;/li&gt;
+      &lt;li&gt;我照着官方文档配了 LUKS 结果不能启动，最后还是用了普通 ext4。说起来挺搞笑的… 它把内核什么的全放在 LUKS 加密过的分区里，GRUB 上也不做别的配置，能启动才怪了…&lt;/li&gt;
+      &lt;li&gt;有部分包上游没有进行构建，这时候 guix 会自动下载工具链进行编译安装（比如 IceCat，自由版本的 Firefox，我 X220 上编译花了几个小时），这就意味着在老机器上安装包可能会比较痛苦。&lt;/li&gt;
+      &lt;li&gt;还是之前说的文档问题，我花了挺多时间都没找到让它根据 file system label 来启用 SWAP 分区的方法，而这样的问题还有不少。&lt;/li&gt;
+      &lt;li&gt;工具链版本有点奇妙，我看它安装的时候 GCC 5 6 7 8 都下载了一遍，直接安装 GCC 竟然装的是 GCC 5.5.0，9102 年了还 5.5.0… 太丢人了（还亏它是 FSF 亲儿子呢）。&lt;/li&gt;
+      &lt;li&gt;IME 支持很烂，fcitx 只打了 fcitx 本体和 fcitx-configtool；RIME 之类的输入法引擎全归类到 iBus 模块下面了，我在 IRC 频道里问了相关事情就直接被忽略了；iBus 装上之后除 GNOME 外都没办法让它自动启动，传统发行版上 .xprofile 里加变量的方式完全没用，文档里也没有提到任何相关的东西；&lt;del&gt;RIME 可能是坏的，无法启动。&lt;/del&gt;&lt;br /&gt;
+      后来有个大佬在 Telegram 里联系了我，说 RIME 实际是可以用的，但是需要&lt;a href=&quot;https://github.com/guix-china/help&quot;&gt;额外的设置&lt;/a&gt;，还是没有 NixOS 用的方法完善。可能需要有知道怎么做才好的人去把它做成一个 module（就像 NixOS 那样）。但我应该不会是那个人，原因见下。&lt;/li&gt;
+      &lt;li&gt;MATE 下的锁屏是坏的（什么都不做就说 Authentication Failed），xfce 下无法启动输入法，就只有 GNOME 可能还能用。&lt;/li&gt;
+      &lt;li&gt;fontconfig 只会读用户 profile 下的字体。&lt;/li&gt;
+      &lt;li&gt;Shepherd 还是太冷门惹… 启动速度也比 systemd 慢&lt;del&gt;（不过至少比 BSD init 快）&lt;/del&gt;。&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;我没去报 bug 的原因是：一，我懒，我去问问题都没人理我，我干嘛要帮他们（虽然我也帮不大上）；二，他们的 Bug tracker 太硬核叻… 只有邮件列表，Bug report 和提交 patch 都在一起的，我不敢说话 🤦‍♀️&lt;/p&gt;
+      &lt;p&gt;NixOS：&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;默认的包有点老了… 内核默认还在用 4.14… Stable 最新 4.19， Unstable 已经打了 4.20，需要手动指定才能用新的。&lt;/li&gt;
+      &lt;li&gt;听说 Nixpkgs Unstable 的包数量都快超过 AUR 了（老早超过 Debiantai 了），但是实际用的时候还是比 AUR 少了一些东西。&lt;/li&gt;
+      &lt;li&gt;IME 基本能用，但是我实在不知道打了 fcitx-rime 不打 ibus-rime 是什么操作… 要不过两天我打个试试？&lt;/li&gt;
+      &lt;li&gt;因为是自动检查更新并打包的，所以有时候会打了 Unstable 的软件，比如说这次 MATE 就打了个 1.21… 然后一些主题炸了。我找到了一个相关的降级回 1.20 的 PR，我稍微催了一下马上就给合并了，并且禁止了 bot 自动查找 MATE 的新版本（可能他们的 bot 还不支持根据一定规则跳过部分版本？），给我感觉还是挺好的 XD&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;总的来说感觉 NixOS 的可用性比 GuixSD 高出一大截。另外虽然我想说我更喜欢 Scheme 而不是这个 nix… 但是感觉有的时候还是 nix 的可读性更好一点。&lt;/p&gt;
+      &lt;p&gt;其实我感觉他们既然都已经有那么多吨 symlink 了，为什么不干脆遵守一下 LSB 呢，无非就是再多几吨 symlink… 这样碎片化越来越严重对整个社区都没什么好处啊。&lt;br /&gt;
+      多版本共存？实际使用场景并不多。其实这方面感觉真的很像 flatpak 或 snap…&lt;br /&gt;
+      Reproducible build？ 这应该是大多数发行版的打包系统的标配吧，只是他们把这暴露给了普通用户。&lt;br /&gt;
+      至于资料的话它们毕竟还算是比较冷门的… 还算能原谅。&lt;/p&gt;
+      &lt;p&gt;至于说这是 Linux 发行版的未来吗？我不知道啊。这确实看上去很有趣，但是实际使用上并没有那么美好，同时感觉也缺少能竞争过传统发行版的地方。&lt;/p&gt;
+      &lt;hr /&gt;
+      &lt;p&gt;我 GuixSD 的配置其实跟官方示例比没多大变化… 因为不知道怎么改：&lt;/p&gt;
+      &lt;div class=&quot;language-scheme highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;;; This is an operating system configuration template&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; for a &quot;desktop&quot; setup with GNOME and Xfce where the&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; root partition is encrypted with LUKS.&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;use-modules&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gnu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gnu&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;system&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nss&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;use-service-modules&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;desktop&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ssh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;use-package-modules&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;certs&lt;/span&gt; 
+      &lt;span class=&quot;nv&quot;&gt;xorg&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;mate&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;fonts&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;fontutils&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;gnome&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;freedesktop&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;xdisorg&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;ssh&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;shells&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ncurses&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;gnuzilla&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;curl&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;wget&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;rsync&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;gcc&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ibus&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;version-control&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;operating-system&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;host-name&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;x220&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;timezone&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;America/Los_Angeles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;locale&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;en_US.utf8&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; Use the UEFI variant of GRUB with the EFI System&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; Partition mounted on /boot/efi.&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bootloader&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bootloader-configuration&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bootloader&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;grub-efi-bootloader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;target&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/boot/efi&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;kernel-arguments&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;thinkpad_acpi.fan_control=1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; Specify a mapped device for the encrypted root partition.&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; The UUID is that returned by 'cryptsetup luksUUID'.&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;;&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; (mapped-devices&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;;  (list (mapped-device&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;;         (source (uuid &quot;5786a4c6-9a95-4b4d-97e5-8ae7c5a99f44&quot;))&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;;         (target &quot;root&quot;)&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;;         (type luks-device-mapping))))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;file-systems&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;cons*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;file-system&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;device&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;file-system-label&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;GUIX&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;mount-point&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;ext4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; (dependencies mapped-devices))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;file-system&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;device&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;file-system-label&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;EFI&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;mount-point&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/boot/efi&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;vfat&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;%base-file-systems&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;swap-devices&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/dev/sda3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cons&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;user-account&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;kay&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;comment&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Kay&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;users&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;supplementary-groups&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wheel&quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;netdev&quot;&lt;/span&gt;
+      &lt;span class=&quot;s&quot;&gt;&quot;audio&quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;video&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;home-directory&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/home/kay&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;string-append&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$zsh&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/bin/zsh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;%base-user-accounts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; This is where we specify system-wide packages.&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;packages&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;cons*&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nss-certs&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;;for HTTPS access&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; gvfs              ;for user mounts&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;openssh&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;zsh&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;icecat&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;curl&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;wget&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;rsync&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;git&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;fontconfig&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;xdg-user-dirs&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; mate-screensaver&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;ncurses&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;gcc&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;binutils&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;arc-theme&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;network-manager-applet&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;ibus&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ibus-rime&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;librime&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;rime-data&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;%base-packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; Add GNOME and/or Xfce---we can choose at the log-in&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; screen with F1.  Use the &quot;desktop&quot; services, which&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; include the X11 log-in service, networking with&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; NetworkManager, and more.&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;services&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;cons*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;mate-desktop-service&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gnome-desktop-service&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;xfce-desktop-service&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; (plasma-desktop-service) ;; Not there yet&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;openssh-service-type&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;openssh-configuration&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;x11-forwarding?&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;#t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;%desktop-services&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;;; Allow resolution of '.local' host names with mDNS.&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name-service-switch&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;%mdns-host-lookup-nss&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;p&gt;然后是我的 NixOS 配置，这个我还是花了一些时间改的，参考了别人的几个配置：
+      （这个在使用的时候要注意，需要先添加 &lt;a href=&quot;https://github.com/NixOS/nixos-hardware&quot;&gt;nixos-hardware&lt;/a&gt; 这个 channel，然后改成你的机型）&lt;/p&gt;
+      &lt;div class=&quot;language-nix highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Edit this configuration file to define what should be installed on&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# your system.  Help is available in the configuration.nix(5) man page&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# and in the NixOS manual (accessible by running ‘nixos-help’).&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pkgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}:&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;imports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Include the results of the hardware scan.&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;nixos-hardware/lenovo/thinkpad/x220&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;sx&quot;&gt;./hardware-configuration.nix&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Hardware configuration&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;sound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;hardware&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enableAllFirmware&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;cpu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;intel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;updateMicrocode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;trackpoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;emulateWheel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;pulseaudio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;bluetooth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;opengl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;driSupport&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;driSupport32Bit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Use the GRUB EFI boot loader.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;boot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;loader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;efi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;canTouchEfiVariables&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;efiSysMountPoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/boot/efi&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;systemd-boot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;kernelPackages&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pkgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;linuxPackages_4_20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;kernelParams&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&quot;thinkpad_acpi.fan_control=1&quot;&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&quot;acpi_osi=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!Windows 2012&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&quot;acpi_osi=Linux&quot;&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&quot;acpi=force&quot;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;initrd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;kernelModules&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;acpi&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;thinkpad-acpi&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;acpi-call&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;supportedFilesystems&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;nfs&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ntfs&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;exfat&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;networking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hostName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;x220&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Define your hostname.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;networking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;nameservers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1.1.1.1&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1.0.0.1&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;4.2.2.1&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; 4.2.2.2&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;9.9.9.9&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;8.8.8.8&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;8.8.4.4&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;networking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;networkmanager&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;dns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;none&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Configure network proxy if necessary&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# networking.proxy.default = &quot;http://user:password@proxy:port/&quot;;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# networking.proxy.noProxy = &quot;127.0.0.1,localhost,internal.domain&quot;;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Select internationalisation properties.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;i18n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;consoleFont&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Lat2-Terminus16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;consoleKeyMap&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;us&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;defaultLocale&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;en_US.UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;inputMethod&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enabled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ibus&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;ibus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;engines&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pkgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ibus-engines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;libpinyin&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;mozc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Set your time zone.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;timeZone&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;America/Los_Angeles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# List packages installed in system profile. To search, run:&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# $ nix search wget&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;systemPackages&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pkgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;wget&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;vim&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nano&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tmux&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;curl&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;zsh&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;networkmanagerapplet&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;firefox&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;unzip&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;spotify&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;w3m&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ntfs3g&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;gptfdisk&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;gcc&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;autoconf&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;bluez&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;gnumake&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;xclip&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ffmpeg&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cryptsetup&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pavucontrol&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;automake&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;unrar&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;p7zip&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;tdesktop&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tilix&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;htop&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;gtk-engine-murrine&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;arc-theme&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;gnome-themes-extra&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;gnome-themes-standard&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;papirus-icon-theme&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;wireguard&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;scrot&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;neofetch&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;restic&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ibus-qt&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;nixpkgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;android_sdk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;accept_license&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;allowUnfree&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# powerManagement.cpuFreqGovernor = pkgs.lib.mkForce null;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Some programs need SUID wrappers, can be configured further or are&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# started in user sessions.&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# programs.mtr.enable = true;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;programs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;light&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;adb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;gnupg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+      &lt;span class=&quot;nv&quot;&gt;enableSSHSupport&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;zsh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;ohMyZsh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;git&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;python&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;man&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;theme&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;robbyrussell&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# List services that you want to enable:&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Power related&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tlp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;thermald&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Redshift&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;redshift&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;latitude&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;36.7&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;longitude&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;119.8&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5700&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;night&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Enable the OpenSSH daemon.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;openssh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;startWhenNeeded&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;forwardX11&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;allowSFTP&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;permitRootLogin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;no&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;openFirewall&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;passwordAuthentication&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;challengeResponseAuthentication&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Firewall.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;networking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;firewall&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;allowedTCPPorts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# networking.firewall.allowedUDPPorts = [ ... ];&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Or disable the firewall altogether.&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# networking.firewall.enable = false;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Enable CUPS to print documents.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;printing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Enable the X11 windowing system.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;xserver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;layout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;us&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;xkbOptions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;terminate:ctrl_alt_bksp&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;videoDrivers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;modesetting&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;displayManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lightdm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;desktopManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;libinput&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;disableWhileTyping&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;tapping&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Enable flatpak&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;flatpak&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;extraPortals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pkgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;xdg-desktop-portal-gtk&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# Define a user account. Don't forget to set a password with ‘passwd’.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;kay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;isNormalUser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;home&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/home/kay&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;description&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Kay&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;pkgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;zsh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;extraGroups&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;wheel&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;audio&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;video&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;disk&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;cdrom&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;users&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;systemd-journal&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;lp&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;networkmanager&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;openssh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;authorizedKeys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;keys&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDWeay/xBNMhnBy3GJcGkQNNa44gRBqXYa+F4RW6VW1E kay@bazinga&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;security&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;wheelNeedsPassword&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# This value determines the NixOS release with which your system is to be&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# compatible, in order to avoid breaking some software such as database&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# servers. You should change this only after NixOS release notes say you&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# should.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;stateVersion&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;18.09&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Did you read the comment?&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;p&gt;我就放在 &lt;a href=&quot;https://v2bv.net/configuration.nix&quot;&gt;https://v2bv.net/configuration.nix&lt;/a&gt; 好叻！&lt;/p&gt;
+      &lt;hr /&gt;
+      &lt;p&gt;说起来还有个 Fedora SilverBlue 看起来也挺有意思，什么时候去试试看（&lt;/p&gt;
+    </description>
+    <pubDate>Wed, 23 Jan 2019 05:42:00 +0000</pubDate>
+    <link>https://v2bv.net/2019/guixsd-and-nixos</link>
+  <guid isPermaLink="true">https://v2bv.net/2019/guixsd-and-nixos</guid>
+</item>
+<item>
+  <title>总结一下 8102</title>
+  <description>&lt;p&gt;太久没动博客了，写一点东西吧… 反正应该没人看。8102 年算是已经过去了，去年差不多这个时候我写了一个流水帐算是那段时间的总结，今天这篇文章大概也会是那样的东西。&lt;/p&gt;
+    &lt;p&gt;现在回想一下 8102 年感觉我也没做什么轰轰烈烈的事情，感觉也就是天天犯傻就这么过来了。仔细想了下感觉也就下面这些事可能还算有点意义：&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;
+    &lt;p&gt;学了一下挼斯特，并不感觉自己学会了… 写不出什么像样的东西来，唯一做过的就是把几个库用胶水黏起来，比如&lt;a href=&quot;https://github.com/RedL0tus/trigger&quot;&gt;这个&lt;/a&gt;。这两天看到有人在推一本书，打算到时候买个电子版看看，不知道能不能看懂。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;主力系统又一次换成了 AOSC OS，帮着写了几个 autobuild，但是吧… 我还是不知道怎么推包，所以现在源里还是没有一个我打的包。用 #archlinux-cn 的大佬们写的 nvchecker 做了个检测更新版本的脚本，但是意义不大… 想做一个从检测版本到推包自动化完成的程序，但是感觉好复杂，写了半个蹩脚的 ciel binding 之后咕咕了。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;因为一些原因想自己写一个博客程序（大概算是从 3102 年我开始建站开始就一直想做的一个事情），写了一半发现这样写出来好像并不见得会比 Jekyll 之类的好多少，就咕咕了，估计是想不出什么更好的解决方法了。不过实际上 8012 年我还是有写一个不知道算不算博客程序的&lt;a href=&quot;https://github.com/RedL0tus/SaltedBlog&quot;&gt;东西&lt;/a&gt;，纯 JS，把渲染放到客户端上的那种，但是也正是因为纯 JS 就没打算拿来替换现在用的 Jekyll，也就写着玩玩。
+    &lt;ul&gt;
+    &lt;li&gt;（然后就是那毕竟是刚开始写 JS 所以肯定很多地方不是按照规范来的，还请大佬们原谅）&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;AP CS 还没怎么准备… 不过应该来得及。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;然后写了这几个东西（按我 GitHub 上最后更新时间顺序）：&lt;/p&gt;
+    &lt;p&gt;（挂在我自己名下的）&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/portal&quot;&gt;portal&lt;/a&gt;： https://brined.fish 的源码… 用的 jQuery，实在不会前端做的还是有不少问题的… 反正没人看无所谓了啦。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/fedirect&quot;&gt;fedirect&lt;/a&gt;： https://brined.fish/link/ 的源码，在后面加上 fediverse 里的用户名会跳转到对应用户的个人页面。名字是盖子起的，程序质量很烂不过反正很简单应该也没什么问题…&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/mark_read&quot;&gt;mark_read&lt;/a&gt;： 在 Telegram 上批量标记已读，Telegram Desktop 上没有这个功能然后就用 Telegram CLI 和一个它的 Python binding 做了这个东西，也没什么好说的（内含大概是错误的多线程使用方式）。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/SaltedFishBot-Rust&quot;&gt;SaltedFishBot-Rust&lt;/a&gt;： 用 Rust 写的一个 Telegram Bot，没记错的话好像只实现了一个 echo bot 的功能。因为实在不知道做什么好以及做不来等等原因就没继续做了。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/SaltedBlog&quot;&gt;SaltedBlog&lt;/a&gt;： 前面介绍过了，假装是一个博客程序。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/Fuchsine&quot;&gt;Fuchsine&lt;/a&gt;： 因为部署 h5ai 的时候遇到了玄学 Bug 才造的替代品，只实现了最基本的功能，而且性能非常惨… 反正我的下载站也没东西就无所谓了，以后有机会再改进。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/cykablyat.news&quot;&gt;cykablyat.news&lt;/a&gt;： https://cykablyat.news 的源码，本来是想着挂以为自己不沙雕的沙雕新闻和假新闻的，程序是写好了但是一直没去推广，相关的收录规则什么的也还没完成，emmmm。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/YearProgressBot&quot;&gt;YearProgressBot&lt;/a&gt;： 用 Bash 写的类似 Twitter 上的 YearProgress 的东西，Telegram 上的频道是 &lt;a href=&quot;https://t.me/YearProgress&quot;&gt;@YearProgress&lt;/a&gt;，大概是我写过的东西里面用户最多的了。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/fuchsine.rs&quot;&gt;fuchsine.rs&lt;/a&gt;: 前面那个 Fuchsine 的 Rust 版本，只做了维护索引的部分，web 部分感觉坐不大来就一直放在那边，有改成 REST 那样的计划，咕咕咕。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/jelly-executor&quot;&gt;jelly-executor&lt;/a&gt;： 前面说的检查新版本用的脚本，没什么用。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RedL0tus/trigger&quot;&gt;trigger&lt;/a&gt;： 监听 GitHub Webhook 的程序，用 Rust 写的，实际上只是 afterparty 这个库的壳子，以后有能力的话会把 afterparty 迁移上最新的 hyper 或者自己实现，到时候再说吧。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;（挂在 AOSC 组织下面的）&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;
+    &lt;p&gt;那个 Ruby 写的 pakreqBot 现在已经标记 archived 了。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;pakreqBot-ng 的坑跟柳树鱼一起填了大概一半，已经能实现老 pakreqBot 的功能了所以就迁移过去了。新 Bot 用的 aiohttp, aiogram, aiosqlite XD&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;（别问我为什么不用 Sanic，我写的时候我都不知道还有 Sanic，不然肯定用）&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;嗯… 好像没了。&lt;/p&gt;
+    &lt;p&gt;前两年觉得很严重的事情… 现在吧算是有了谢新的理解，我大概理解为什么会这样了，不过也没什么了，就这样吧。&lt;/p&gt;
+    &lt;p&gt;但是实际上还是觉得很难过啊，听起来可能很矫情，但我真的没什么朋友。虽然我在家人面前老是装成朋友很多的样子（还请看到的同志不要拆穿），但是实际上线下基本上没遇到过有同样爱好的人（去年本来算是有一个的，但是性格上我不是很喜欢，倒是一直迁就他关系也就算还行），线上的… 也就只有用电脑或手机的时候才能交流一下。原因我也差不多知道，我并不是个讨喜的人，线上线下应该还是讨厌我的人比较多。我脾气不好，很多时候我自己都觉得我欠揍。但是我也很想融入大家啊，羡慕甚至有点嫉妒受欢迎的人，我想模仿啊，我也在模仿啊，我很焦虑，但是每次到了最后剩下的只有尴尬，我应该就是平时大家说的那种 KY 了，而我不知道要怎么才不是。而当时那位算是我仅有的朋友了吧，所以那是才会那么难受。这段话在你们看来可能很好笑，算了，好笑就好笑吧。反正该怎么样就怎么样，我本来也不配受太多关注的样子。&lt;/p&gt;
+    &lt;p&gt;但是不管怎样，我还是要感谢我遇到的每一个人，没你们的话我想我会更受不了吧。&lt;/p&gt;
+    &lt;p&gt;8102 年感觉还是很压抑的，许多名人去世了，经济情况越来越差，还有等等的一些情况。9102 年可能也不见得会好，我已经挖了的坑会想办法填，新坑也不知道会不会再开，到时候再说吧（咕）。&lt;/p&gt;
+    &lt;p&gt;啊，说到 咕 我就想到我画的那个鸽子头像，画画我也挺想学的，但是没人教（挺后悔当时选课没选美术而是选了乐队），而且练习需要很多的功夫，我可能也就这样了。顺便在这里要声明下，我做的大多是临摹而非原创，因为我自己根本就不会… 但是画个简单的头像还是可以的。&lt;/p&gt;
+    &lt;p&gt;其实说实话，我现在写这些东西主要也是想着我能不能在这个世界上留下什么东西，能有人不嫌弃我就很高兴了。&lt;/p&gt;
+    &lt;p&gt;我觉得我还需要一个目标，一个足够大但又不至于不可能实现的目标，能让我足够投入又不至于丧失信心。现在还没找到，感觉也不太可能找到。&lt;/p&gt;
+    &lt;!-- 至于我相当 MtF 的事情... 现在算是暂时搁置吧，条件还不成熟，我也还能忍。再说了我还是先减肥下来比较好吧，不然别人看着难受我自己也难受。（还请看到的同志不要说出去） --&gt;
+    &lt;p&gt;好了，苦水吐完了，日子还是得照样过，明天太阳还是会照样升起，马上就一月七号了。&lt;/p&gt;
+    &lt;p&gt;（我语文不好，有什么语病还请各位原谅）&lt;/p&gt;
+  </description>
+  <pubDate>Mon, 07 Jan 2019 01:32:00 +0000</pubDate>
+  <link>https://v2bv.net/2019/summary-of-8102</link>
+<guid isPermaLink="true">https://v2bv.net/2019/summary-of-8102</guid>
+</item>
+<item>
+  <title>AirJack Review/AirJack 評測</title>
+  <description>&lt;p&gt;&lt;a href=&quot;#en&quot;&gt;Chinglish version&lt;/a&gt;&lt;br /&gt;
+    &lt;a href=&quot;#zh&quot;&gt;中文&lt;/a&gt;&lt;/p&gt;
+    &lt;div id=&quot;en&quot;&gt;&lt;/div&gt;
+    &lt;p&gt;For those who don’t know what AirJack is, it is a device that can make any headphone with 3.5mm plug a Bluetooth headphone. It’s basically a Bluetooth audio receiver.&lt;/p&gt;
+    &lt;p&gt;I received it yesterday. I’ve waited for a loooooooong time. &lt;a href=&quot;https://go-techllc.com&quot;&gt;Go-Tech LLC&lt;/a&gt; promised to ship around May 2017 when I back the project on &lt;a href=&quot;https://www.indiegogo.com/projects/airjack-bluetooth-for-any-audio-device-headphones#/&quot;&gt;Indiegogo&lt;/a&gt;, but they did not. Then I received a tracking number in February 2018, but I didn’t see any update until six days ago (May 21, 2018). So finally, it arrived, in a small packet.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_packet.jpg&quot; alt=&quot;All the stuff in the packet&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;(Yes, I’ve bought the charging case.)&lt;/p&gt;
+    &lt;p&gt;It was very disappointing that the build quality (of the case) is extremely terrible. The lid was made of soft plastic, the thickness of it is uneven, and cutting is… terrible, with lots of burr on it.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_case_lid.jpg&quot; alt=&quot;The lid&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;However, compared to the case itself, the lid is still acceptable. The case is entirely made of (low quality) foam, WITHOUT a plastic housing. And on the back is a piece of cardboard glued together… If I press on it, I can see the battery and wires inside of it.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_case_back.jpg&quot; alt=&quot;Back of the case&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;(And there is a big hole under the part which stores the RCA to AUX dongle)&lt;/p&gt;
+    &lt;p&gt;The case is almost completely different from the advertisement, in the picture on the manual, it has a battery indicator, a power button, a plastic housing around the foam part, and a different layout.&lt;/p&gt;
+    &lt;p&gt;This is what in the &lt;a href=&quot;https://web.archive.org/web/20180526211740/https://static1.squarespace.com/static/5798c3429f74564be3410f9b/t/5b010c9388251b9376380434/1526795414610/AirJack+Manual+Revision+1.04.pdf&quot;&gt;manual&lt;/a&gt;:&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_case_ad.jpg&quot; alt=&quot;Case in the advertisement&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;And this is what I actually get:&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_case_real.jpg&quot; alt=&quot;The actual case&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/sticker_kim_1.jpg&quot; alt=&quot;Sticker&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;Let’s talk about functionality. What I expect is I when I put AirJack (The little black cube in the photo above) back into the case, the case should charge it until the battery inside of AirJack is full, or the battery in the case is out of power, and a power button that can toggle the case to charge AirJack or not. But what I actually get is a case that is just a case, it doesn’t work AT ALL. Just like the photo above, nothing lights up, nothing is charging. Though at some angle it may work when I moved it a little bit, it stopped working.&lt;/p&gt;
+    &lt;p&gt;AirJack itself’s quality is… acceptable. Everything is fine except a big gap between the two pieces of plastic cases and some burr around the holes. It’s definitely not waterproofed, LOL.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack.jpg&quot; alt=&quot;AirJack itself&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;It may be a little bit hard to see in the picture, it has three buttons, and two metal contactors for charging. The 3.5mm headphone jack is on the other side. The buttons are extremely tough to push. Hold the “Center Button” to turn it on, and it will have a light on another side, through a small hole:&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_light.jpg&quot; alt=&quot;AirJack light&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;And that’s the indicator. I’ve already paired it with my phone, so it’s a blinking blue light. For more details about the usage, please read their &lt;a href=&quot;https://static1.squarespace.com/static/5798c3429f74564be3410f9b/t/5b010c9388251b9376380434/1526795414610/AirJack+Manual+Revision+1.04.pdf&quot;&gt;manual&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;I’m sure it can work, but… not as well as they advertised:&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;Go-Tech LLC claimed it could work 50 feet (around 15 meters) away from the… phone? However, when I put my phone in my right pocket, and AirJack in the left pocket, sometimes the audio become intermittently. Moreover, it will disconnect when I’m around 2 meters away from my phone.&lt;/li&gt;
+    &lt;li&gt;It claimed to have aptX support, but when I connected to my phone, my phone won’t recognize it as an aptX device. My phone automatically selects SBC, not even AAC. I don’t know why.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;By the way, my phone is SONY Xperia XZ1 Compact, every other Bluetooth headphones I have works fine with it (Even &lt;del&gt;garbage&lt;/del&gt; like PowerBeats2 Wireless).&lt;/p&gt;
+    &lt;p&gt;I haven’t tested the battery life yet. They claimed AirJack has 32 hours of battery life… But…&lt;/p&gt;
+    &lt;p&gt;And it doesn’t have ANY charge protection.&lt;/p&gt;
+    &lt;p&gt;Those dongles in the case probably have the best build quality among all the things I received.&lt;/p&gt;
+    &lt;p&gt;So my opinion to this thing is… not recommended. The price is not low ($32 for early birds at Indiegogo), it’s build quality is just terrible, and didn’t reach many expectations, especially for the case. If the price goes down or the build quality got a significant improvement, it can be a good product, but right now it’s just a… &lt;!--garbage--&gt; If you really want one, you can have a try, but don’t buy the case, it’s useless.&lt;/p&gt;
+    &lt;p&gt;I’m not loving it as they promised.
+    &lt;img src=&quot;../img/airjack_email.jpg&quot; alt=&quot;Email&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;Feel free to ask me anything about it in the comments below.&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;div id=&quot;zh&quot;&gt;&lt;/div&gt;
+    &lt;p&gt;以下爲中文版：&lt;br /&gt;
+    這篇文章裏提到的 AirJack 是 &lt;a href=&quot;https://go-techllc.com&quot;&gt;Go-Tech LLC&lt;/a&gt; 在 &lt;a href=&quot;https://www.indiegogo.com/projects/airjack-bluetooth-for-any-audio-device-headphones#/&quot;&gt;Indiegogo 上衆籌&lt;/a&gt;的一個能把一般的 3.5mm 接口的有線耳機當藍牙耳機用的設備。也就是說它是一個接收藍牙訊號並解碼然後輸出到 3.5mm 口的設備。&lt;/p&gt;
+    &lt;p&gt;我差不多一年多前就參與了這個衆籌項目，當時做 AirJack 的團隊說會在 17 年 5 月左右發貨，但是並沒有。然後我在 18 年二月份的時候收到了一個物流號碼，但是一直沒有動靜（直到六天前也就是 5 月 21 日）。直到昨天我才收到它…&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_packet.jpg&quot; alt=&quot;這就是包裹裏的所有東西了&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;（沒錯，我買了他們的那個旅行充電盒）&lt;/p&gt;
+    &lt;p&gt;然後就是這東西的做工，實在是太可怕了。我明白你們是衆籌，做工粗糙一點也正常，但是完全沒想到會是這個樣子的。這個盒子的蓋子切割得很爛，厚度不均勻，毛刺也沒去除乾淨。&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_case_lid.jpg&quot; alt=&quot;盒子的蓋子&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;不過跟盒子本身比這已經算很好了。整個盒子就是一塊很廉價的海綿一樣的東西，外面並沒有像圖片裏那樣的塑料殼子。在背面直接就是一塊粘上去的紙板，如果在那邊按下去甚至還能看到裏面的電池和線。&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_case_back.jpg&quot; alt=&quot;盒子背面&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;（在 RCA 到 AUX 轉接線底下還有一個很大的空洞）&lt;/p&gt;
+    &lt;p&gt;可以說是跟宣傳裏的完全不一樣了，&lt;a href=&quot;https://web.archive.org/web/20180526211740/https://static1.squarespace.com/static/5798c3429f74564be3410f9b/t/5b010c9388251b9376380434/1526795414610/AirJack+Manual+Revision+1.04.pdf&quot;&gt;手冊&lt;/a&gt;裏的宣傳圖裏有電池指示燈，電源鍵，佈局也是不一樣的：&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_case_ad.jpg&quot; alt=&quot;廣告裏的&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;但是現實是這樣的：&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_case_real.jpg&quot; alt=&quot;這就是現實&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/sticker_kim_1.jpg&quot; alt=&quot;不忍直視&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;再來談談它的功能。看圖片還以爲它能做到當我把 AirJack（也就是盒子裏面那個黑色的小方塊）放進去後自動給它充電，當充滿了之後自動斷開，能通過上面的指示燈看剩餘電量，還有一個開關能控制是否充電。但是現實是骨感的，它啥都沒有，上面僅有的兩個燈一個是表示正在充電，一個表示正在輸出電。而且連基本的充電都做不到，絕大多數時候放進去了啥事都不會發生，只有特定角度下纔能充電進去，但是稍微動一下就又斷開了。&lt;/p&gt;
+    &lt;p&gt;再來說 AirJack 本身，它的做工… 還算可以接受吧，只是縫隙有點大然後部分地方有毛刺（它當然不防水）。&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack.jpg&quot; alt=&quot;AirJack 本體&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;在圖片裏可能有點難看到，它實際上有三個按鈕。另外還有兩個用來充電的金屬觸電。那三個按鈕非常難按，也沒法區分。開機需要長按中間那個鍵好幾秒，開機之後另外一面的一個小孔裏會有燈亮起來。&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_light.jpg&quot; alt=&quot;AirJack 亮了之後&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;它就是主要的指示燈了，裏面大概是有一紅一藍兩個 LED，會根據不同情況亮不同顏色的燈。我已經配對好了所以是閃爍的藍色的光。別的具體信息可以看他們的&lt;a href=&quot;https://web.archive.org/web/20180526211740/https://static1.squarespace.com/static/5798c3429f74564be3410f9b/t/5b010c9388251b9376380434/1526795414610/AirJack+Manual+Revision+1.04.pdf&quot;&gt;手冊&lt;/a&gt;。&lt;/p&gt;
+    &lt;p&gt;它可以正常工作，但是並不像他們宣稱的那麼好…&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;他們宣稱它能在 50 英尺（差不多 15 米）內正常工作，但是事實是我把手機放在右邊褲袋，AirJack 放在左邊褲袋就已經出現斷斷續續的情況了，離開兩米左右就已經斷開連接了。&lt;/li&gt;
+    &lt;li&gt;他們宣稱它有 aptX 支持，但是我的手機並不能正確識別，可選的編碼只有 SBC，連 AAC 都不行。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;我的手機是索尼的 Xperia XZ1 Compact，用別的藍牙耳機都能正常工作（即使是 PowerBeats2 Wireless 這樣的&lt;del&gt;蠟屐&lt;/del&gt;），應該不是手機的問題。&lt;/p&gt;
+    &lt;p&gt;並且它沒有任何的充電保護，手冊裏說必須一充滿了就要斷開電源…&lt;/p&gt;
+    &lt;p&gt;我還沒測試過續航，他們宣稱有 32 小時… 但是感覺並不可信…&lt;/p&gt;
+    &lt;p&gt;盒子裏的那些轉接頭可能是所有東西裏面做工最好的了。&lt;/p&gt;
+    &lt;p&gt;所以我對它的綜合評價是… 不推薦購買。首先它並不便宜（Indiegogo 上 Early Bird 價格是 32 刀），做工是相當的爛，也沒有做到他們宣傳裏的很多東西，尤其是這個盒子。除非他們降低價格或是在最終零售版裏提高質量，不然這東西就是絕對的垃圾。如果你很想試試這樣的東西的話也不是不可以買，但是不論如何，不要買那個盒子，就是浪費錢。&lt;/p&gt;
+    &lt;p&gt;我並沒有像他們保證的那樣喜歡上這個設備。&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;../img/airjack_email.jpg&quot; alt=&quot;郵件&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;有什麼問題的話歡迎在評論裏提出。&lt;/p&gt;
+  </description>
+  <pubDate>Sat, 26 May 2018 20:35:00 +0000</pubDate>
+  <link>https://v2bv.net/2018/AirJack-review</link>
+<guid isPermaLink="true">https://v2bv.net/2018/AirJack-review</guid>
+</item>
+<item>
+  <title>一條通知</title>
+  <description>&lt;p&gt;有一件事情要告訴大家，其實我是鹹魚星派來觀測人類的使者。&lt;/p&gt;
+    &lt;p&gt;在這段時間內與大家相處很開心，我也學了一些你們的科技相關的內容。不過很抱歉，到現在我還無法熟練掌握你們的語言，仍然會寫出不少被你們叫做“語法錯誤”的東西。&lt;/p&gt;
+    &lt;p&gt;我大概還有一個月就要離開這個星球了，感謝大家這段時間以來對我的照顧。&lt;/p&gt;
+    &lt;p&gt;謝謝大家。&lt;/p&gt;
+  </description>
+  <pubDate>Sun, 01 Apr 2018 18:18:25 +0000</pubDate>
+  <link>https://v2bv.net/2018/happy-april-fools-day</link>
+<guid isPermaLink="true">https://v2bv.net/2018/happy-april-fools-day</guid>
+</item>
+<item>
+  <title>剁了輛自行車</title>
+  <description>&lt;p&gt;爲了增加運動量報名了健身房，本來住處附近就有一個健身房，走過去十分種左右的事情。在他們網站上在線辦理好了註冊手續（交了錢）之後過去看了下他們搬… 遷… 了… 😂&lt;/p&gt;
+    &lt;p&gt;搬到了原本的位置往北一英里的地方😣，美帝這邊打車跟搶錢一樣的，走路過去又太費時間（&lt;/p&gt;
+    &lt;p&gt;最後決定還是買輛自行車。然後因爲是住在別人家裏，也不好意思買大的車，畢竟不好放，於是選擇購買摺疊車（&lt;/p&gt;
+    &lt;p&gt;網上查了下一大羣人推薦大行的 SP8/SP18，但是問題是我這裏（網上）要麼找不到，要麼貴！上！天！了！別的推薦的牌子也找不到… 挺絕望的（&lt;/p&gt;
+    &lt;p&gt;挑來挑去選了他們家的 Speed D7 Street (KAC072)，20 吋輪徑，7 檔變速，具體參數可以看他們&lt;a href=&quot;https://usa.dahon.com/bikes/speed-d7-street/&quot;&gt;官網&lt;/a&gt;上。對沒錯我知道這是二級車是各種偷工減料的產物… 但是我也沒辦法啊美帝這邊跟搶錢一樣的… 而且即使是這個車也有點超原來的預算了… 官網上的圖是這個樣子的：&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://usa.dahon.com/wp-content/uploads/2016/01/dahon-usa-2016-speed-d7-black-large.png&quot; alt=&quot;SD7_Official&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;（感覺挺好看的）&lt;/p&gt;
+    &lt;p&gt;除此之外還買了一些配套用的東西比如前燈啊鎖啊打氣筒啊什麼的，一個個都好貴啊🌝&lt;/p&gt;
+    &lt;p&gt;那些配件下單後一兩天就到了，可是這車等了差不多一週，最氣的是 17 號就到了本地的 FedEx 倉庫，當天的物流信息裏就說開始派送了，結果白白在家裏等了兩天，直到今天（19 日）上午才送到… 到的時候我還在學校裏所以也不知道具體是怎麼個情況，反正我回來後看到這個箱子後感覺比想像中大…&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://v2bv.net/img/dahon_sd7_box.jpg&quot; alt=&quot;Box&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;拆開之後是這樣的：&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://v2bv.net/img/dahon_sd7_open_box.jpg&quot; alt=&quot;Box_opened&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;（之前查過別人的開箱所以已經知道了）到的時候只有腳踏和坐管是沒裝上的，別的地方基本上都不用管的。跟我媽兩個人自己把那些東西裝上了（對！沒用扳手就把腳踏擰上去了！）&lt;/p&gt;
+    &lt;p&gt;不得不說這車還真是除了車架做工都不怎麼樣（然而車把上還有一塊地方漆被蹭掉了）… 前輪剎車（V 剎）還有會蹭到輪子的問題（後來找了個內六角螺絲刀調了一下應該沒問題了），很多地方都挺粗糙的，要完美肯定還是要改的… 不過現在沒啥必要就是了…（某個人推薦我上 SRAM Red eTap，看了下價格嚇得我都扔掉了 iPad）（反正不是我的）&lt;/p&gt;
+    &lt;p&gt;看起來倒是還行，就是… 這個紅色… 說好的暗紅… 怎麼… 看起來… 那麼像粉紅…&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://v2bv.net/img/dahon_sd7_unfolded.jpg&quot; alt=&quot;Unfolded&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;（漆被蹭掉了的那部分地方被燈遮起來了）&lt;/p&gt;
+    &lt;p&gt;它畢竟還是摺疊車，摺疊起來是這個樣子的（對焦好像有點問題）：&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://v2bv.net/img/dahon_sd7_folded.jpg&quot; alt=&quot;Folded&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;騎起來的感覺我不知道怎麼形容… 反正不差（畢竟再怎麼說也不便宜）。在大佬們眼裏這當然不是啥好車 XD&lt;/p&gt;
+    &lt;p&gt;如果說要改的話我也不知道應該怎麼改，以及應該優先改什麼東西，現在先算了（另外再次強烈譴責給我推薦某貴上天的無線電動變速器的傢伙）。&lt;/p&gt;
+    &lt;p&gt;（不知道這樣的文風各位大佬們習慣不習慣，XD）&lt;/p&gt;
+  </description>
+  <pubDate>Mon, 19 Mar 2018 00:00:00 +0000</pubDate>
+  <link>https://v2bv.net/2018/new-bike</link>
+<guid isPermaLink="true">https://v2bv.net/2018/new-bike</guid>
+</item>
+<item>
+  <title>用戶的自由與選擇</title>
+  <description>&lt;p&gt;好吧這篇文章其實也是在吹水，更多像是有感而發吧 XD
+    如果你不是沒事情幹就別看這篇文章了，沒啥意思的（&lt;/p&gt;
+    &lt;p&gt;這兩天看各種消費產品和大佬們的討論，總有種感覺是現在的廠商們越來越不給消費者選擇的餘地和自由了。&lt;/p&gt;
+    &lt;p&gt;硬件的接口上小到手機上的 3.5mm 接口，大到筆記本上的 RJ45，DIMM 等等，這類栗子還是很多的。我對此的態度跟我以前在知乎上寫的一個如何看手機去掉耳機孔的問題下一樣：這是在剝奪用戶選擇的權利。&lt;br /&gt;
+    其實說真的，很多時候都沒有到非把這個接口去了不可的地步，如果想加肯定還是有辦法加上的，比如說富士通以前的那個非常拉風的 RJ45（圖片來自 The Verge）：
+    &lt;img src=&quot;https://cdn.vox-cdn.com/uploads/chorus_asset/file/9833363/DQaNaMRUEAAvbTK.jpg&quot; alt=&quot;Fujitsu RJ45, 圖片來自 The Verge&quot; /&gt;
+    只要肯下工夫，加一個這樣的接口也不是什麼難事；如果懷疑這個接口的耐用程度，其實還有一種結構更簡單的，只是我現在懶得找圖（就是接口的下半部分是可以伸縮的，ASUS E46CB 就有）。&lt;/p&gt;
+    &lt;p&gt;更不用說很多機器並沒有薄到需要移除接口的那個程度。&lt;/p&gt;
+    &lt;p&gt;至於 3.5mm 孔就更加了，現在比 3.5mm 薄的手機怕是壓根沒幾個，一個個卻都跟風某個廠全部去掉了它，甚至還美曰其名爲“改進”。&lt;/p&gt;
+    &lt;p&gt;可能的確有人需要特別輕薄的設備吧，這個我沒意見，我雙手贊成，甚至還希望這類滿足少部分人的需求的事情多一點，畢竟說不定什麼時候就輪到我們了。但問題就在於，現在廠商們是在把不同的設備往同一種做，連工作站都往輕薄了做，還是犧牲功能性的那種輕薄。這種事情我真的想不出來除了爲了多賺點錢以外的理由了，畢竟可以多賣點轉接頭。&lt;/p&gt;
+    &lt;p&gt;到這裏可能就有人反對了，那啥公司去掉某某某接口可是爲了推動進步呢。&lt;/p&gt;
+    &lt;p&gt;但是爲了這個“進步”買單的人可是用戶啊，造成的不方便和經濟損失都是用戶來承擔的啊，廠商可是躺着賺錢美滋滋的啊。這些“進步”也不一定是真的進步。在這裏還拿手機上的 3.5mm 接口舉例子，我留着這個接口也不會帶來什麼損失，防水照樣防（索尼和三星都做到了，某公司那麼有錢可能會做不到嘛），藍牙耳機的功能也不影響。而你去掉了就相當於去掉了一種選擇，比如有時候可能沒有藍牙耳機用，或是藍牙耳機沒電了，那不就抓瞎了，可不是所有人都願意帶轉接線的。&lt;/p&gt;
+    &lt;p&gt;軟件上也有類似的事情，比如之前提到的 ME，有人需要它除了初始化硬件以外的功能，但是大多數人都用不到，這個東西甚至還有不少安全隱患，但是 intel 就是不提供讓用戶禁用的選項。&lt;/p&gt;
+    &lt;p&gt;在我個人看來，最理想的狀態應該是所有人都能找到符合自己需求的硬件，而不是爲了廠商的產品而改變自己的需求。但現實則是後者，不少消費者不光這麼做了甚至還認爲廠商是爲了自己好。&lt;/p&gt;
+    &lt;p&gt;現在就是消費者們被打壓習慣了，說真的都有點懷疑是不是都有斯德哥爾摩綜合徵了（&lt;/p&gt;
+    &lt;p&gt;我作爲一個窮學生，自然是做不到啥的，只能是我認爲不好的東西不去買，然後在這個博客上還有別的平臺水水文章罷了。&lt;/p&gt;
+    &lt;p&gt;以前也看到過有自媒體自稱是站在消費者的角度，爲了消費者去評測（雖然他們官方一直不肯承認是評測），到頭來他們卻連基本事實都不願意尊重，特別得維護某個廠商，爲自己不客觀而沾沾自喜。&lt;/p&gt;
+    &lt;p&gt;唉。&lt;/p&gt;
+  </description>
+  <pubDate>Mon, 05 Mar 2018 04:54:00 +0000</pubDate>
+  <link>https://v2bv.net/2018/customer-choices-and-freedom</link>
+<guid isPermaLink="true">https://v2bv.net/2018/customer-choices-and-freedom</guid>
+</item>
+<item>
+  <title>這是一篇廢文</title>
+  <description>&lt;p&gt;&lt;strong&gt;這是廢文！&lt;/strong&gt;&lt;br /&gt;
+    &lt;strong&gt;這是廢文！！&lt;/strong&gt;&lt;br /&gt;
+    &lt;strong&gt;這是廢文！！！&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;把這段時間的事情簡單說一下：&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;
+    &lt;p&gt;去年十二月的時候買了一個 Nintendo Switch 還有塞爾達什麼的。如果有關注我的 Twitter 的話能看到我前段時間天天發塞爾達錄屏（XD）。現在 Ganon 已經打過但是遊戲完成度才 20% 左右… （地圖真大），這遊戲真的挺棒的。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;前段時間安全界年末大驚喜不斷，那倆處理器 Bug 的軟件修正說是會帶來 30% 多的性能損失，不過在新機器上實際上其實也還行，老機器就爆炸了。隔壁&lt;a href=&quot;https://mingcongbai.wtf&quot;&gt;果凍&lt;/a&gt;本來去年買的 ThinkPad T61 打算用三年，結果這次這個夭蛾子直接讓它變得不可用了，I/O 爆炸（此處心疼果凍三秒）（然後他就去買了個 L420）。&lt;br /&gt;
+    我自己這裏兩臺機器區別不是很明顯，就是偶爾打字會卡頓什麼的（不過很可能不是漏洞修正帶來的問題）。修補的過程中沒啥特別痛苦的地方，只是碰巧 AOSC OS 的 ZFS 打炸了；ZFS 炸完後 nfs-utils 炸了… 等果凍修完爆炸了的包之後又遇到了 intel DDX 的坑：更新完了之後進系統發現終端模擬器突然打不開了。起先還以爲是 Tilix 本身炸了，進羣裏問了下才知道是 intel DDX 的鍋，改成 modesetting 就一些正常了… 所以說 intel 被 Linus Torvalds 噴軟件寫得爛不是沒理由的 😂（反正我下一臺機器怕是認準 AMD 了，intel 這樣真的受不鳥）。&lt;br /&gt;
+    前幾天又在 eBay 上買了幾個 Meltdown inside 和 Spectre inside 的貼紙貼在了兩臺筆記本上，用以嘲諷英銻爾 XD&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;像&lt;a href=&quot;https://v2bv.net/2018/coreboot&quot;&gt;前一篇博文&lt;/a&gt;裏說的那樣，我把我的 X220 的 coreboot 更新了下。不過那片文章裏沒寫的是其實之前還失敗了好幾次 😂 本來想用編程器刷的結果出了夭蛾子，編程器蜜汁變得很燙而 flashrom 又不認 NOR Flash，之後無奈只能用 internal flash，懷着&lt;del&gt;不作死就不會死&lt;/del&gt;忐忑不安的心情刷好了之後發現沒掛我很&lt;del&gt;失望&lt;/del&gt;高興。&lt;br /&gt;
+    之後配置的時候也是改了又改，本來甚至還想塞個主題進去的，結果不知爲啥那個 GRUB 不認我放在 CBFS 的主題 😂&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;換了個手機，因爲 Nexus 5X 的續航實在不行了，放着一上午不用電量能掉 50% 多。新手機是 Xperia XZ1 Compact，續航很強，還有 SD 卡槽等等，也能無痛使用 Project Fi，可惜不能隨便解鎖 BL（不然相機會變綠），總之挺滿意的。大法算是現在少數幾家不砍耳機孔，帶 SD 卡槽，外觀不仿水果而且不會炸的廠家之一了。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;在吃的藥換了一次又一次，最後吃上了電池😂，被要求去做血檢結果一抽就是十管血… 簡直害怕。&lt;br /&gt;
+    不過電池好像真的挺有用的，現在感覺好多了。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;想自己考 AP Computer Science，在自己學 Java，不過不知道有啥好參考的東西，就自己買了點書啃，也有在用那些 OJ 平臺啥的，不過好像還是不是很確定是不是能學到啥。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;想明年跟 A2 一樣轉去 Simon’s Rock，不過對自己沒啥信心… 畢竟我那麼菜 😂&lt;br /&gt;
+    不過努力一下也沒什麼不好的，就算去不成 Simon’s Rock 對以後申請大學總也有好處的。&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;!--
+    - 我也不知道是不是一時衝動... 突然有點想吃糖 XD  
+    不過我這樣的就算吃了也不會變好看的吧 😂
+    總之現在先維持原樣吧。
+    --&gt;
+    &lt;ul&gt;
+    &lt;li&gt;去年一整年都過得挺失敗的，在自己擅長的地方原地踏步，薄弱的地方也沒補上，還讓那麼多人擔心了… 唉。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;總之新的一年，先努力吧。&lt;/p&gt;
+  </description>
+  <pubDate>Wed, 24 Jan 2018 04:07:00 +0000</pubDate>
+  <link>https://v2bv.net/2018/xd</link>
+<guid isPermaLink="true">https://v2bv.net/2018/xd</guid>
+</item>
+<item>
+  <title>在 ThinkPad X220 上使用 coreboot</title>
+  <description>&lt;p&gt;我在&lt;a href=&quot;https://v2bv.net/2017/intel-me&quot;&gt;前一篇文章&lt;/a&gt;結尾提到過 coreboot，它是一個可拓展的固件平臺（官網上是這麼說的，在 PC 上可以理解爲 BIOS/UEFI 之類的東西）。優點是開源（但是一般情況下還是需要一些閉源的 blob 才能正常工作，當然這是硬件廠商的鍋；有一個完全自由的分支叫 &lt;a href=&quot;https://libreboot.org/&quot;&gt;libreboot&lt;/a&gt;），快（起碼個人感覺是比原廠的快…），可以自己修改訂製。&lt;br /&gt;
+    但是由於一些原因比如 &lt;a href=&quot;https://github.com/corna/me_cleaner/wiki/Intel-Boot-Guard&quot;&gt;Boot Guard&lt;/a&gt;（還是硬件廠商的鍋）等等，不是所有機器都會有 coreboot 適配，具體的適配列表可以在這裏看到： &lt;a href=&quot;https://www.coreboot.org/Supported_Motherboards&quot;&gt;Supported_Motherboards&lt;/a&gt;。&lt;/p&gt;
+    &lt;p&gt;（說到 Boot Guard，本來出發點挺好的，爲了安全嘛！但是問題是這東西無法關閉，給自定義造成了麻煩；安全性上的提升實際上也沒多少，已經有人找到繞過它的辦法了。總的來說呢，無用，只不過是給 coreboot 之類的開源固件的適配造成了麻煩。安全固然重要，但並不能犧牲用戶的自由，更不能強迫所有人都去用這坨翔。）&lt;/p&gt;
+    &lt;p&gt;coreboot 的人也挺無奈的，intel 那邊不用說了，一直是大坨 blob 還有 ME 這個東西；AMD 現在也好不了多少，Ryzen 並沒有多開放。不是他們不想做適配，而是做不出來… 這也是爲什麼一般只有老硬件纔會有 coreboot 甚至 libreboot 用。&lt;/p&gt;
+    &lt;p&gt;幸運的是我有一臺 ThinkPad X220，實際上在去年就用上了 coreboot，只是當時只折騰到了能跑起來就沒繼續了。前兩天看到萌狼的&lt;a href=&quot;https://blog.yoitsu.moe/tech_misc/x230_with_coreboot_and_me_cleaner.html&quot;&gt;文章&lt;/a&gt;就又想折騰了，在大佬的指點和我的摸索下，總算是折騰到了比較滿意的一個程度。&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;以下是需要準備的東西：&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;ThinkPad X220 和另一臺電腦（這當然不用說了）&lt;/li&gt;
+    &lt;li&gt;編程器 &amp;amp; 編程夾，X220 的 Flash 芯片是 SOIC-8 封裝的（如果以前用的是原廠 BIOS 的話必須要用編程器才能刷寫；如果刷了 coreboot 並沒有鎖上刷寫的話可以不用）&lt;/li&gt;
+    &lt;li&gt;手，眼睛，腦子！！！&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;首先把編譯 coreboot 的依賴裝好，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GCC&lt;/code&gt; 必然是不可缺少的，此外還有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GNAT&lt;/code&gt;（Ada 編譯器，其實也可以算是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GCC&lt;/code&gt; 的一部分，不過一般都是分開來打包的樣子）、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bison&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flex&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ncurses&lt;/code&gt;（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make menuconfig&lt;/code&gt; 時需要）、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wget&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zlib&lt;/code&gt;。&lt;/p&gt;
+    &lt;p&gt;如果你的發行版裏不提供其中的一個或一些包，你可以選擇自己編譯一個用或是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;debootstrap&lt;/code&gt; 一個最小的 Debian 環境然後 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chroot&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systemd-nspawn&lt;/code&gt; 進去用。我的 X220 上跑的是 AOSC OS 而在我寫這篇文章的時候源裏還沒有 GNAT，我就是這麼解決的。&lt;/p&gt;
+    &lt;p&gt;然後把 coreboot 的源碼拖下來:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://review.coreboot.org/coreboot.git
+    $ cd coreboot &amp;amp;&amp;amp; git submodule update --init --checkout
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;即使發行版提供 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flashrom&lt;/code&gt; 這個刷寫工具也還要把 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flashrom&lt;/code&gt; 的源碼拖下來，因爲等會兒要用到源碼裏的一個工具：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://review.coreboot.org/flashrom.git
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;進入 coreboot 的源碼目錄裏，準備好工具鏈等等：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ make crossgcc-i386 CPUS=4 # 這裏只需要給 X220 用，所以準備 i386 的工具鏈就足夠了
+    $ make iasl # 準備 iASL 編譯器
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;接下來就需要對硬件開刀了，ThinkPad X220 可以說是挺好拆的，後面幾個標着鍵盤和掌托的螺絲擰下來就能很輕鬆得拆下鍵盤和掌托，Flash 芯片就在掌托那塊地方的左下角黑色貼紙下面。用編程夾夾上去，再把線接到編程器或者支持 SPI 的板子上啥的就行了，這方面我就不多說了，相關的資料很多。&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://www.coreboot.org/images/6/62/X220_flashchip.jpg&quot; alt=&quot;Flashchip&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;（圖片來自 coreboot Wiki: &lt;a href=&quot;https://www.coreboot.org/File:X220_flashchip.jpg&quot;&gt;https://www.coreboot.org/File:X220_flashchip.jpg&lt;/a&gt;）&lt;/p&gt;
+    &lt;p&gt;用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flashrom&lt;/code&gt; 把現有的固件 Dump 出來：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo flashrom -p internal:laptop=force_I_want_a_brick -c MX25L6405D -r dump.rom # 這裏舉例用的是 internal flash 的命令，如果用編程器的話需要根據編程器進行修改。
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;可能需要多做幾次然後比對下 hash，這是爲了避免讀出差錯。&lt;/p&gt;
+    &lt;p&gt;這之後先別急，現階段最重要的事情是：&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;備份！&lt;/strong&gt;&lt;br /&gt;
+    &lt;strong&gt;備份！！&lt;/strong&gt;&lt;br /&gt;
+    &lt;strong&gt;備份！！！&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;del&gt;(XD)&lt;/del&gt;&lt;/p&gt;
+    &lt;p&gt;修改 BIOS 畢竟還是有一定風險的，如果編譯出來的 coreboot 有問題&lt;strong&gt;輕則無法啓動變成大號板磚&lt;/strong&gt;,&lt;strong&gt;重則主板燒毀客服開不一定給你修&lt;/strong&gt;（畢竟這機器都多少年了），但是如果有備份而且硬件沒掛的話就能用編程器再救回來。&lt;/p&gt;
+    &lt;p&gt;進入 coreboot 源碼目錄的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;util/ifdtool&lt;/code&gt; 目錄下並編譯它：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd util/ifdtool &amp;amp;&amp;amp; make
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;然後使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ifdtool&lt;/code&gt; 解鎖固件描述（firmware descriptor，不知道怎麼叫纔是正確的）和 ME 區域。&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ifdtool -u dump.rom # 把文件名改成自己的
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ifdtool&lt;/code&gt; 會創建一個新的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dump.rom.new&lt;/code&gt;，接下來的步驟要用它。&lt;/p&gt;
+    &lt;p&gt;如果只是想幹掉 ME 的話現在拿去過一邊 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;me_cleaner&lt;/code&gt; 應該就可以刷回去了。&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ me_claner.py dump.rom.new # 換成你自己的文件名
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;（我也不知道 coreboot 的構建系統雖然有相關選項但是會不會真的去淦 ME，所以在這裏推薦也國一下 me_cleaner）。&lt;/p&gt;
+    &lt;p&gt;進入 flashrom 源碼目錄下的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;util/ich_descriptors_tool&lt;/code&gt; 目錄並編譯 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ich_descriptors_tool&lt;/code&gt;:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd util/ich_descriptors_tool &amp;amp;&amp;amp; make
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;然後用它來提取文件：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ich_descriptors_tool -f dump.rom.new -d # 當然，還是要改成自己的文件名
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;這個工具會輸出一大堆東西，不用管它，我們只要它創建的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dump.rom.new.Descriptor.bin&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dump.rom.new.ME.bin&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dump.rom.new.GBE.bin&lt;/code&gt;,分別代表着需要用到的三大坨 blob。&lt;/p&gt;
+    &lt;p&gt;然後我們可以把這些文件複製到 coreboot 源碼目錄的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3rdparty/blobs&lt;/code&gt; 目錄的對應位置裏（這是爲了之後配置起來方便點）。&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cp dump.rom.new.Descriptor.bin ~/coreboot/3rdparty/blobs/mainboard/lenovo/x220/descriptor.bin
+    $ cp dump.rom.new.ME.bin ~/coreboot/3rdparty/blobs/mainboard/lenovo/x220/me.bin
+    $ cp dump.rom.new.GBE.bin ~/coreboot/3rdparty/blobs/mainboard/lenovo/x220/gbe.bin
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;這裏可能會有人要問爲什麼不用提取 VGA BIOS，這個我起先也懷疑過，自己也提取了試過，對比之後發現 native init 和用 VGA BIOS 的效果實際上差不多甚至更好（因爲能用高分辨率模式），而且還是開源的實現，能少一坨 blob 就少一坨吧（&lt;/p&gt;
+    &lt;p&gt;接下來就是配置 coreboot 了。&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;回到 coreboot 的源碼目錄下執行 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make menuconfig&lt;/code&gt; 開始配置。&lt;/p&gt;
+    &lt;p&gt;在這裏跟配置 Linux 時是一樣的操作方式，上下移動選擇項目，左右移動要進行的操作，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?&lt;/code&gt; 查看幫助，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; 搜索。&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://v2bv.net/img/coreboot-config-1.png&quot; alt=&quot;Config-1&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;首先進入第一個 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;General setup&lt;/code&gt;，我個人的配置是這樣的：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;()  Local version string
+    (fallback) CBFS prefix to use
+    Compiler to use (GCC)  ---&amp;gt; # 一般還是用 GCC 吧,LLVM/Clang 支持還在測試的樣子。
+    [ ] Allow building with any toolchain
+    [ ] Use ccache to speed up (re)compilation # 雖說 ccache 能加快重複編譯的速度，但是一般也用不到... 反正編譯一下挺快的
+    [*] Generate flashmap descriptor parser using flex and bison
+    [*] Generate SCONFIG &amp;amp; BLOBTOOL parser using flex and bison
+    [*] Use CMOS for configuration values
+    [ ]   Load default configuration values into CMOS on each boot
+    [*] Compress ramstage with LZMA
+    [*] Include the coreboot .config file into the ROM image
+    [*] Create a table of timestamps collected during boot
+    [*] Allow use of binary-only repository # 這條一定要打開
+    [ ] Code coverage support
+    [ ] Undefined behavior sanitizer support
+    -*- Build the ramstage to be relocatable in 32-bit address space.
+    [ ] Update existing coreboot.rom image
+    [ ] Add a bootsplash image # 我至今沒搞明白這個怎麼用，與其加一張圖進去浪費寶貴的閃存空間，不如就讓它空着，反正 coreboot 初始化挺快的。
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;之後是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mainboard&lt;/code&gt;，這邊的配置在選好了主板型號之後基本上就不用動了：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    *** Important: Run 'make distclean' before switching boards ***                                                                                                           
+    Mainboard vendor (Lenovo)  ---&amp;gt; # 選聯想
+    Mainboard model (ThinkPad X220)  ---&amp;gt; # 當然是 X220 啦
+    ROM chip size (8192 KB (8 MB))  ---&amp;gt; # 除非你魔改過，不然不用改
+    (0x100000) Size of CBFS filesystem in ROM
+    ()  fmap description file in fmd format
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;然後 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chipset&lt;/code&gt;：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    *** SoC ***
+    *** CPU ***
+    [*] Enable VMX for virtualization
+    [*]   Set lock bit after configuring VMX
+    Include CPU microcode in CBFS (Generate from tree)  ---&amp;gt;
+    ()  Microcode binary path and filename
+    *** Northbridge ***
+    -*- Use native raminit
+    [ ]   Ignore vendor programmed fuses that limit max. DRAM frequency
+    [ ]   Ignore XMP profile max DIMMs per channel
+    *** Southbridge ***
+    Flash locking during chipset lockdown (Don't lock flash sections)  ---&amp;gt;
+    [ ] Lock down chipset in coreboot
+    *** Super I/O ***
+    *** Embedded Controllers ***
+    [*] Beep on fatal error
+    [*] Flash LEDs on fatal error
+    [*] Support bluetooth on wifi cards
+    *** Intel Firmware ***
+    [*] Add Intel descriptor.bin file # 必選
+    (3rdparty/blobs/mainboard/$(MAINBOARDDIR)/descriptor.bin) Path and filename of the descriptor.bin file # 選擇剛剛複製的 descriptor.bin
+    [ ]   Configure IFD for EM100 usage
+    [*]   Add Intel ME/TXE firmware # 必選
+    (3rdparty/blobs/mainboard/$(MAINBOARDDIR)/me.bin) Path to management engine firmware # 同上
+    [*]     Verify the integrity of the supplied ME/TXE firmware
+    [*]     Strip down the Intel ME/TXE firmware # 如果要幹 ME 的話選上這個
+    *** Please test the modified ME/TXE firmware and coreboot in two steps ***
+    [*]   Add gigabit ethernet firmware # 必選
+    (3rdparty/blobs/mainboard/$(MAINBOARDDIR)/gbe.bin) Path to gigabit ethernet firmware # 同上
+    [ ]   Add EC firmware
+    [ ] Lock ME/TXE sectionBootblock behaviour (Always load fallback)  ---&amp;gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Devices&lt;/code&gt; 裏：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Graphics initialization (Use native graphics init)  ---&amp;gt; # 這就是之前提到的 native init
+    Display  ---&amp;gt;
+    Framebuffer mode (Linear &quot;high-resolution&quot; framebuffer)  ---&amp;gt; # 如果等會兒選擇用 GRUB2 作爲 payload，那麼更推薦用這個 high-resolution 的，如果用 SeaBIOS 的話更推薦用 Legacy VGA text mode，不然可能 SeaBIOS 的輸出可能只佔屏幕的四分之一
+    -*- Enable PCIe Common Clock
+    -*- Enable PCIe ASPM
+    [*] Enable PCIe Clock Power Management
+    [*] Enable PCIe ASPM L1 SubState
+    [ ] Early PCI bridge
+    (0x0000) Override PCI Subsystem Vendor ID
+    (0x0000) Override PCI Subsystem Device ID
+    [ ] Add a VGA BIOS image # 如果用了 native init 就不需要選擇
+    [ ] Add a Video Bios Table (VBT) binary to CBFS
+    [*] Enable I2C controller emulation in software
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Generic Drivers&lt;/code&gt; 裏基本不需要動:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[ ] AS3722 RTC support
+    [*] SPI flash driver support in SMM
+    [ ] Disable Fast Read command
+    [ ] Serial port on SuperIO
+    [ ] Oxford OXPCIe952
+    (0x0) UART's PCI bus, device, function address
+    [ ] USB 2.0 EHCI debug dongle support
+    [*] Support Intel PCI-e WiFi adapters
+    [*] PS/2 keyboard init # 必選
+    [*] Enable TPM support # 如果需要 TPM 的話可以選上
+    [ ]   Deactivate TPM
+    [ ] Silicon Image SIL3114
+    [ ] TI TPS65913 support
+    [ ] TI TPS65913 RTC support
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Security&lt;/code&gt; 下沒需求的話就不用改了：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Verified Boot (vboot)  ---&amp;gt;
+    [ ] Verify firmware with vboot.
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Console&lt;/code&gt; 裏：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[*] Squelch AP CPUs from early console.
+    [ ] spkmodem (console on speaker) console output
+    [ ] Use onboard VGA as primary video device
+    [ ] Network console over NE2000 compatible Ethernet adapter
+    [ ] Send console output to a CBMEM buffer
+    [ ] SPI Flash console output
+    Default console log level (8: SPEW)  ---&amp;gt;
+    [ ] Don't show any POST codes
+    [ ]   Store post codes in CMOS for debugging
+    [ ]   Show POST codes on the debug console
+    [ ]   Send POST codes to an external device
+    [*]   Send POST codes to an IO port
+    (0x80)  IO port for POST codes
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System Table&lt;/code&gt;：&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[*] Generate SMBIOS tables
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Payload&lt;/code&gt; 裏比較特殊，需要根據自己的需求選擇 _(:з」∠)_。&lt;br /&gt;
+    現在官方支持的 Payload 有：&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;None - 無，什麼都沒有。&lt;/li&gt;
+    &lt;li&gt;An ELF executable payload - 一個 ELF 可執行文件作爲 Payload。&lt;/li&gt;
+    &lt;li&gt;Bayou - 一個可以從 CBFS（coreboot filesystem）裏選擇並啓動別的 payload 的工具（是不是有點繞）。&lt;/li&gt;
+    &lt;li&gt;FILO - 一個啓動管理器，比較簡單的那種。&lt;/li&gt;
+    &lt;li&gt;GRUB2 - 知名啓動管理器。&lt;/li&gt;
+    &lt;li&gt;SeaBIOS - 一個開源的 BIOS 實現，爲默認選項。&lt;/li&gt;
+    &lt;li&gt;U-Boot - 熟悉 ARM 的朋友應該知道（跑&lt;/li&gt;
+    &lt;li&gt;A Linux payload - 直接把一個 Linux 內核作爲 payload 塞進去。&lt;/li&gt;
+    &lt;li&gt;Tianocore coreboot payload package - 開源的 UEFI 實現。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;其中第一個肯定是不行的，coreboot 只執行一些基本的初始化，操作系統引導等等還是要交給 payload 來做的；&lt;br /&gt;
+    第二個可以在確認 coreboot 能用後做自定義時使用，比如我現在就是先生成好 GRUB2 的 elf 文件然後再把它編譯進 coreboot；&lt;br /&gt;
+    Bayou 沒用過，不過看起來很雞肋的樣子…；&lt;br /&gt;
+    FILO 也沒用過，不過都有 GRUB2 了還用啥 FILO；&lt;br /&gt;
+    GRUB2 是一個 OS，不解釋 _(:з」∠)_；&lt;br /&gt;
+    U-Boot 現在支持還是試驗階段；&lt;br /&gt;
+    直接用內核的只要你能把內核裁剪到夠小，那就用吧（x；&lt;br /&gt;
+    Tianocore 的話嘛… 東西是好東西，但是那個構建系統感覺有點可怕，我對它有心理陰影 Orz… 而且 X220 本身對 EFI 的支持了不算很好，不算很推薦（當然如果你認爲 EFI 是剛需的話可以用它。&lt;/p&gt;
+    &lt;p&gt;不同的 Payload 配置方法不一樣。在這裏就不多說了，如果第一次用的話個人建議先用 SeaBIOS，等後來熟悉並且確認能用了再換 GRUB2 等等，畢竟 GRUB2 需要自己寫配置 Orz&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Debugging&lt;/code&gt; 底下什麼都不用選（&lt;/p&gt;
+    &lt;p&gt;全部配置好之後保存然後退出。&lt;/p&gt;
+    &lt;p&gt;使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make&lt;/code&gt; 就能打開新世界大門了。&lt;/p&gt;
+    &lt;p&gt;編譯好的固件在源碼目錄的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build/coreboot.rom&lt;/code&gt;。&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;進入 build 目錄下就可以用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flashrom&lt;/code&gt; 刷了。&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo flashrom -p internal:laptop=force_I_want_a_brick -c MX25L6405D -w coreboot.rom # 同樣的，這裏的命令也是 internal flash 的命令，如果用編程器的話需要根據情況進行修改。
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;如果能正常啓動並且看到 payload 的界面，那就大功告成了。&lt;/p&gt;
+    &lt;p&gt;之前備份的原廠 BIOS 千萬&lt;strong&gt;不要&lt;/strong&gt;刪除。&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;以下是關於如何配置 GRUB2 的。&lt;/p&gt;
+    &lt;p&gt;GRUB2 需要一個配置文件才能正常工作，而這個配置文件相關的信息挺難找的，我是在 BLUG 的 persmule.y 大佬的指點下才配成了現在的樣子。&lt;/p&gt;
+    &lt;p&gt;首先要明確一件事情，如果用 GRUB2 作爲 payload，那麼它的配置文件在編寫的時候必定要考慮到是否足夠靈活，不然每次有一點點小變化就要重新刷固件那還不如直接用 SeaBIOS。&lt;/p&gt;
+    &lt;p&gt;詳細情況可以參考 &lt;a href=&quot;https://github.com/hardenedlinux/Debian-GNU-Linux-Profiles/blob/master/docs/hardened_boot/grub-for-coreboot.md&quot;&gt;https://github.com/hardenedlinux/Debian-GNU-Linux-Profiles/blob/master/docs/hardened_boot/grub-for-coreboot.md&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;基本上直接參考上面就能夠勝任絕大多數情況了。&lt;/p&gt;
+    &lt;p&gt;以下是個人認爲的幾個注意點：&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;一些經常變動的東西可以寫到硬盤上讓 GRUB 自己去加載，而不是寫到固件裏面。&lt;/li&gt;
+    &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(memdisk)&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(cbfsdisk)&lt;/code&gt; 要區分清楚，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(cbfsdisk)&lt;/code&gt; 是 ROM 裏的 CBFS 區域，而 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(memdisk)&lt;/code&gt; 是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grub-mkstandalone&lt;/code&gt; 時包括進去的部分。&lt;/li&gt;
+    &lt;li&gt;如果圖形相關選擇的是 native init 的 high-resolution framebuffer，並且進去後發現只有四分之一個屏幕可用的話可以試着在配置裏加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gfxpayload=keep&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;terminal_output --append gfxterm&lt;/code&gt;，應該可以讓它恢復正常。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;另外有什麼的話，想到再寫 XD&lt;/p&gt;
+  </description>
+  <pubDate>Mon, 15 Jan 2018 20:45:00 +0000</pubDate>
+  <link>https://v2bv.net/2018/coreboot</link>
+<guid isPermaLink="true">https://v2bv.net/2018/coreboot</guid>
+</item>
+<item>
+  <title>感覺有點不太好...</title>
+  <description>&lt;p&gt;哎呀呀好羞（&lt;/p&gt;
+  </description>
+  <pubDate>Fri, 24 Nov 2017 04:29:00 +0000</pubDate>
+  <link>https://v2bv.net/2017/feeling-bad</link>
+<guid isPermaLink="true">https://v2bv.net/2017/feeling-bad</guid>
+</item>
+<item>
+  <title>淺談 Malicious Engine</title>
+  <description>&lt;p&gt;想必不少人之前看到有新聞說 ME 被發現有漏洞，但是又不知道它是什麼,相關的中文資料很少。&lt;br /&gt;
+    這幾天正好想寫點什麼，那就拿這個題材來水一水吧，文筆不好請見諒。&lt;/p&gt;
+    &lt;h2 id=&quot;什麼是-me&quot;&gt;什麼是 ME？&lt;/h2&gt;
+    &lt;ul&gt;
+    &lt;li&gt;Intel ME 是 Intel &lt;strong&gt;M&lt;/strong&gt;anagement &lt;strong&gt;E&lt;/strong&gt;ngine 的簡稱。&lt;/li&gt;
+    &lt;li&gt;Intel ME 是一個擁有從&lt;strong&gt;底層&lt;/strong&gt;控制硬件能力的、&lt;strong&gt;獨立&lt;/strong&gt;與處理器和操作系統的&lt;strong&gt;框架&lt;/strong&gt;，它對於操作系統也是隱形的。簡單點說就是擁有極高的權限。其中 Intel Active Management Technology（英特爾主動管理技術）是運行與 ME 框架上的應用的一個例子。&lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;Intel ME 被搭載在&lt;strong&gt;幾乎所有的&lt;/strong&gt; 2006 年之後上市出售的 intel 平臺上。硬件部分整合在 CPU 或是主板芯片組內；軟件（固件）部分一般與 BIOS 共存在一個 ROM 芯片中（如果把 ROM 的內容提取出來的話，會發現 ME 固件往往比 BIOS 本身以及 GBE 固件加在一起還大）。&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Found Region Section
+    FLREG0:    0x00000000
+    Flash Region 0 (Flash Descriptor): 00000000 - 00000fff
+    FLREG1:    0x07ff0500
+    Flash Region 1 (BIOS): 00500000 - 007fffff
+    FLREG2:    0x04ff0003
+    Flash Region 2 (Intel ME): 00003000 - 004fffff
+    FLREG3:    0x00020001
+    Flash Region 3 (GbE): 00001000 - 00002fff
+    FLREG4:    0x00001fff
+    Flash Region 4 (Platform Data): 00fff000 - 00000fff (unused) （以上是我的 X220 的原版 BIOS的結構信息）
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;在 Linux 平臺上可以使用 &lt;a href=&quot;https://github.com/zamaudio/intelmetool&quot;&gt;intelmetool&lt;/a&gt; 來查看 ME 的狀態。&lt;br /&gt;
+    &lt;img src=&quot;https://img.vim-cn.com/ab/ec88a9b22cfcdc7c0ec735d31bd81abd333f6f.png&quot; alt=&quot;X220_intelmetool&quot; /&gt;
+    (我的 X220 上已經用 me_cleaner 把 ME 閹割了，所以狀態是 Recovery)&lt;/p&gt;
+    &lt;p&gt;Windows 平臺可以使用 MEInfoWin 這個程序來查看，因爲版權問題不在這裏提供下載。&lt;br /&gt;
+    &lt;del&gt;（好吧事實是我也找不到下載地址）&lt;/del&gt;&lt;/p&gt;
+    &lt;h2 id=&quot;爲什麼-me-會被認爲不安全&quot;&gt;爲什麼 ME 會被認爲不安全？&lt;/h2&gt;
+    &lt;p&gt;ME 本身是爲了企業管理用途而存在的，但是存在以下問題，導致我們不得不擔憂它的安全性：&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;ME 擁有&lt;strong&gt;高於幾乎所有別的系統組件的權限&lt;/strong&gt;，也因爲這點有人把它叫做 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ring -3&lt;/code&gt;。&lt;/li&gt;
+    &lt;li&gt;ME 是&lt;strong&gt;閉源&lt;/strong&gt;的，用戶無法審覈它是否足夠安全。&lt;/li&gt;
+    &lt;li&gt;ME &lt;strong&gt;幾乎無法被關閉或禁用&lt;/strong&gt;。&lt;/li&gt;
+    &lt;li&gt;ME 以及依賴它的組件&lt;strong&gt;已經&lt;/strong&gt;被發現了有漏洞存在（&lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5689&quot;&gt;CVE-2017-5689&lt;/a&gt;），並且很可能有&lt;strong&gt;更多&lt;/strong&gt;的漏洞等着被發現（畢竟基本不可能一個 Bug 都不存在）。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;就像是你的身體裏有個不受你的意識控制，而又有能力控制你的身體，還能窺探甚至影響你的思維的不明物體。&lt;br /&gt;
+    &lt;del&gt;這個不明物體甚至還是有缺陷的，可能會讓別人隨意控制你。&lt;/del&gt;&lt;/p&gt;
+    &lt;p&gt;尤其是如果你是自由軟件的狂熱愛好者、會在電腦上處理機密信息或是很重要的隱私，ME 無疑是一個不可忽視的漏洞。&lt;/p&gt;
+    &lt;p&gt;說得陰謀論點，它甚至可能是 Intel 或是美國政府在你的電腦裏留下的後門。&lt;/p&gt;
+    &lt;p&gt;&lt;del&gt;如果你用的是 AuthenticAMD 平臺的機器，那麼自然不用擔心 ME 的存在。然而天下的烏鴉一般黑，一個類似的東西叫 PSP(&lt;/del&gt;PlayStation Portable~~ Platform Security Processor)，也有差不多的問題存在，只是現在似乎還沒有被公開有漏洞。~~
+    AMD 的 PSP 可以被用戶禁用。&lt;/p&gt;
+    &lt;h2 id=&quot;me-可能被關閉禁用麼&quot;&gt;ME 可能被關閉/禁用麼？&lt;/h2&gt;
+    &lt;p&gt;在前面也說了，ME 幾乎不可能被關閉，爲什麼又要寫這一段呢？&lt;br /&gt;
+    ME 的確很難被關閉。它沒有開關，（在 Nehalem 架構之後）如果暴力破壞它的固件，機器會在 30 分鐘內自動斷電或是重啓；至於破壞硬件… 洗洗睡吧。
+    而且隨着 ME 的一代代更新，ME 覆蓋的範圍越來越廣，最新的 ME 已經接管了硬件初始化；同時還有 Boot Guard 的存在，風險很大。&lt;br /&gt;
+    然而再嚴密的東西也總會有疏漏的地方（墨先生一句話說得好，凡事有可能出岔子，它就會出岔子），幾乎不能被關閉也只是&lt;strong&gt;幾乎&lt;/strong&gt;而已，&lt;del&gt;廣大勞動人民的智慧是無窮的&lt;/del&gt;已經有人發現了在部分平臺上禁用它或是讓它失去功能的辦法。&lt;br /&gt;
+    主要有以下思路：&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;對於 Nehalem 之前的架構，可以通過一點小小的修改來徹底移除。&lt;/li&gt;
+    &lt;li&gt;在不破壞基礎框架的前提下破壞一部分 ME 的組件：&lt;br /&gt;
+    具體實現是 &lt;a href=&quot;https://github.com/corna/me_cleaner&quot;&gt;me_cleaner&lt;/a&gt; ，需要使用編程器。它會把 BIOS 裏的 ME 固件裏的一部分非必要組件連同簽名一起移除（具體信息可以看&lt;a href=&quot;https://github.com/corna/me_cleaner/wiki/How-does-it-work%3F&quot;&gt;這裏&lt;/a&gt;）。&lt;br /&gt;
+    但是注意，這個方法僅僅只是讓 ME 失去了部分功能（幾乎殘廢了），並不是完美的方法（剩餘的必要部分也可能有問題）。另外要提醒的是，刷 BIOS 有風險，請做好備份。&lt;/li&gt;
+    &lt;li&gt;有人發現了 ME 11(Skylake and above) 的固件裏有個保留位，通過修改它可以做到禁用 ME，具體可以看&lt;a href=&quot;http://blog.ptsecurity.com/2017/08/disabling-intel-me.html&quot;&gt;這裏&lt;/a&gt;。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;現在還沒有任何簡單的方法來移除 ME，僅有的辦法也都需要編程器以及一定的動手技巧，還有刷壞 BIOS 成磚的風險。如果沒有相關經驗，並不怎麼建議移除它。&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;最後安利一下 coreboot，可以把它理解爲一個開源的 BIOS 實現，官網是 &lt;a href=&quot;https://coreboot.org&quot;&gt;https://coreboot.org&lt;/a&gt; 。有能力並且有興趣，而且設備又有適配的話可以試試。&lt;/p&gt;
+    &lt;p&gt;本文的工具和信息不少也是來自 coreboot 項目的，如果喜歡並且方便可以捐贈給他們。&lt;/p&gt;
+    &lt;p&gt;不管怎麼樣，還是希望開源自由的硬件和軟件遲早能夠勝過這些夾雜了私貨的產品，作爲用戶能得到不少好處。&lt;/p&gt;
+    &lt;p&gt;參考資料：&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Wires and Bits&lt;/strong&gt; (&lt;a href=&quot;http://me.bios.io&quot;&gt;me.bios.io&lt;/a&gt;): Brief description of ME, &lt;a href=&quot;http://me.bios.io/ME:About&quot;&gt;me.bios.io/ME:About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Coreboot Wiki&lt;/strong&gt; (&lt;a href=&quot;https://www.coreboot.org&quot;&gt;www.coreboot.org&lt;/a&gt;):  Intel Management
+    Engine, &lt;a href=&quot;https://www.coreboot.org/Intel_Management_Engine&quot;&gt;www.coreboot.org/Intel_Management_Engine&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Postive Technologies&lt;/strong&gt; (&lt;a href=&quot;http://blog.ptsecurity.com&quot;&gt;blog.ptsecurity.com&lt;/a&gt;):Disabling Intel ME 11 via undocumented mode, &lt;a href=&quot;http://blog.ptsecurity.com/2017/08/disabling-intel-me.html&quot;&gt;blog.ptsecurity.com/2017/08/disabling-intel-me.html&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Wikipedia&lt;/strong&gt; (&lt;a href=&quot;https://wikipedia.org&quot;&gt;wikipedia.org&lt;/a&gt;): Intel Active Management Technology, &lt;a href=&quot;https://en.wikipedia.org/wiki/Intel_Active_Management_Technology&quot;&gt;en.wikipedia.org/wiki/Intel_Active_Management_Technology&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;GitHub corna/me_cleaner&lt;/strong&gt; (&lt;a href=&quot;https://github.com/corna/me_cleaner&quot;&gt;github.com/corna/me_cleaner&lt;/a&gt;): How does it work?, &lt;a href=&quot;https://github.com/corna/me_cleaner/wiki/How-does-it-work%3F&quot;&gt;github.com/corna/me_cleaner/wiki/How-does-it-work%3F&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Intel, Active Management Technology 和 Management Engine 是英特爾公司或其子公司在美國和 / 或其他國家（地區）的商標，商標版權歸英特爾公司所有。&lt;/p&gt;
+  </description>
+  <pubDate>Wed, 27 Sep 2017 00:53:00 +0000</pubDate>
+  <link>https://v2bv.net/2017/intel-me</link>
+<guid isPermaLink="true">https://v2bv.net/2017/intel-me</guid>
+</item>
+<item>
+  <title>近期的一些想法</title>
+  <description>&lt;p&gt;這篇文章已經想了很久了，最後還是決定發出來。&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;h2 id=&quot;首先是關於本博客&quot;&gt;首先是關於本博客&lt;/h2&gt;
+    &lt;ol&gt;
+    &lt;li&gt;我之前用我那語法錯誤滿天飛的英文寫的東西我自己都看不下去了，以後的文章用英語還是中文還沒想好（畢竟中文沒有 Inconsolata 用）。&lt;/li&gt;
+    &lt;li&gt;關於更新頻率：
+    &lt;ul&gt;
+    &lt;li&gt;現在還沒想好，應該是有心情有事情好說就寫吧。&lt;/li&gt;
+    &lt;li&gt;（不知道會不會被黃鼠菊苣刪友鏈）&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;可能會在什麼時候遷移到新的域名（v2bv.net），具體時間還沒決定。&lt;/li&gt;
+    &lt;li&gt;可能會在什麼時候從 GitHub Pages 遷移到別的平臺，比如自己的 VPS 什麼的… 總之看心情吧。&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;不過反正我這個博客基本沒人看，無所謂啦。&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;h2 id=&quot;然後是關於我現在的狀態&quot;&gt;然後是關於我現在的狀態&lt;/h2&gt;
+    &lt;p&gt;（&lt;strong&gt;注意：下面的內容很無聊，完全可以隨便忽略。如果看了之後認爲我是中二晚期，那就中二晚期吧。&lt;/strong&gt;）&lt;/p&gt;
+    &lt;p&gt;這段時間心態不怎麼好，遇到了點事情。&lt;a href=&quot;https://s.brined.fish/@KayMW&quot;&gt;Mastodon&lt;/a&gt; 上已經很長時間沒有動靜了。&lt;/p&gt;
+    &lt;p&gt;我之前有篇已經刪了的文章提到過我當時的一些情況（很矯情就是了，不過這篇估計會更矯情）。其實那段時間還算好，當時還有個人肯陪我，至少是我認爲又一個能理解我的人。&lt;/p&gt;
+    &lt;p&gt;而現在的情況是，那位在兩週之前突然就離開我了，就在這認識才一年不到的情況下。&lt;/p&gt;
+    &lt;p&gt;具體什麼事情我不想多說，實際上也說不出什麼。我現在只希望明天能看到一條信息說那是在逗我，當然我也知道沒什麼可能性就是了。&lt;/p&gt;
+    &lt;p&gt;然後學校裏也有點事情，在宗教學校裏上學被宗教課弄得要瘋，GPA 還被拖下來了 Orz&lt;br /&gt;
+    （&lt;strong&gt;如果有誰想要去國外留學，千萬千萬千萬千萬千萬千萬千萬千萬不要去教會學校，中介機構等等再怎麼推薦也不要去教會學校，至少不要去強制學習宗教相關科目的學校，除非你本來就信教。&lt;/strong&gt;）&lt;/p&gt;
+    &lt;p&gt;什麼時候能恢復我也不清楚… 真的就是心情的問題了…&lt;/p&gt;
+    &lt;p&gt;以前挖的坑比如 pakreqBot 之類的現在填是還在填，就是比較慢罷了，先說句對不起了。&lt;/p&gt;
+    &lt;p&gt;就這樣吧。&lt;/p&gt;
+  </description>
+  <pubDate>Fri, 08 Sep 2017 08:16:14 +0000</pubDate>
+  <link>https://v2bv.net/2017/some-thoughts</link>
+<guid isPermaLink="true">https://v2bv.net/2017/some-thoughts</guid>
+</item>
+<item>
+  <title>Using IBM RT3200 on modern Linux systems</title>
+  <description>&lt;p&gt;I just bought a IBM SpaceSaver II RT3200 (P/N: 37L0888) on &lt;a href=&quot;https://item.taobao.com/item.htm?id=19702143286&quot;&gt;Taobao&lt;/a&gt; for just 129 CNY (about 20 USD) instead on making my own mechanical keyboard. &lt;br /&gt;
+    It was announced in the middle of 1999, and here is the official &lt;a href=&quot;http://ps-2.kev009.com/pcpartnerinfo/ctstips/10762.htm&quot;&gt;info&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;I choose it because of:&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;It has UltraNav.&lt;/li&gt;
+    &lt;li&gt;Most mechanical keyboard DIY kits doesn’t include trackpoint.&lt;/li&gt;
+    &lt;li&gt;Those kits like TEX Yoda which has trackpoint support are tooooooooooooo expensive to me.&lt;/li&gt;
+    &lt;li&gt;Modern ThinkPad keyboards’ keys are too “soft” for me.&lt;/li&gt;
+    &lt;li&gt;Classic ThinkPad keyboards includes palm rests which I don’t need.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;And here is how it looks:&lt;br /&gt;
+    &lt;img src=&quot;https://img.vim-cn.com/7b/f4675db0fd01ef0756cbb6a52715333839b7ab.jpg&quot; alt=&quot;RT3200&quot; /&gt;
+    (I use a sticker from AOSCC 2017 to cover up Windows logo.)&lt;br /&gt;
+    (Ugh… Looks like a Windows 2000 logo.)&lt;/p&gt;
+    &lt;p&gt;It comes in good shape and looks just like  normal 80% keyboard with UltraNav, isn’t it?&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;It is a pretty good keyboard but with several problems:&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;It uses &lt;strong&gt;two&lt;/strong&gt; PS/2 ports (one for keyboard it self and one for UltraNav) which are rare to see on modern laptops (Of course at that time most keyboards and mice use PS/2 ports). It means you have to buy a USB to PS/2 adapter in order to use it.&lt;/li&gt;
+    &lt;li&gt;Sometimes the CapLocks key is too hard to press (Maybe it’s just my own problem).&lt;/li&gt;
+    &lt;li&gt;It’s UltraNav has little differences from modern ones. It’s left and right keys are softer than modern ones and it use a classic “cat-tongue” TrackPoint cap.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;And after I connect to my X220, everything works fine except the middle button of UltraNav, it doesn’t simulate wheel like the modern ones. It probably because it’s connected using an adapter so Linux cannot recognize keyboard correctly.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://img.vim-cn.com/7d/396a9f0de5220d5ca8f3571f27add704c04a39.png&quot; alt=&quot;&amp;quot;Barcode reader&amp;quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;(An interesting thing is Linux recognize one of my adapters as a barcode reader… Orz)&lt;/p&gt;
+    &lt;p&gt;As I said before, it’s hard to identify between the keyboards connected with adapters, so I think the best solution I could find is to enable wheel emulation on all of the pointing devices that connected to this computer.&lt;/p&gt;
+    &lt;p&gt;After searching on the Internet, I found a solution from &lt;a href=&quot;https://felixc.at/&quot;&gt;Felix Yan&lt;/a&gt; on &lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=133298&quot;&gt;Arch Linux Forums&lt;/a&gt;:&lt;/p&gt;
+    &lt;p&gt;Just modify XOrg’s config to make all pointing devices use evdev drivers and enable wheel emulation:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Section &quot;InputClass&quot;
+    Identifier &quot;evdev pointer catchall&quot;
+    MatchIsPointer &quot;on&quot;
+    MatchDevicePath &quot;/dev/input/event*&quot;
+    Driver &quot;evdev&quot;
+    Option      &quot;EmulateWheel&quot;      &quot;true&quot;
+    Option      &quot;EmulateWheelButton&quot;    &quot;2&quot;
+    Option      &quot;XAxisMapping&quot;      &quot;6 7&quot;
+    Option      &quot;YAxisMapping&quot;      &quot;4 5&quot;
+    EndSection
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;After this, just restart XOrg and everything will be fine :)&lt;/p&gt;
+    &lt;p&gt;(If you have any better idea, please comment below :)&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;Anyway, it is a really a &lt;strong&gt;GREAT&lt;/strong&gt; keyboard for a low price, it’s old but not obsolete. &lt;del&gt;If you like it, you can go and get one from eBay or other places, it’s not rare and expensive until now, but maybe several years later it will be another IBM Model M&lt;/del&gt; XD&lt;/p&gt;
+  </description>
+  <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+  <link>https://v2bv.net/2017/using-ibm-rt3200-on-modern-linux-systems</link>
+<guid isPermaLink="true">https://v2bv.net/2017/using-ibm-rt3200-on-modern-linux-systems</guid>
+</item>
+<item>
+  <title>A test for reStructuredText support.</title>
+  <description>I give up.
+    ```
+    Example Chapter Heading
+    =======================
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula
+    sapien, malesuada eu tempor eu, sagittis nec nibh. Fusce sit amet nunc
+    sit amet felis semper molestie. Proin orci dolor, interdum ut lacinia
+    id, semper quis nisi. Aenean vestibulum ullamcorper eros et vulputate.
+    Fusce diam turpis, facilisis nec consectetur vitae, dapibus vel
+    sapien.
+    Example Section Heading
+    -----------------------
+    Quisque ipsum lectus, cursus laoreet aliquet in, viverra sit amet
+    metus. Aliquam tristique, dui vel euismod facilisis, velit mi pretium
+    leo, elementum feugiat tortor nibh quis nibh. Pellentesque vel nisl
+    sit amet sem euismod mollis.
+    Example Subsection Heading
+    ``````````````````````````
+    * Bullets are great for making a point
+    * Bullets can be placed in rST like so
+    **Example**
+    Tables can be very illustrative.
+    +------------------+------------------+--------------------------+
+    | Column One       | Column Two       | Column Three             |
+    +==================+==================+==========================+
+    | First            | Detail           | Detail                   |
+    +------------------+------------------+--------------------------+
+    | Second           | Detail           | Detail                   |
+    +------------------+------------------+--------------------------+
+    Example Code
+    ````````````
+    .. code-block:: javascript
+    $('#id').click(function() { alert('This is a code sample.'); });
+    .. code-block:: html
+    &lt;html&gt;&lt;/html&gt;
+    ```
+  </description>
+  <pubDate>Sun, 18 Jun 2017 07:58:55 +0000</pubDate>
+  <link>https://v2bv.net/2017/Test-reStructuredText</link>
+<guid isPermaLink="true">https://v2bv.net/2017/Test-reStructuredText</guid>
+</item>
+<item>
+  <title>A quick look at V2Ray</title>
+  <description>&lt;p&gt;A normal way to escape from censorship or blockage of access to information is to use proxy.&lt;/p&gt;
+    &lt;p&gt;There are several different proxy protocols and software. And today I’m gonna talk about V2Ray.&lt;/p&gt;
+    &lt;p&gt;It’s home page is https://www.v2ray.com.&lt;/p&gt;
+    &lt;p&gt;It’s written in Golang, with these features:&lt;/p&gt;
+    &lt;ol&gt;
+    &lt;li&gt;It supports several protocols (SOCKS, HTTP, Shadowsocks, VMess)(And VMess is it’s own protocol).&lt;/li&gt;
+    &lt;li&gt;Built-in routing support.&lt;/li&gt;
+    &lt;li&gt;Cross-platform support.&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;But these features also causes it’s a bit hard for newbies to configure it.&lt;/p&gt;
+    &lt;p&gt;But in fact, if you just need basic proxy features, it could be very easy to use.&lt;/p&gt;
+    &lt;p&gt;First, V2Ray use JSON as the format of configuration file. A basic configuration of V2Ray can be split to several parts: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inbound&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;outbound&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;routing&lt;/code&gt;.&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inbound&lt;/code&gt; is just about how others connect to V2Ray software.&lt;br /&gt;
+    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;outbound&lt;/code&gt; is about how V2Ray connect to the web or other V2Ray servers.&lt;br /&gt;
+    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;routing&lt;/code&gt; is the part to configure the route of packages.&lt;/p&gt;
+    &lt;p&gt;Also there are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inboundDetour&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;outboundDetour&lt;/code&gt; and parts about how to transport packages.&lt;/p&gt;
+    &lt;p&gt;###&lt;strong&gt;In the part &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inbound&lt;/code&gt;:&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;For servers, inbound have to be the protocol and ports that clients will connect. As an example:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;inbound&quot;: {
+    &quot;port&quot;: 37192, // port
+    &quot;protocol&quot;: &quot;vmess&quot;,    // main inbound protocol
+    &quot;settings&quot;: {
+    &quot;clients&quot;: [
+    {
+    &quot;id&quot;: &quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;,  // User ID
+    &quot;level&quot;: 1  // User level 
+    }
+    ]
+    }
+    }
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;In the example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt; will be the port that clients will connect; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protocol&lt;/code&gt; is the protocol it gonna use; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;settings&lt;/code&gt; are the parameters of inbound protocols.&lt;/p&gt;
+    &lt;p&gt;For more detailed information about VMess and it’s settings, please visit: https://www.v2ray.com/chapter_04/03_vmess.html&lt;/p&gt;
+    &lt;p&gt;For clients, inbound have to be the settings of how other applications connects to it. For example:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;inbound&quot;: {
+    &quot;port&quot;: 1080, // port
+    &quot;protocol&quot;: &quot;socks&quot;,
+    &quot;settings&quot;: {
+    &quot;auth&quot;: &quot;noauth&quot;,
+    &quot;udp&quot;: false
+    }
+    }
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt; is the port that other applications will connect; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protocol&lt;/code&gt; is the protocol it will use. For now V2Ray supports SOCKS5 and HTTP.&lt;/p&gt;
+    &lt;p&gt;For detailed information, please visit: https://www.v2ray.com/chapter_04/03_vmess.html&lt;/p&gt;
+    &lt;p&gt;###&lt;strong&gt;In the part &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;outbound&lt;/code&gt;:&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;For servers, this part is about how V2Ray communicates with the web.&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;outbound&quot;: {
+    &quot;protocol&quot;: &quot;freedom&quot;,  
+    &quot;settings&quot;: {}
+    }
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;In this example, traffics will use a protocol called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;freedom&lt;/code&gt;. In fact, it’s just about to make normal TCP/UDP connections to the web.&lt;/p&gt;
+    &lt;p&gt;For more detailed information about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;freedom&lt;/code&gt;, please visit: https://www.v2ray.com/chapter_02/protocols/freedom.html&lt;/p&gt;
+    &lt;p&gt;For clients, this part is about how V2Ray communicates with V2Ray on the server.&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;outbound&quot;: {
+    &quot;protocol&quot;: &quot;vmess&quot;,
+    &quot;settings&quot;: {
+    &quot;vnext&quot;: [
+    {
+    &quot;address&quot;: &quot;8.8.8.8&quot;, // Server IP
+    &quot;port&quot;: 17173,  // Server port
+    &quot;users&quot;: [
+    {
+    &quot;id&quot;: &quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;, // User ID
+    &quot;security&quot;: &quot;aes-128-gcm&quot;, 
+    &quot;alterId&quot;: 128
+    },
+    ]
+    }
+    ]
+    }
+    }
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;Note that in this part, all of the settings &lt;strong&gt;must&lt;/strong&gt; be the same with the server.&lt;/p&gt;
+    &lt;p&gt;For more detailed information about VMess and it’s settings, please visit: https://www.v2ray.com/chapter_04/03_vmess.html&lt;/p&gt;
+    &lt;p&gt;###&lt;strong&gt;In the part &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;routing&lt;/code&gt;:&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;Absolutely it’s about routing of packages.&lt;/p&gt;
+    &lt;p&gt;For detailed information, please visit: https://www.v2ray.com/chapter_02/03_routing.html&lt;/p&gt;
+    &lt;p&gt;Here is an example about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;routing&lt;/code&gt;:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;routing&quot;: {
+    &quot;strategy&quot;: &quot;rules&quot;,
+    &quot;settings&quot;: {
+    &quot;rules&quot;: [
+    {
+    &quot;type&quot;: &quot;field&quot;,
+    &quot;ip&quot;: [
+    &quot;0.0.0.0/8&quot;,
+    &quot;10.0.0.0/8&quot;,
+    &quot;100.64.0.0/10&quot;,
+    &quot;127.0.0.0/8&quot;,
+    &quot;169.254.0.0/16&quot;,
+    &quot;172.16.0.0/12&quot;,
+    &quot;192.0.0.0/24&quot;,
+    &quot;192.0.2.0/24&quot;,
+    &quot;192.168.0.0/16&quot;,
+    &quot;198.18.0.0/15&quot;,
+    &quot;198.51.100.0/24&quot;,
+    &quot;203.0.113.0/24&quot;,
+    &quot;::1/128&quot;,
+    &quot;fc00::/7&quot;,
+    &quot;fe80::/10&quot;
+    ],
+    &quot;outboundTag&quot;: &quot;blocked&quot;
+    }
+    ]
+    }
+    }
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;P.S. “outboundTag” determines which route the traffics that meets the rules above will go. It’s about inboundDetor/outboundDetor, please visit official manual.&lt;/p&gt;
+    &lt;p&gt;###&lt;strong&gt;Here is the basic config:&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Server:&lt;/strong&gt;&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+    &quot;inbound&quot;: {
+    &quot;port&quot;: 12138,
+    &quot;protocol&quot;: &quot;vmess&quot;,
+    &quot;settings&quot;: {
+    &quot;clients&quot;: [
+    {
+    &quot;id&quot;: &quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;,
+    &quot;level&quot;: 1,
+    &quot;alterId&quot;: 128
+    }
+    ]
+    }
+    },
+    &quot;outbound&quot;: {
+    &quot;protocol&quot;: &quot;freedom&quot;,
+    &quot;settings&quot;: {}
+    },
+    &quot;outboundDetour&quot;: [
+    {
+    &quot;protocol&quot;: &quot;blackhole&quot;,
+    &quot;settings&quot;: {},
+    &quot;tag&quot;: &quot;blocked&quot;
+    }
+    ],
+    &quot;routing&quot;: {
+    &quot;strategy&quot;: &quot;rules&quot;,
+    &quot;settings&quot;: {
+    &quot;rules&quot;: [
+    {
+    &quot;type&quot;: &quot;field&quot;,
+    &quot;ip&quot;: [
+    &quot;0.0.0.0/8&quot;,
+    &quot;10.0.0.0/8&quot;,
+    &quot;100.64.0.0/10&quot;,
+    &quot;127.0.0.0/8&quot;,
+    &quot;169.254.0.0/16&quot;,
+    &quot;172.16.0.0/12&quot;,
+    &quot;192.0.0.0/24&quot;,
+    &quot;192.0.2.0/24&quot;,
+    &quot;192.168.0.0/16&quot;,
+    &quot;198.18.0.0/15&quot;,
+    &quot;198.51.100.0/24&quot;,
+    &quot;203.0.113.0/24&quot;,
+    &quot;::1/128&quot;,
+    &quot;fc00::/7&quot;,
+    &quot;fe80::/10&quot;
+    ],
+    &quot;outboundTag&quot;: &quot;blocked&quot;
+    }
+    ]
+    }
+    }
+    }
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;strong&gt;Client:&lt;/strong&gt;&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+    &quot;inbound&quot;: {
+    &quot;port&quot;: 1080,
+    &quot;protocol&quot;: &quot;socks&quot;,
+    &quot;settings&quot;: {
+    &quot;auth&quot;: &quot;noauth&quot;,
+    &quot;udp&quot;: true
+    }
+    },
+    &quot;outbound&quot;: {
+    &quot;protocol&quot;: &quot;vmess&quot;,
+    &quot;settings&quot;: {
+    &quot;vnext&quot;: [
+    {
+    &quot;address&quot;: &quot;8.8.8.8&quot;,
+    &quot;port&quot;: 12138,
+    &quot;users&quot;: [
+    {
+    &quot;id&quot;: &quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;,
+    &quot;alterId&quot;: 128,
+    &quot;security&quot;: &quot;aes-128-gcm&quot;
+    }
+    ]
+    }
+    ]
+    }
+    },
+    &quot;outboundDetour&quot;: [
+    {
+    &quot;protocol&quot;: &quot;freedom&quot;,
+    &quot;settings&quot;: {},
+    &quot;tag&quot;: &quot;direct&quot;
+    }
+    ],
+    &quot;routing&quot;: {
+    &quot;strategy&quot;: &quot;rules&quot;,
+    &quot;settings&quot;: {
+    &quot;rules&quot;: [
+    {
+    &quot;type&quot;: &quot;field&quot;,
+    &quot;ip&quot;: [
+    &quot;0.0.0.0/8&quot;,
+    &quot;10.0.0.0/8&quot;,
+    &quot;100.64.0.0/10&quot;,
+    &quot;127.0.0.0/8&quot;,
+    &quot;169.254.0.0/16&quot;,
+    &quot;172.16.0.0/12&quot;,
+    &quot;192.0.0.0/24&quot;,
+    &quot;192.0.2.0/24&quot;,
+    &quot;192.168.0.0/16&quot;,
+    &quot;198.18.0.0/15&quot;,
+    &quot;198.51.100.0/24&quot;,
+    &quot;203.0.113.0/24&quot;,
+    &quot;::1/128&quot;,
+    &quot;fc00::/7&quot;,
+    &quot;fe80::/10&quot;
+    ],
+    &quot;outboundTag&quot;: &quot;direct&quot;
+    }
+    ]
+    }
+    }
+    }
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  </description>
+  <pubDate>Fri, 16 Jun 2017 07:04:50 +0000</pubDate>
+  <link>https://v2bv.net/2017/A-quick-look-at-V2Ray</link>
+<guid isPermaLink="true">https://v2bv.net/2017/A-quick-look-at-V2Ray</guid>
+</item>
+<item>
+  <title>Introducing Jekyll theme &quot;Biu&quot;</title>
+  <description>&lt;p&gt;Link: https://github.com/RedL0tus/Biu-Jekyll-Theme&lt;br /&gt;
+    License: MIT&lt;/p&gt;
+    &lt;p&gt;Yes, this is the theme this blog is using.&lt;/p&gt;
+    &lt;p&gt;It’s a fork of &lt;a href=&quot;https://github.com/alexcarpenter&quot;&gt;Alex Carpenter&lt;/a&gt;’s &lt;a href=&quot;https://github.com/alexcarpenter/butane-jekyll-theme&quot;&gt;Butane-jekyll-theme&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;It looks quite same but with several difference:&lt;/p&gt;
+    &lt;ol&gt;
+    &lt;li&gt;Changed fonts to Inconsolata (&lt;a href=&quot;https://github.com/RedL0tus/Biu-Jekyll-Theme/commit/6d08203aefdb36e7f172d1a15dc47b5df89cde96&quot;&gt;All hail monospaced fonts!&lt;/a&gt;).&lt;/li&gt;
+    &lt;li&gt;Modified headers in post pages.&lt;/li&gt;
+    &lt;li&gt;Modified footers.&lt;/li&gt;
+    &lt;li&gt;Add Google Analytics support&lt;/li&gt;
+    &lt;li&gt;Add Structured Data support.&lt;/li&gt;
+    &lt;li&gt;Add Accelerated Mobile Pages support.&lt;/li&gt;
+    &lt;li&gt;Add a random fortune at footer.&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;P.S. There are some slight difference between the version in the theme’s repo and the version I’m using right now. Such as Service Worker and Progressive Web APP’s manifest. That’s because the service worker I’m using right now is written by others :)&lt;/p&gt;
+    &lt;p&gt;How to deploy:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/RedL0tus/Biu-Jekyll-Theme.git  
+    $ cd Biu-Jekyll-Theme  
+    $ rm -rf CHANGELOG.md README.md
+    $ nano  _config.yml #Or any other editor you prefer   
+    $ jekyll serve # Please deploy Jekyll first.  
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  </description>
+  <pubDate>Thu, 15 Jun 2017 08:09:11 +0000</pubDate>
+  <link>https://v2bv.net/2017/Introducing-Jekyll-Theme-Biu</link>
+<guid isPermaLink="true">https://v2bv.net/2017/Introducing-Jekyll-Theme-Biu</guid>
+</item>
+<item>
+  <title>Introduce the SFaaS</title>
+  <description>&lt;p&gt;Introduce the SFaaS - SaltedFish as a Service&lt;/p&gt;
+    &lt;p&gt;SFaaS is a revolution of cloud computing services.&lt;/p&gt;
+    &lt;p&gt;Our team found that SaltedFish can work as a kind of processor. It has following unique features:&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;Higher performance than all of the existing computers.&lt;/li&gt;
+    &lt;li&gt;Lower cost on power.&lt;/li&gt;
+    &lt;li&gt;Lower cost on deploying applicaion.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Our team had setup data centers all around the world and build SaltedFish Network that can connect every SaltedFish together and access the Internet. So you can deploy yours in seconds with a low fee.&lt;/p&gt;
+    &lt;p&gt;But please note that not every kind of SaltedFish can be a node in the network. To maintain the SaltedFish Network, you must have SaltedFish Certified Engineer Certification. Also please don’t touch or eat SaltedFish at the data center, they are the SaltedFish that will burn your house down!&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;Here is a example instance:
+    &lt;a href=&quot;https://v2bv.win/sfaas/&quot;&gt;https://v2bv.win/sfaas/&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;You can find answers of all the exsiting problems in the world here.&lt;/p&gt;
+    &lt;p&gt;Just have a try!&lt;/p&gt;
+  </description>
+  <pubDate>Sat, 01 Apr 2017 19:34:56 +0000</pubDate>
+  <link>https://v2bv.net/2017/Introduce-SFaaS</link>
+<guid isPermaLink="true">https://v2bv.net/2017/Introduce-SFaaS</guid>
+</item>
+<item>
+  <title>MultiROM on Nexus 5X</title>
+  <description>&lt;p&gt;As a no-zuo-no-die-solaris, I want to install multi systems (a.k.a ROMs) on my Nexus 5X (bullhead).&lt;/p&gt;
+    &lt;p&gt;But I just searched for a long time, I found there are two ways to multi boot on Android devices: MultiROM &amp;amp; EFIDroid.&lt;/p&gt;
+    &lt;p&gt;But both of MultiROM and EFIDroid don’t have official support to Nexus 5X.&lt;/p&gt;
+    &lt;p&gt;After several times of searching, I found that there is a people who already done porting of MultiROM to Nexus 5X.&lt;/p&gt;
+    &lt;p&gt;You can get source code here: &lt;a href=&quot;https://github.com/jollaman999/multirom&quot;&gt;@jollaman999/multirom at GitHub&lt;/a&gt;&lt;br /&gt;
+    And modified version of TWRP’s source code: &lt;a href=&quot;https://github.com/jollaman999/Team-Win-Recovery-Project&quot;&gt;@jollaman/Team-Win-Recovery-Project at GitHub&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;I’ve tested on my device and it can work correctly.&lt;/p&gt;
+    &lt;p&gt;In order to use it, the easiest way is download the modified version of MultiROM Manager. You can find it at &lt;a href=&quot;https://github.com/jollaman999/MultiROMMgr/tree/master/MultiROMMgr&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;Once you open the MultiROM Manager and give it root access, you can use it as the normal MultiROM manager.&lt;/p&gt;
+    &lt;p&gt;Have fun!&lt;/p&gt;
+  </description>
+  <pubDate>Tue, 28 Mar 2017 05:28:40 +0000</pubDate>
+  <link>https://v2bv.net/2017/MultiROM-On-Nexus-5X</link>
+<guid isPermaLink="true">https://v2bv.net/2017/MultiROM-On-Nexus-5X</guid>
+</item>
+<item>
+  <title>My new AP (hAP AC Lite)</title>
+  <description>&lt;h2 id=&quot;finally-my-new-ap-arrived--from-latvia&quot;&gt;Finally my new AP arrived :) (From Latvia)&lt;/h2&gt;
+    &lt;p&gt;The reason I buy a new AP is the router here at my host family is totally a garbge.(Doesn’t support 802.11AC; latency while pinging an address in local network can reach 1000ms; Some times even cannot assign IP address to connected devices…)&lt;/p&gt;
+    &lt;p&gt;So I ask for some advice about which AP worth to buy in AOSC’s group, then BroncoTc suggest MikroTik’s hAP &lt;del&gt;(In fact I didn’t heard anything about MikroTik before)&lt;/del&gt;.&lt;/p&gt;
+    &lt;p&gt;After searching on eBay, I found that hAP AC is too expensive so I decide to buy hAP AC Lite (RB952Ui-5ac2nD-TC). After about half an month, I receive the package.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://img.vim-cn.com/09/b9515458ece6371c7d10f01dab12df1e707b5b.jpg&quot; alt=&quot;Box&quot; /&gt;
+    Just a small box with signs printed on it.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://img.vim-cn.com/56/7abef3f0c9aa95ce2c8a10d7b37c00f48dbd22.jpg&quot; alt=&quot;Open&quot; /&gt;
+    There are only a few things in the box: hAP itself, power adapter and a plastic mount.
+    (Ignore the ThinkPad logo behind, please)&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://img.vim-cn.com/44/6f8a54f3cb354126ad58aab0286c9edd9d3ce6.jpg&quot; alt=&quot;Router&quot; /&gt;
+    It’s pretty tiny that only a little bit bigger than my hand. &lt;del&gt;(cute)&lt;/del&gt;
+    (Ignore my ThinkPad again, please)&lt;/p&gt;
+    &lt;p&gt;I place it at living room and near the original router :)
+    &lt;img src=&quot;https://img.vim-cn.com/e7/d9face3c9f77ce9448c44f439a8f62b4f4cbb7.jpg&quot; alt=&quot;Desk&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;And… It workds fine, much much better than the original one from xfinity.&lt;/p&gt;
+    &lt;p&gt;For detailed performance information, please read other’s post :)&lt;/p&gt;
+  </description>
+  <pubDate>Tue, 07 Mar 2017 00:20:00 +0000</pubDate>
+  <link>https://v2bv.net/2017/My-New-AP</link>
+<guid isPermaLink="true">https://v2bv.net/2017/My-New-AP</guid>
+</item>
+<item>
+  <title>My custom mechanical keyboard</title>
+  <description>&lt;p&gt;&lt;del&gt;I want to build a custom mechanical keyboard by my self.&lt;/del&gt;&lt;/p&gt;
+    &lt;p&gt;~And here is all I need:~~&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;del&gt;Soldering Iron Kit (Bought,&lt;a href=&quot;https://www.amazon.com/gp/product/B01JZ6HNB8&quot;&gt;Amazon&lt;/a&gt;)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;Solder (Bought,&lt;a href=&quot;https://www.amazon.com/gp/product/B00068IJPO&quot;&gt;Amazon&lt;/a&gt;)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;Switches (Planning, Cherry MX Brown+Blue/Green)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;PCB (Waiting for Massdrop, XD60)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;Keycaps (Planning, may be blank PBT ?) (Or this on &lt;a href=&quot;https://www.massdrop.com/buy/dan-ink-pbt-all-over-dye-subbed-keycap-set&quot;&gt;Massdrop&lt;/a&gt;)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;Case (Planning, may be Aluminum or Acrylic ?)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;Keyboard plate (Planning)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;Carrying bag/case (Planning)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;Stabilizers (Planning)&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;…&lt;/del&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;&lt;del&gt;2017-03-06:&lt;/del&gt;&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;del&gt;Bought soldering iron kit and solder on Amazon, planning to arrive at 2017-03-07.&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;XD60 PCB may be on Massdrop at middle of this month.&lt;/del&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;&lt;del&gt;&lt;strong&gt;TO BE CONTINUED…&lt;/strong&gt;&lt;/del&gt;&lt;/p&gt;
+    &lt;p&gt;2017-07-31:&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;Bought a IBM SpaceSaver II (RT3200), details: &lt;a href=&quot;https://v2bv.win/2017/using-ibm-rt3200-on-modern-linux-systems.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  </description>
+  <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+  <link>https://v2bv.net/2017/custom-mechanical-keyboard</link>
+<guid isPermaLink="true">https://v2bv.net/2017/custom-mechanical-keyboard</guid>
+</item>
+<item>
+  <title>Unofficial LineageOS build (SFMod)</title>
+  <description>&lt;p&gt;Several days ago, Cyngn shut down all services for CyanogenMod, and those developers created a fork of CyanogenMod called &lt;a href=&quot;https://lineageos.org&quot;&gt;LineageOS&lt;/a&gt;. And at now, though we can visit their download site but they didn’t start build official builds yet (2017.01.09). So I built a build from their &lt;a href=&quot;https://github.com/LineageOS&quot;&gt;source code on GitHub&lt;/a&gt; for my Nexus 5X(bullhead) – Of course, with some changes.&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Changes:
+    1. Change default kernel to flar2's ElementalX-4.04.
+    2. Add Brevent(3.1.2).
+    3. Change color theme to blue, just like Pixel (From Pure Nexus Project)
+    4. Add Masquerade and Substratum.
+    5. System embedded Magisk Manager
+    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p&gt;And… I call it SFMod, you can find source code &lt;a href=&quot;https://github.com/SFMod&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;(The reason why I stop using Pure Nexus is that the maintainer of Pure Nexus allways reset repo’s HEAD and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push -f&lt;/code&gt; so when I merge from those repo, it always make many conflicts; And always fail to build it from source.)&lt;/p&gt;
+    &lt;p&gt;Here is the download link: &lt;a href=&quot;https://drive.google.com/file/d/0B5BS_3kBfTlkLWRZaENGOHN1NTg/view?usp=sharing&quot;&gt;Google Drive&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://img.vim-cn.com/8e/85681240d1c07a4f410de749592faa05c81cc3.png&quot; alt=&quot;About&quot; /&gt;&lt;/p&gt;
+  </description>
+  <pubDate>Tue, 10 Jan 2017 00:08:00 +0000</pubDate>
+  <link>https://v2bv.net/2017/unofficial-lineageos-build</link>
+<guid isPermaLink="true">https://v2bv.net/2017/unofficial-lineageos-build</guid>
+</item>
+<item>
+  <title>Pure Nexus - SFMod</title>
+  <description>&lt;p&gt;These days I was working on compiling and modifying Android system.&lt;/p&gt;
+    &lt;p&gt;At first I want to use &lt;a href=&quot;https://cyanogenmod.org&quot;&gt;CyanogenMod&lt;/a&gt; as base of my Mod.&lt;/p&gt;
+    &lt;p&gt;Ah… As you know, Cyngn &lt;a href=&quot;https://cyngn.com/blog/cyanogen-services-shutting-down&quot;&gt;shut down CM Project and all of its services&lt;/a&gt;. Those developers went to a new project called &lt;a href=&quot;https://lineageos.org&quot;&gt;Lineage OS&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;Then I heard about &lt;a href=&quot;https://slimroms.org&quot;&gt;SlimROMs&lt;/a&gt; form &lt;a href=&quot;https://typeblog.net&quot;&gt;PeterCxy&lt;/a&gt;. After I compile their source code, I found that SlimROM may not support Google’s Project Fi (Baseband works fine but it cannot identify my Project Fi SIM card).&lt;/p&gt;
+    &lt;p&gt;Finally I try to build &lt;a href=&quot;https://github.com/PureNexusProject&quot;&gt;Pure Nexus&lt;/a&gt; (Because my phone is Nexus 5X and other Nexus users had recommend me about the Pure Nexus Project). I also tried their official build and I found it supports Project Fi. But at the first time I was trying to get the source code of it, I don’t know what’s wrong with &lt;a href=&quot;https://gitlab.com&quot;&gt;GitLab&lt;/a&gt;, I cannot acces Pure Nexus Project’s repo on it. I sent issues to both GitLab and Pure Nexus Project on GitHub. Though nobody answered me but one day later I can successfully access the repo.&lt;/p&gt;
+    &lt;p&gt;After I got their source code, I started modify it. I added support for &lt;a href=&quot;https://github.com/liudongmiao&quot;&gt;liudongmiao&lt;/a&gt;’s &lt;a href=&quot;https://piebridge.me/pr/&quot;&gt;Brevent&lt;/a&gt; and Change the default kernel (PureKernel) to &lt;a href=&quot;https://github.com/flar2&quot;&gt;flar2(Aaron Segaert)&lt;/a&gt;’s &lt;a href=&quot;https://elementalx.org&quot;&gt;ElementalX&lt;/a&gt; (Because I bought &lt;a href=&quot;https://play.google.com/store/apps/details?id=flar2.exkernelmanager&quot;&gt;EXKM&lt;/a&gt; and I don’t want to waste my mondy :D )&lt;/p&gt;
+    &lt;p&gt;Finally it works. But I found there is still a small problem: Some application will crash due to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AndroidRuntime: java.lang.SecurityException: Permission Denial: XXXXXXXXXX; this requires android.permission.INTERACT_ACROSS_USERS_FULL&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;Source code manifest: https://github.com/RedL0tus/manifest&lt;/p&gt;
+    &lt;p&gt;Here is the download link of my build: &lt;a href=&quot;https://drive.google.com/file/d/0B5BS_3kBfTlkV1paTEk5OVpCc1E/view?usp=sharing&quot;&gt;Google Drive&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Here are the screenshots:
+    &lt;img src=&quot;https://img.vim-cn.com/c7/6e0094f94e74c3fd0f4ebef52f39e71b210bc4.png&quot; alt=&quot;PixelLauncher&quot; /&gt;
+    (It use Pixel Launcher as default launcher)
+    &lt;img src=&quot;https://img.vim-cn.com/f3/193b647dc7bd68cb5ea4d77380dd0bd523294b.png&quot; alt=&quot;LockScreen&quot; /&gt;
+    (The carrier info can be modify via Pure Settings)
+    &lt;img src=&quot;https://img.vim-cn.com/09/ce180a4f17b2454ee2233ccfe3e9e56730e120.png&quot; alt=&quot;Brevent&quot; /&gt;
+    (Brevent’s working)
+    &lt;img src=&quot;https://img.vim-cn.com/a5/22737efef28c510d6ab9cc33678ce03122259b.png&quot; alt=&quot;About&quot; /&gt;
+    (PureNexus-SFMod :D )&lt;/p&gt;
+  </description>
+  <pubDate>Tue, 03 Jan 2017 00:53:00 +0000</pubDate>
+  <link>https://v2bv.net/2017/SFMod</link>
+<guid isPermaLink="true">https://v2bv.net/2017/SFMod</guid>
+</item>
+<item>
+  <title>Happy new year!</title>
+  <description>&lt;p&gt;Happy new year!&lt;/p&gt;
+    &lt;p&gt;&lt;del&gt;(In fact I just wanna update the number of year in footer)&lt;/del&gt;&lt;/p&gt;
+  </description>
+  <pubDate>Sun, 01 Jan 2017 08:00:00 +0000</pubDate>
+  <link>https://v2bv.net/2017/Happy-New-Year</link>
+<guid isPermaLink="true">https://v2bv.net/2017/Happy-New-Year</guid>
+</item>
+<item>
+  <title>Gabe, shut up and take my money!</title>
+  <description>&lt;p&gt;&lt;img src=&quot;https://img.vim-cn.com/29/052ced758175ba426cb78292a99a368239e947.png&quot; alt=&quot;Steam1&quot; /&gt;
+    &lt;img src=&quot;https://img.vim-cn.com/b0/e660dd0c1ab634f2d7b2237e0689d3beade0fb.png&quot; alt=&quot;Steam2&quot; /&gt;
+    &lt;img src=&quot;https://img.vim-cn.com/c3/fbbcac96073933cc516b467c8c6df6cd93a484.png&quot; alt=&quot;Steam3&quot; /&gt;&lt;/p&gt;
+    &lt;h1 id=&quot;gabe-shut-up-and-take-my-money&quot;&gt;Gabe, shut up and take my money!&lt;/h1&gt;
+    &lt;p&gt;&lt;img src=&quot;https://img.vim-cn.com/3b/037a58691a64f6c7b8459524dfe416122ed325.jpg&quot; alt=&quot;Gabe&quot; /&gt;&lt;/p&gt;
+  </description>
+  <pubDate>Fri, 23 Dec 2016 19:01:12 +0000</pubDate>
+  <link>https://v2bv.net/2016/shut-up-and-take-my-money</link>
+<guid isPermaLink="true">https://v2bv.net/2016/shut-up-and-take-my-money</guid>
+</item>
+<item>
+  <title>Federal SlatedFish</title>
+  <description>&lt;p&gt;&lt;img src=&quot;https://img.vim-cn.com/fb/28a4012a87d78f5d5f6963a32d559e10b5e779.png&quot; alt=&quot;Federal SaltedFish&quot; /&gt;
+    LOL (&lt;/p&gt;
+  </description>
+  <pubDate>Mon, 19 Dec 2016 21:21:21 +0000</pubDate>
+  <link>https://v2bv.net/2016/Federal-SaltedFish</link>
+<guid isPermaLink="true">https://v2bv.net/2016/Federal-SaltedFish</guid>
+</item>
+<item>
+  <title>I'm back (Again)</title>
+  <description>&lt;p&gt;##I’m back (AGAIN)&lt;/p&gt;
+    &lt;p&gt;I can’t remember how many times I’ve rebuild my blog.&lt;/p&gt;
+    &lt;p&gt;And this time, it’s because I lost my _config.yaml of the Hexo theme AGAIN…&lt;br /&gt;
+    (I sat the theme as a submodule by mistake.)&lt;/p&gt;
+    &lt;p&gt;Now I switched to Jekyll and use Prose.io to write posts.&lt;br /&gt;
+    And the theme I’m using now is modified from Brutane and you can find it on my GitHub.&lt;/p&gt;
+    &lt;p&gt;LOL&lt;/p&gt;
+  </description>
+  <pubDate>Thu, 08 Dec 2016 11:29:12 +0000</pubDate>
+  <link>https://v2bv.net/2016/Im-back-again</link>
+<guid isPermaLink="true">https://v2bv.net/2016/Im-back-again</guid>
+</item>
+<item>
+  <title>Welcome to Jekyll!</title>
+  <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+    &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+    &lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+    &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+  </description>
+  <pubDate>Wed, 07 Dec 2016 19:48:12 +0000</pubDate>
+  <link>https://v2bv.net/2016/welcome-to-jekyll</link>
+<guid isPermaLink="true">https://v2bv.net/2016/welcome-to-jekyll</guid>
+</item>
+</channel>
+</rss>
